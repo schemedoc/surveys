@@ -2,8 +2,8 @@
 
 #lang racket
 
+;; raco pkg install css-expr txexpr
 (require css-expr)
-(require sxml)
 (require txexpr)
 
 (define (xexpr->file html-filename xexpr)
