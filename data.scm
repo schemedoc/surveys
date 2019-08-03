@@ -29,6 +29,10 @@
    dir
    sig-mask
    new-pgrp
+   pty
+   timeout
+   raise-exit-code
+   text-ports
    stdin-pipe
    stdout-pipe
    stderr-pipe
@@ -48,6 +52,7 @@
    open-process
    (env
     dir
+    pty
     stdin-pipe
     stdout-pipe
     stderr-pipe))
@@ -83,4 +88,66 @@
     other-fd-close
     sig-mask
     new-pgrp
-    ))))
+    ))
+
+  (implementation
+   python
+   subprocess.run
+   (fork
+    exec
+    wait
+    timeout
+    raise-exit-code
+    text-ports)))
+
+ (wait
+  (features
+   process-object
+   any-pid
+   any-pgrp
+   timeout
+   no-hang
+   get-exit-code)
+
+  (implementation
+   gambit
+   process-status
+   (process-object
+    timeout
+    get-exit-code))
+
+  (implementation
+   gauche
+   sys-wait
+   ())
+
+  (implementation
+   gauche
+   sys-waitpid
+   (any-pid
+    any-pgrp
+    no-hang)))
+
+ (readdir
+  (features
+   in-path
+   in-dir-object
+   no-dot-dot
+   no-dotfiles
+   no-w32-hidden
+   sort
+   out-fullpaths)
+
+  (implementation
+   gambit
+   open-directory
+   (in-path
+    no-dot-dot
+    no-dotfiles
+    no-w32-hidden))
+
+  (implementation
+   gauche
+   sys-readdir
+   (in-path
+))))
