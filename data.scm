@@ -33,8 +33,7 @@
    stdout-pipe
    stderr-pipe
    any-fd-dup
-   other-fd-close
-   )
+   other-fd-close)
 
   (implementation
    chicken
@@ -70,8 +69,7 @@
     dir
     sig-mask
     any-fd-dup
-    other-fd-close
-    ))
+    other-fd-close))
 
   (implementation
    gauche
