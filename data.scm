@@ -149,4 +149,52 @@
   (implementation
    gauche
    sys-readdir
-   (in-path))))
+   (in-path)))
+
+ (delete-file
+  (features
+   delete-dir
+   error-if-not-exist
+   try-to-change-perms
+   delete-w32-junction)
+
+  (implementation
+   gambit
+   sys-remove
+   (error-if-not-exist
+    delete-w32-junction))
+
+  (implementation
+   gauche
+   sys-unlink
+   ())
+
+  (implementation
+   racket
+   delete-file
+   (try-to-change-perms)))
+
+ (delete-directory
+  (features
+   delete-nonempty)
+
+  (implementation
+   gauche
+   sys-rmdir
+   ()))
+
+ (create-directory
+  (features
+   create-parents
+   perm-bits)
+
+  (implementation
+   gauche
+   sys-mkdir
+   (perm-bits))
+
+  (implementation
+   gauche
+   make-directory*
+   (create-parents
+    perm-bits))))
