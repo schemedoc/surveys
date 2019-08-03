@@ -149,5 +149,4 @@
   (implementation
    gauche
    sys-readdir
-   (in-path
-))))
+   (in-path))))
