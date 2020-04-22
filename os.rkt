@@ -11,7 +11,7 @@
    html-filename
    (λ (out . _) (displayln (xexpr->html xexpr) out))))
 
-(define data (with-input-from-file "data.scm" read))
+(define data (with-input-from-file "os.scm" read))
 
 (define (feature-tds all-available-features-in-order features)
   (for-each (λ (feature)
@@ -47,7 +47,7 @@
                   instances)))])]))
 
 (xexpr->file
- "data.html"
+ "os.html"
  `(html
    (head
     (title "Scheme")
