@@ -23,6 +23,8 @@
    path-search
    arg-shell
    arg-list
+   arg-syms
+   arg-nums
    arg-zero
    arg-w32-quote
    env
@@ -37,7 +39,40 @@
    stdout-pipe
    stderr-pipe
    any-fd-dup
+   any-fd-close
    other-fd-close)
+
+  (implementation
+   chibi
+   execute
+   (exec
+    path-search
+    arg-list
+    arg-zero))
+
+  (implementation
+   chibi
+   system
+   (fork
+    exec
+    wait
+    path-search
+    arg-list
+    arg-zero))
+
+  (implementation
+   chibi
+   call-with-process-io
+   (fork
+    exec
+    arg-shell
+    arg-list
+    arg-syms
+    arg-nums
+    arg-zero
+    stdin-pipe
+    stdout-pipe
+    stderr-pipe))
 
   (implementation
    chicken
@@ -46,6 +81,15 @@
     arg-list
     arg-w32-quote
     env))
+
+  (implementation
+   chicken
+   process-run
+   (fork
+    exec
+    path-search
+    arg-shell
+    arg-list))
 
   (implementation
    gambit
@@ -89,6 +133,17 @@
     sig-mask
     new-pgrp
     ))
+
+  (implementation
+   go
+   os.StartProcess
+   (path-search
+    arg-list
+    arg-zero
+    dir
+    env
+    any-fd-dup
+    any-fd-close))
 
   (implementation
    python
