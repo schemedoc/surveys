@@ -8,5 +8,5 @@ Gauche: `(current-load-path)`
 
 Rep (librep): `load-filename`
 
-SRFI 193 (script-file, script-directory) is similar but does not apply
-to all loaded files, only "scripts".
+SRFI 193 (`script-file`, `script-directory`) is similar but does not
+apply to all loaded files, only "scripts".
