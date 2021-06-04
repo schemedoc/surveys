@@ -6,7 +6,7 @@
 * Case behavior is excessively religious and emotional
 * We have two precedences, one R6RS and one R5RS, in standards for doing different case behavior
 * In the presence of different character sets and traditions, certain case behaviors are more prevalent
-* The solution to the behavior must be compatible both in Scheme Core and Scheme 7
+* The solution to the behavior must be compatible both in Scheme Core and s7
 
 ## Proposed Solution
 
@@ -26,7 +26,7 @@ The use of parameters in Scheme Core would affect any procedures called that mak
 
 I would like to avoid creation of "compatibility" layers in Scheme implementations that intend to break the default case sensitivity defaults. Since most code that needs to run or most legacy code that is important can be counted on to still run under their same implementations in this proposal, this actually improves the conformance and maintains a large body of backwards compatible source code without requiring modification. Such source code can easily be moved to systems with different defaults by using flags or modules. This is no more difficult than requiring special encantations in the target Scheme implementation. It is also standardized, so the user can easily make a library entirely portable in this regard by either using a flag or providing a module. Doing so is superior to requiring each implementation to have a unique encantation for calling the code with the correct behavior.
 
-The use of a parameter allows for much nicer interactions with the reader at a Scheme Core level without complicating the semantics. It also means that you have more control at run-time of the reader without making this more complex. It permits an acceptable level of control in Scheme Core, while scaling up to phasing levels and procedural macros in Scheme 7.
+The use of a parameter allows for much nicer interactions with the reader at a Scheme Core level without complicating the semantics. It also means that you have more control at run-time of the reader without making this more complex. It permits an acceptable level of control in Scheme Core, while scaling up to phasing levels and procedural macros in s7.
 
 ## Case-sensitive and Case-Folded Modules (by John Cowan)
 

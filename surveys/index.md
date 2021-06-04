@@ -82,10 +82,6 @@ either will not build on my system or will not run.
 For these and many other Schemes see the
 [fairly complete list of Scheme implementations](http://community.schemewiki.org/?scheme-faq-standards).
 
-S7 was formerly, but incorrectly, known in these pages as "Scheme 7",
-and some references to this name survive.
-It's really named after [the motorcycle](http://en.wikipedia.org/wiki/Sunbeam_S7_and_S8).
-
 Not all these pages have information on all these Schemes.
 
 * [ApplyArgsLimit](ApplyArgsLimit.html)
