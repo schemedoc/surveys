@@ -117,7 +117,6 @@ Not all these pages have information on all these Schemes.
 * [ForceNonPromise](ForceNonPromise.html)
 * [GuardBehavior](GuardBehavior.html)
 * [MultipleValues](MultipleValues.html)
-* [NilIsFalse](NilIsFalse.html)
 * [OneArmedIf](OneArmedIf.html)
 * [ParametersAndThreads](ParametersAndThreads.html)
 * [PetrofskyCatastrophe](PetrofskyCatastrophe.html)
@@ -131,6 +130,7 @@ Not all these pages have information on all these Schemes.
 * [ImmediateStringsCoalesced](ImmediateStringsCoalesced.html)
 * [ImmutableLiterals](ImmutableLiterals.html)
 * [ImmutableStrings](ImmutableStrings.html)
+* [NilIsFalse](NilIsFalse.html)
 * [ReadMutable](ReadMutable.html)
 
 ## Lexical syntax
