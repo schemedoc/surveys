@@ -88,17 +88,22 @@ Not all these pages have information on all these Schemes.
 
 * [CommaCommands](CommaCommands.html)
 * [CompilerAvailable](CompilerAvailable.html)
+* [FiveToSixToSeven](FiveToSixToSeven.html)
+* [ImplementationSupport](ImplementationSupport.html)
+* [Optionality](Optionality.html)
 * [SchemeOnWindows](SchemeOnWindows.html)
 * [StandaloneExecutables](StandaloneExecutables.html)
 * [SyntaxDefinitions](SyntaxDefinitions.html)
 
 ## Bindings
 
+* [ChezReplSemantics](ChezReplSemantics.html)
 * [DefineSyntaxDefines](DefineSyntaxDefines.html)
 * [EmptyDefine](EmptyDefine.html)
 * [EvalDefine](EvalDefine.html)
 * [HygienicInclusion](HygienicInclusion.html)
 * [LetrecStar](LetrecStar.html)
+* [LiSPTopLevels](LiSPTopLevels.html)
 * [PetrofskyLet](PetrofskyLet.html)
 * [RedefiningKeywords](RedefiningKeywords.html)
 * [RedefiningSyntax](RedefiningSyntax.html)
@@ -127,6 +132,7 @@ Not all these pages have information on all these Schemes.
 
 * [CharEq](CharEq.html)
 * [EmptyStringsVectors](EmptyStringsVectors.html)
+* [ExceptionTaxonomies](ExceptionTaxonomies.html)
 * [ImmediateStringsCoalesced](ImmediateStringsCoalesced.html)
 * [ImmutableLiterals](ImmutableLiterals.html)
 * [ImmutableStrings](ImmutableStrings.html)
