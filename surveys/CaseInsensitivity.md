@@ -30,37 +30,36 @@ All Schemes in the test suite accept `E` as well as `e` in inexact constants (ex
 
 Although symbols themselves are case-sensitive (you can create uppercase and lowercase symbols via string->symbol), by R5RS the standard required the reader to effectively fold the cases when it is reading symbol, so that 'a and 'A are treated as eq?
 
-Almost all active implementations, however, have a switch to choose case-sensitiveness of the symbol reader.   Furthermore, more and more recent implementations seem to adopt case-sensitive reader by default.
+Almost all active implementations, however, have a switch to choose case-sensitiveness of the symbol reader. Furthermore, more and more recent implementations seem to adopt case-sensitive reader by default.
 
-Here's a list of implementations and their default case sensitivity
-('S' for sensitive, 'I' for insensitive), and whether they have an option
-to switch.  (If you want to add or correct entries, please go ahead.)
+Here's a list of implementations and their default case sensitivity ('S' for sensitive, 'I' for insensitive), and whether they have an option to switch.
 
-||''Implementation''||''default''||''option?''||
-||[[Bigloo]]        ||S          ||yes (option -fcase-insensitive)||
-||[[ChezScheme]]    ||S          ||yes (parameter case-sensitive)||
-||[[Chicken]]       ||S          ||yes (compiler command line option)||
-||[[Cyclone]]       ||S          ||no||
-||[[Elk]]           ||S          ||yes (command line)||
-||[[Gambit]]        ||S          ||yes (command line / readtable)||
-||[[Gauche]]        ||S          ||yes (command line -fcase-fold)||
-||[[Guile]]         ||S          ||yes (reader option)||
-||[[Ikarus]]        ||S          ||no?||
-||[[Kawa]]          ||S          ||yes (variable symbol-read-case)||
-||[[Larceny]]       ||S          ||yes (command line switches, parameter, per-port flags)||
-||[[LispMe]]        ||I          ||yes (settings dialog)||
-||[[MIT-Scheme]]    ||I          ||yes (variable *parser-canonicalize-symbols?*)||
-||[[PLT-Scheme]]    ||S          ||yes (parameter read-case-sensitive, per-expression prefix #cs and #ci)||
-||[[Pocket-Scheme]] ||I*         ||no||
-||[[RScheme]]       ||S          ||?||
-||[[Scheme48]]      ||I          ||no||
-||[[SCM]]           ||I          ||no||
-||[[Scsh]]          ||S          ||no?||
-||[[SigScheme]]     ||S          ||no?||
-||[[SISC]]          ||I          ||yes (parameter case-sensitive)||
-||[[Stalin]]        ||I          ||no||
-||[[STklos]]        ||S          ||yes (command line and directive #!no-fold-case)||
-||[[TinyScheme]]        ||I          ||no||
+| Implementation | default | option? |
+| -------------- | ------- | ------- |
+| Bigloo         | S       | yes (option -fcase-insensitive) |
+| ChezScheme     | S       | yes (parameter case-sensitive) |
+| Chicken        | S       | yes (compiler command line option) |
+| Cyclone        | S       | no |
+| Elk            | S       | yes (command line) |
+| Gambit         | S       | yes (command line / readtable) |
+| Gauche         | S       | yes (command line -fcase-fold) |
+| Guile          | S       | yes (reader option) |
+| Ikarus         | S       | no? |
+| Kawa           | S       | yes (variable symbol-read-case) |
+| Larceny        | S       | yes (command line switches, parameter, per-port flags) |
+| LispMe         | I       | yes (settings dialog) |
+| MIT-Scheme     | I       | yes (variable *parser-canonicalize-symbols?*) |
+| PLT-Scheme     | S       | yes (parameter read-case-sensitive, per-expression prefix #cs and #ci) |
+| Pocket-Scheme  | I*      | no |
+| RScheme        | S       | ? |
+| Scheme48       | I       | no |
+| SCM            | I       | no |
+| Scsh           | S       | no? |
+| SigScheme      | S       | no? |
+| SISC           | I       | yes (parameter case-sensitive) |
+| Stalin         | I       | no |
+| STklos         | S       | yes (command line and directive #!no-fold-case) |
+| TinyScheme     | I       | no |
 
 (* Pocket Scheme: only folds case between U+0000 - U+00FF)
 
