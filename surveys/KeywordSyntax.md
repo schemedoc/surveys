@@ -84,3 +84,13 @@ prefix **or suffix**, remembering which one you used, in S7.
 
 Keyword objects are not symbols in Bigloo, Chicken, Gambit,
 Sagittarius, STklos.
+
+## Systems with neither keywords nor syntax-case
+
+It's possible to cleverly simulate keyword procedures
+with syntax-case macros.  The keyword analysis can be done
+in the macro and then the underlying procedure invoked,
+and with syntax-case it is possible to match macro names
+in operand position.
+
+Systems like this include: MIT, SCM, Scheme 9.
