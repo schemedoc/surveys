@@ -1,4 +1,4 @@
 #!/bin/sh
 set -eu
 cd "$(dirname "$0")"
-rsync -vr www/ alpha.servers.scheme.org:/production/doc/www/surveys/
+rsync -crv www/ alpha.servers.scheme.org:/production/doc/www/surveys/
