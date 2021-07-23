@@ -41,8 +41,8 @@ Test code:
   (newline))
 (define t (make-thread thunk))
 (begin
-  (start-thread! t)
-  (join-thread! t))
+  (thread-thread! t)
+  (thread-join! t))
 (p) ; (b) displays 24, (c) displays 17
 ```
 
