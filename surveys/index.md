@@ -108,6 +108,7 @@ Not all these pages have information on all these Schemes.
 * [RedefiningKeywords](RedefiningKeywords/)
 * [RedefiningSyntax](RedefiningSyntax/)
 * [RedundantImports](RedundantImports/)
+* [SetSyntax](SetSyntax/)
 * [SetUndefinedVariable](SetUndefinedVariable/)
 * [SyntaxAbuse](SyntaxAbuse/)
 
@@ -119,6 +120,7 @@ Not all these pages have information on all these Schemes.
 * [CondExpand](CondExpand/)
 * [DisjointPromises](DisjointPromises/)
 * [EmptyList](EmptyList/)
+* [EvalProcedure](EvalProcedure/)
 * [ForceNonPromise](ForceNonPromise/)
 * [GuardBehavior](GuardBehavior/)
 * [MultipleValues](MultipleValues/)
