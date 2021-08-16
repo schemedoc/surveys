@@ -7,7 +7,6 @@ Which schemes support unicode lambda as an alternative to "`lambda`"?
 |Chez	|NO	| |
 |Chibi	|NO	| |
 |Chicken|NO	| |
-|Kawa	|NO	||
 |Loko	|NO	| |
 |Gambit	|NO	| |
 |Gauche | NO|uses caret (`^`)|
