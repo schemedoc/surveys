@@ -157,6 +157,7 @@ Not all these pages have information on all these Schemes.
 * [QuoteDelimiter](QuoteDelimiter/)
 * [SquareBrackets](SquareBrackets/)
 * [StringSymbolConversion](StringSymbolConversion/)
+* [UnicodeLambda](UnicodeLambda/)
 * [UnsignedImaginary](UnsignedImaginary/)
 * [UpperCaseEscape](UpperCaseEscape/)
 * [VerticalLineSymbols](VerticalLineSymbols/)
