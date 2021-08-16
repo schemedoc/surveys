@@ -39,7 +39,11 @@ this:
 
 Which implementations support the above?
 
+* bigloo             `expected`
 * chibi              `expected`
 * chicken            `expected`
 * gambit             `expected`
 * gauche             `expected`
+* guile              `expected`
+* kawa               `expected`
+* stklos             `expected`
