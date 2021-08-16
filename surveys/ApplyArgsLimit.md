@@ -8,7 +8,7 @@ These tests were done on a 64-bit Linux system.
 
 100000 arguments works correctly: S7, Chicken 5
 
-10000 arguments works correctly: Guile, Mosh, XLisp, TinyScheme, Elk, Llava, SXM, S7
+10000 arguments works correctly: Guile, Mosh, XLisp, TinyScheme, Elk, Llava, SXM, S7, STklos
 
 6500 arguments works correctly: Sizzle
 
