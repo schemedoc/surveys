@@ -8,7 +8,7 @@ These tests were done on a 64-bit Linux system.
 
 100000 arguments works correctly: S7, Chicken 5
 
-10000 arguments works correctly: Guile, Mosh, XLisp, TinyScheme, Elk, Llava, SXM, S7, STklos
+10000 arguments works correctly: Guile, Mosh, XLisp, TinyScheme, Elk, Llava, SXM, S7, STklos (default stack size) [*]
 
 6500 arguments works correctly: Sizzle
 
@@ -25,3 +25,5 @@ Hard limit is 2026 arguments: Foment
 Hard limit is 998 arguments: RScheme
 
 Cannot run test: UMB, Owl Lisp
+
+[*]: If STklos is started with `-s 10000000` then it will support the initial test with one million arguments.
