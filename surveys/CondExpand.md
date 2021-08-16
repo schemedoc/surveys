@@ -47,3 +47,9 @@ Which implementations support the above?
 * guile              `expected`
 * kawa               `expected`
 * stklos             `expected`
+* scheme 9           `expected`
+
+Signal an error:
+
+* foment 
+* MIT
