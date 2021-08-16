@@ -149,7 +149,7 @@ Not all these pages have information on all these Schemes.
 * [CommaInIdentifiers](CommaInIdentifiers/)
 * [DatumLabels](DatumLabels/)
 * [DotComma](DotComma/)
-* [EmptySymbolConcatenated](EmptySymbolConcatenated.md/)
+* [EmptySymbolConcatenated](EmptySymbolConcatenated/)
 * [HashBangEof](HashBangEof/)
 * [HashInIdentifiers](HashInIdentifiers/)
 * [HashQuote](HashQuote/)
