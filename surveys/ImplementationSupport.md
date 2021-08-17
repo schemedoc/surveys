@@ -20,4 +20,4 @@ The following implementations support all or part of R7RS-small:
 |[Racket](http://racket-lang.org/)|[unofficial](https://github.com/lexi-lambda/racket-r7rs)|
 |[Rapid](https://gitlab.com/nieper/rapid-scheme)||
 |[Sagittarius](https://bitbucket.org/ktakashi/sagittarius-scheme/wiki/Home)||
-|[STklos](https://stklos.net)||
+|[STklos](https://stklos.net)| (partial: incompatible syntax/R7RS libraries and lacks lexically scoped macros)|
