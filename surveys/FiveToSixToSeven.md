@@ -55,7 +55,7 @@ These are the language changes listed in R6RS Appendix E, with notes on the exte
     * Adopted.
 * The `let-syntax` and `letrec-syntax` no longer introduce a new environment for their bodies.
     * Rejected for backward compatibility with existing Schemes.
-* For implementations that support [NaNs](NaNs.md) or infinities, many arithmetic operations have been specified on these values consistently with IEEE 754.
+* For implementations that support NaNs or infinities, many arithmetic operations have been specified on these values consistently with IEEE 754.
     * Adopted.
 * For implementations that support a distinct -0.0, the semantics of many arithmetic operations with regard to -0.0 has been specified consistently with IEEE 754.
     * Adopted.
