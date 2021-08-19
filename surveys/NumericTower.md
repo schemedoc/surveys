@@ -30,6 +30,6 @@ See [NumericTowerManisComments](NumericTowerManisComments.md) for Vincent Manis'
 
 ## See also
 
-See also [ComplexRepresentations](ComplexRepresentations.md) for information on which Schemes support exact, inexact, and mixed-exactness complex numbers.
+See also [ComplexRepresentations](../ComplexRepresentations/) for information on which Schemes support exact, inexact, and mixed-exactness complex numbers.
 
-See also [FloatPrecision](FloatPrecision.md) for information on the different precisions of inexact numbers that some Schemes support.
+See also [FloatPrecision](../FloatPrecision/) for information on the different precisions of inexact numbers that some Schemes support.

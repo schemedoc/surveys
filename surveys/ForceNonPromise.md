@@ -6,4 +6,4 @@ The Schemes were tested to see what happens when `force` is applied to a non-pro
 
 `force` does not exist: KSi, Shoe, S7, Rep, Llava, FemtoLisp, Dfsch
 
-See also [DisjointPromises](DisjointPromises.md).
+See also [DisjointPromises](../DisjointPromises/).

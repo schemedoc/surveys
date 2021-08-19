@@ -10,4 +10,4 @@ Buggy implementation: Oaklisp
 
 Note:  In Owl Lisp, repeated forces re-evaluate the delayed expression, because Owl Lisp is immutable.
 
-See also [ForceNonPromise](ForceNonPromise.md).
+See also [ForceNonPromise](../ForceNonPromise/).
