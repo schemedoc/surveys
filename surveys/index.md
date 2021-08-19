@@ -118,7 +118,6 @@ Not all these pages have information on all these Schemes.
 * [ArgumentOrder](ArgumentOrder/)
 * [CallCc](CallCc/)
 * [CondExpand](CondExpand/)
-* [DisjointPromises](DisjointPromises/)
 * [EmptyList](EmptyList/)
 * [EvalProcedure](EvalProcedure/)
 * [ForceNonPromise](ForceNonPromise/)
@@ -133,6 +132,7 @@ Not all these pages have information on all these Schemes.
 ## Identity and mutability
 
 * [CharEq](CharEq/)
+* [DisjointPromises](DisjointPromises/)
 * [EmptyStringsVectors](EmptyStringsVectors/)
 * [ExceptionTaxonomies](ExceptionTaxonomies/)
 * [ImmediateStringsCoalesced](ImmediateStringsCoalesced/)
