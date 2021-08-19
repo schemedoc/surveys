@@ -15,6 +15,3 @@ Chicken also provides:
 
 Kawa's underlying implementation provides property lists for its Elisp implementation,
 but they aren't directly exposed to Scheme except through the Java FFI.
-
-For a pre-SRFI for disembodied plists, see
-[PropertyListAPI](http://htmlpreview.github.io?https://github.com/johnwcowan/r7rs-work/blob/master/PropertyListAPI.html).
