@@ -22,12 +22,6 @@ There are therefore 16 possible numeric towers.  9 of them are known to have imp
 
 NexJ's numeric tower is undocumented and behaves inconsistently in any case:  applying `expt` to two fixnums, for example, returns a bignum, but adding them returns a potentially incorrect fixnum.  Basically it does what Java does.
 
-## Opinions
-
-In my opinion, the reasonable general-purpose towers are --+- (fixnums and flonums), +-+- (fixnums, bignums, and flonums), +++- (fixnums, bignums, ratnums, and flonums) and ++++ (full).  The --+- tower's operations have the advantage of running in constant time on modern hardware.  The ++-- tower (ratnums but not flonums) may be reasonable for some purposes, but numerical code will often run very slowly without inexact support due to fractions which grow larger and larger. The ---- (fixnum-only) tower might possibly be appropriate where only a tiny amount of space is available and essentially no numerical work will be done.
-
-See [NumericTowerManisComments](NumericTowerManisComments.md) for Vincent Manis's comments on an earlier version of this page.
-
 ## See also
 
 See also [ComplexRepresentations](../ComplexRepresentations/) for information on which Schemes support exact, inexact, and mixed-exactness complex numbers.
