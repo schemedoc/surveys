@@ -21,5 +21,6 @@ is displayed.
 | Racket         | `(void)`      | N/A              | `#<void>`        |
 | s7             | N/A           | N/A              | N/A              |
 | Sagittarius    | `(undefined)` | N/A              | `#<unspecified>` |
+| Scheme 9       | `(void)`      | N/A              | `#<unspecific>`  |
 | STklos         | `(void)`      | `#void`          | `#void`          |
 | TinyScheme     | N/A           | N/A              | N/A              |
