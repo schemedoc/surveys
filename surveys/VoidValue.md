@@ -15,6 +15,7 @@ is displayed.
 | Cyclone        | N/A           | N/A              | N/A              |
 | Gambit         | `(void)`      | `#!void`         | `#!void`         |
 | Gauche         | N/A           | N/A              | N/A              |
+| Guile          | ?             | ?                | `#<unspecified>` |
 | Kawa           | N/A           | `#!void`         | nothing written  |
 | MIT            | ?             | `#!unspecific`   | nothing written  |
 | Mosh           | N/A           | N/A              | N/A              |
