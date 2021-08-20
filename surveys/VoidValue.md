@@ -16,6 +16,7 @@ is displayed.
 | Gambit         | `(void)`      | `#!void`         | `#!void`         |
 | Gauche         | N/A           | N/A              | N/A              |
 | Kawa           | N/A           | `#!void`         | nothing written  |
+| MIT            | ?             | `#!unspecific`   | `#!unspecific`   |
 | Mosh           | N/A           | N/A              | N/A              |
 | Owl Lisp       | N/A           | N/A              | N/A              |
 | Racket         | `(void)`      | N/A              | `#<void>`        |
