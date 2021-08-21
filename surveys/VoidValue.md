@@ -17,7 +17,7 @@ is displayed.
 | Gauche         | N/A           | N/A              | N/A              |
 | Guile          | ?             | ?                | `#<unspecified>` |
 | Kawa           | N/A           | `#!void`         | nothing written  |
-| MIT            | ?             | `#!unspecific`   | nothing written  |
+| MIT            | ?             | `#!unspecific`   | `#!unspecific`   |
 | Mosh           | N/A           | N/A              | N/A              |
 | Owl Lisp       | N/A           | N/A              | N/A              |
 | Racket         | `(void)`      | N/A              | `#<void>`        |
