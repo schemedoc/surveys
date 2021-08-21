@@ -27,6 +27,7 @@ it:
 |Bigloo|getprop|putprop! |remprop! |symbol-plist|
 |Guile|symbol-property|set-symbol-property! |symbol-property-remove! |(none)|
 |Common Lisp|[`get`](http://www.lispworks.com/documentation/HyperSpec/Body/f_get.htm)|`(setf (get key) val)`|[`remprop`](http://www.lispworks.com/documentation/HyperSpec/Body/f_rempro.htm#remprop)|[`symbol-plist`](http://www.lispworks.com/documentation/HyperSpec/Body/f_symb_4.htm)
+|Emacs Lisp|`get`|`put`|`cl-remprop`|`symbol-plist`
 
 Chicken also provides:
 * get-properties, which searches for multiple properties simultaneously
