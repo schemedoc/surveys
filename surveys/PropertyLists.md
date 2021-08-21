@@ -1,13 +1,13 @@
 The following Schemes have implementations of property lists:
 
 |Scheme|Get property|Put property|Remove property|Get p-list|
+|------|------------|------------|---------------|----------|
 |Chicken|get|put or (setter get)|remprop! |symbol-plist|
 |Chez|getprop|putprop|remprop|property-list (returns copy)|
 |Ikarus|getprop|putprop|remprop|property-list (returns copy)|
 |Larceny|getprop|putprop|remprop|(none)|
 |Bigloo|getprop|putprop! |remprop! |symbol-plist|
 |Guile|symbol-property|set-symbol-property! |symbol-property-remove! |(none)|
-|
 
 Chicken also provides:
 * get-properties, which searches for multiple properties simultaneously
