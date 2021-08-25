@@ -182,7 +182,7 @@ Not all these pages have information on all these Schemes.
 
 ## Numbers
 
-* [ComplexLog](ComplexLog/)
+* [ComplexLogarithm](ComplexLogarithm/)
 * [ComplexRepresentations](ComplexRepresentations/)
 * [ExactExpt](ExactExpt/)
 * [ExactSqrt](ExactSqrt/)
