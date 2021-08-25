@@ -1,6 +1,8 @@
-# Fixnum ranges for 32-bit Schemes
+# Fixnum info
 
-This is the range of fixnums in bits for the 32-bit builds of 39 Schemes. 
+## Fixnum ranges for 32-bit Schemes
+
+This is the range of fixnums in bits for the 32-bit builds of 39 Schemes.
 For this purpose, an exact integer *n* is a fixnum if *n* satisfies
 the implementation's `fixnum?` procedure (marked by an dagger)
 or if there is no such procedure, then if `(eq? `*n*` `*n*`)` returns `#t`.

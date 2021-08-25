@@ -1,5 +1,6 @@
-These are the language changes listed in R6RS Appendix E, with notes on the extent to which R7RS-small has taken them up.
+# Five to six to seven
 
+These are the language changes listed in R6RS Appendix E, with notes on the extent to which R7RS-small has taken them up.
 
 * Scheme source code now uses the Unicode character set.  Specifically, the character set that can be used for identifiers has been greatly expanded.
     * Permitted but not required.

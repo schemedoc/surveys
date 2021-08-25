@@ -1,4 +1,6 @@
-### Where a single value is expected
+# Multiple values
+
+## Where a single value is expected
 
 I asked my usual suite of Schemes to evaluate `(+ 1 (values 2 3))`.
 
