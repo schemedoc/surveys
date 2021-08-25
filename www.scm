@@ -3,11 +3,11 @@
 
 (import (only (chicken file) create-directory directory)
         (only (chicken process-context) change-directory)
-        (only (sxml-transforms) SXML->HTML)
-        (only (lowdown) markdown->sxml)
-        (only (www-lowdown-colorize) enable-www-lowdown-colorize!))
-
-(enable-www-lowdown-colorize!)
+        (only (colorize)
+              coloring-type-exists? coloring-type-names html-colorize)
+        (only (html-parser) html->sxml)
+        (only (pandoc) pandoc-file->sxml)
+        (only (sxml-transforms) SXML->HTML))
 
 (define (disp . xs) (for-each display xs) (newline))
 
@@ -28,22 +28,66 @@
                         (content ,description))))
               (body ,@body))))))
 
+(define (map-sxml-elems update tag elems)
+  (letrec ((convert-elem
+            (lambda (elem)
+              (if (and (pair? elem)
+                       (symbol? (car elem))
+                       (eq? tag (car elem)))
+                  (update elem)
+                  elem)))
+           (convert-elems
+            (lambda (elems)
+              (if (not (pair? elems)) elems
+                  (map convert-elem elems)))))
+    (convert-elems elems)))
+
+(define (dashes->spaces string)
+  (string-map (lambda (c) (if (char=? c #\-) #\space c)) string))
+
+(define (spaces->dashes string)
+  (string-map (lambda (c) (if (char=? c #\space) #\- c)) string))
+
+(define (coloring-type-string->symbol string)
+  (let ((string (dashes->spaces string)))
+    (let loop ((names (coloring-type-names)))
+      (and (not (null? names))
+           (if (string-ci= string (cdar names))
+               (caar names)
+               (loop (cdr names)))))))
+
+(define (colorize-sxml elems)
+  (map-sxml-elems
+   (lambda (elem)
+     (let* ((attrs (and (pair? (cadr elem))
+                        (eq? '@ (car (cadr elem)))
+                        (cdr (cadr elem))))
+            (syn-attr (assq 'data-syntax attrs))
+            (syn (and syn-attr (pair? (cdr syn-attr)) (cadr syn-attr)))
+            (synsym (and syn (coloring-type-string->symbol syn)))
+            (body (fold string-append "" ((if attrs cddr cdr) elem))))
+       `(pre (code (@ (class "colorize") ,@(or attrs '()))
+                   ,@(if (and syn (coloring-type-exists? synsym))
+                         (cdr (html->sxml (html-colorize synsym body)))
+                         (list body))))))
+   'pre elems))
+
 (define (page-title-from-sxml tags)
   (let rec ((tags tags))
     (cond ((not (pair? tags)) #f)
           ((eqv? 'h1 (car (car tags)))
-           (apply string-append (cadr (car tags))))
+           (apply string-append (cdr (car tags))))
           (else (rec (cdr tags))))))
 
 (define (markdown-file->sxml md-filename)
-  (call-with-port (open-input-file md-filename) markdown->sxml))
+  (pandoc-file->sxml 'gfm md-filename))
 
 (define (write-simple-page html-filename md-filename description)
   (let ((sxml (markdown-file->sxml md-filename)))
     (write-html-file html-filename
                      (or (page-title-from-sxml sxml) "")
                      description
-                     sxml)))
+                     (colorize-sxml sxml))))
 
 (define (main)
   (create-directory "www")
