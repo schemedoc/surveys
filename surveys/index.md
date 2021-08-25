@@ -1,4 +1,4 @@
-# Scheme surveys
+# Scheme Surveys
 
 This is an index to pages that describe various detailed differences between Scheme implementations.
 

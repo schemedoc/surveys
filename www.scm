@@ -9,6 +9,9 @@
         (only (pandoc) pandoc-file->sxml)
         (only (sxml-transforms) SXML->HTML))
 
+(define global-description
+  "Surveys of Scheme implementation features.")
+
 (define (disp . xs) (for-each display xs) (newline))
 
 (define (write-html-file html-filename title description body)
@@ -89,10 +92,23 @@
                      description
                      (colorize-sxml sxml))))
 
+(define (write-survey-page html-filename md-filename)
+  (let ((sxml (markdown-file->sxml md-filename)))
+    (write-html-file html-filename
+                     (let ((t (page-title-from-sxml sxml)))
+                       (if (not t)
+                           "Scheme Surveys"
+                           (string-append t " (Scheme Surveys)")))
+                     global-description
+                     (append (colorize-sxml sxml)
+                             `((hr)
+                               (p (a (@ (href "../"))
+                                     "Back to Scheme Surveys")))))))
+
 (define (main)
   (create-directory "www")
   (write-simple-page "www/index.html" "surveys/index.md"
-                     "Scheme Surveys")
+                     global-description)
   (for-each (lambda (name)
               (let ((ext ".md"))
                 (when (string-suffix? ext name)
@@ -101,10 +117,9 @@
                       (let* ((hdir (string-append "www/" stem))
                              (html (string-append hdir "/index.html")))
                         (create-directory hdir)
-                        (write-simple-page
+                        (write-survey-page
                          html
-                         (string-append "surveys/" name)
-                         "Scheme Surveys")))))))
+                         (string-append "surveys/" name))))))))
             (list-sort string<? (directory "surveys")))
   0)
 
