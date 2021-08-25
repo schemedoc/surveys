@@ -1,6 +1,7 @@
 # Lisp top levels
 
-All information taken from Christaian Quiennic's, __Lisp In Small Pieces__, 1994 edition.
+All information taken from Christian Queinnec's, __Lisp In Small
+Pieces__, 1994 edition.
 
 ## Universal Global Environment
 
