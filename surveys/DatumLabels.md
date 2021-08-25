@@ -1,7 +1,7 @@
 I tested datum-label support with the following expression:
 
-```
-        (let ((x '(#1=(a b) #1#))) (eq? (car x) (cadr x)))
+```Scheme
+(let ((x '(#1=(a b) #1#))) (eq? (car x) (cadr x)))
 ```
 
 Gauche, MIT, Bigloo, Kawa, Chez, Ikarus/Vikare, Larceny*, Mosh, STklos, FemtoLisp, Sagittarius, Foment, Chibi, Picrin support the syntax and return `#t`;
