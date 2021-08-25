@@ -2,7 +2,7 @@
 
 This page talks about how implementations handle various aspects of zero.  Thanks to Alexey Radul for the ideas here; the research is mine.
 
-### Exact division by zero
+## Exact division by zero
 
 Racket, MIT, Gambit, Chicken, Bigloo, Scheme48/scsh, Chibi, Guile, SISC, Chez, Ikarus/Vicare, Larceny, Ypsilon, Mosh, IronScheme, NexJ, STklos, Shoe, S7, BDC, XLisp, Rep, Schemik, Elk, UMB, SigScheme, SXM, Sizzle, Spark, Dfsch, Inlab, VSCM, Sagittarius report an error.
 
@@ -14,7 +14,7 @@ Scheme 9 returns its implementation-specific undefined value.
 
 Femtolisp returns an incorrect result.
 
-### Inexact division by exact zero
+## Inexact division by exact zero
 
 Racket, Gambit, Chicken, scsh, Chibi, Guile, Shoe, S7, BDC, XLisp, Rep, Schemik, Elk, SXM, Sizzle, Spark, Dfsch, Inlab, VSCM report an error.
 
@@ -26,7 +26,7 @@ Scheme 9 returns its implementation-specific undefined value.
 
 KSi, Femtolisp return an incorrect result.
 
-### Division by inexact zero
+## Division by inexact zero
 
 Plain Chicken, scsh, Shoe, TinyScheme, XLisp, Rep, Schemik, S7, SXM, Sizzle, Dfsch, Inlab, VSCM report an error.
 
@@ -38,7 +38,7 @@ Scheme 9 returns its implementation-specific undefined value.
 
 KSi returns an incorrect result.
 
-### Inexact multiplication by exact zero
+## Inexact multiplication by exact zero
 
 Racket, MIT, Gambit, Chez, Ypsilon, TinyScheme, XLisp, Elk, SXM, Sizzle, Spark, Inlab return exact `0`.
 
@@ -46,7 +46,7 @@ Gauche, Chicken, Bigloo, Scheme48/scsh, Guile, Kawa, SISC, Chibi, SCM, Ikarus/Vi
 
 SigScheme, Dream, Oaklisp, Owl Lisp do not support inexact numbers.
 
-### Multiplying NaN by exact 0
+## Multiplying NaN by exact 0
 
 Racket, MIT, Chez, Ypsilon, Elk, SXM, Sizzle, Spark, Inlab return exact `0`.
 
@@ -56,7 +56,7 @@ Scheme 9 does not have any form of NaN.
 
 SigScheme, Dream, Oaklisp, Owl Lisp do not support inexact numbers.
 
-### Dividing exact zero by an inexact number
+## Dividing exact zero by an inexact number
 
 Racket, Gambit, TinyScheme, Sizzle, Spark return exact `0`.
 
@@ -66,7 +66,7 @@ SigScheme, Dream, Oaklisp, Owl Lisp do not support inexact numbers.
 
 Femtolisp returns the wrong answer.
 
-### Complex numbers with 0.0 imaginary part.
+## Complex numbers with 0.0 imaginary part.
 
 Gauche, MIT, Chicken with the numbers egg, Scheme48/scsh, Kawa, SISC, SCM, STklos, KSi, S7, UMB, Spark, Dfsch, VSCM consider `3.0+0.0i` to be a real number.
 
@@ -74,7 +74,7 @@ Racket, Gambit, Guile, Chibi, Chez, Vicare, Larceny, Ypsilon, Mosh, IronScheme, 
 
 Plain Chicken, Bigloo, Ikarus, NexJ, SigScheme, Shoe, TinyScheme, Dream, Scheme 9, BDC, XLisp, Rep, Schemik, Elk, VX, Oaklisp, SXM, Sizzle, Femtolisp, Inlab, Owl Lisp do not implement non-real numbers.
 
-### Negative zero
+## Negative zero
 
 I did a test of:
 
@@ -119,7 +119,7 @@ These are the R6RS examples involving -0.0 (already accounted for verbally in th
 (angle -1.0-0.0i) => -3.141592653589793   ; approximately
 ```
 
-### Angle of negative zero
+## Angle of negative zero
 
 Because of the branch cut of `atan`, the values of `(angle 0.0)` and `(angle -0.0)` should be 0 and pi respectively.  Furthermore, by R5RS and R6RS, `(atan y x)` is equivalent to `(angle (make-rectangular x y))` even on systems that don't support non-real numbers, so `(atan 0.0 -0.0)` should also be pi.  On many implementations, these turn out not to be the case.
 
@@ -153,7 +153,7 @@ Shoe, TinyScheme, Schemik, Llava, FemtoLisp do not support either `angle` or `at
 
 SigScheme, Dream, Oaklisp, Owl Lisp do not support inexact numbers.
 
-### Inexact zero raised to a negative real power
+## Inexact zero raised to a negative real power
 
 This situation involves the log of 0, and R6RS and R7RS permit implementations to either raise an exception or return an arbitrary number.
 
@@ -175,7 +175,7 @@ SigScheme, Dream, Oaklisp, Owl Lisp do not support inexact numbers.
 
 TinyScheme, Schemik, Femtolisp, BDC either don't provide `expt` or don't provide `log`.
 
-### Inexact zero raised to a complex power whose real part is negative
+## Inexact zero raised to a complex power whose real part is negative
 
 Racket, Gauche, Gambit, Chicken with the numbers egg, Kawa, Chibi, Ypsilon, Spark, Sagittarius return `+nan.0+nan.0i`.
 

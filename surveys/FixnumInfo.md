@@ -21,7 +21,7 @@ or if there is no such procedure, then if `(eq? `*n*` `*n*`)` returns `#t`.
 
 In Kawa and IronScheme all exact integers are boxed, but a short range is preallocated, so that `eq?` is satisfied: -100 to 1024 for Kawa, -100 to 999 for IronScheme.
 
-# Fixnum ranges for 64-bit Schemes
+## Fixnum ranges for 64-bit Schemes
 
 These were computed using later versions of many of the above Schemes, so they are not necessarily directly comparable.
 However, fixnums tend to be a rather stable part of any Scheme implementation.

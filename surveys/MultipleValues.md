@@ -17,6 +17,6 @@ single value.  Of these, Guile and NexJ treat zero values passed to a single-val
 
 TinyScheme, Scheme 9, Dream, Rep, Schemik, Elk, UMB, VX, Oaklisp, Inlab don't support `values`.
 
-### Embedded in a begin block
+## Embedded in a begin block
 
 Here I'm testing `(begin (values 1 2) 3)` and `(begin (values) 3)`.  Of the Schemes above that support multiple values, only SCM, SigScheme, Shoe, and Owl Lisp report an error; the rest return 3.
