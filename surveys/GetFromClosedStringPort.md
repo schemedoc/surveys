@@ -16,4 +16,3 @@ Architecture-dependent: Chibi
 Returns the empty string: Inlab
 
 No built-in support for SRFI 6 (I did not attempt to load support from implementation libraries):  Scheme48/scsh, SISC, Vicare, Larceny, Ypsilon, Mosh, NexJ, JScheme, KSi, Shoe, Scheme 9, BDC, XLisp, Rep, Schemik, UMB, Llava, FemtoLisp, Dfsch, Oaklisp, Owl Lisp
-

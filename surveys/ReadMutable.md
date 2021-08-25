@@ -16,4 +16,3 @@ All pairs are immutable: Racket, Owl Lisp
 Returned pair is immutable: JScheme
 
 No usable `read`, `set-car!` or `open-input-file`: Rep, Shoe, UMB, Llava, Dfsch
-

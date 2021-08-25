@@ -54,4 +54,3 @@ Now we look at what happens when an identifier is defined as syntax and then cha
 `fard` cannot be redefined: IronScheme, SXM
 
 No support for `syntax-rules`: NexJ, JScheme, KSi, SigScheme, Shoe, TinyScheme, RScheme, S7, BDC, XLisp, Rep, Schemik, UMB, Elk, Llava, Sizzle, FemtoLisp, Dfsch, Inlab
-

@@ -87,7 +87,7 @@ These are the R6RS examples involving `+inf.0` and `-inf.0` (already accounted f
 (/ 1.0 0)            => +inf.0
 (/ -1 0.0)           => -inf.0
 (/ +inf.0)           => 0.0
-(/ -inf.0)           => -0.0 if distinct from 0.0 
+(/ -inf.0)           => -0.0 if distinct from 0.0
 
 (rationalize +inf.0 3)      => +inf.0
 (rationalize +inf.0 +inf.0) => +nan.0

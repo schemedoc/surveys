@@ -46,6 +46,3 @@ Test code:
   (thread-join! t))
 (p) ; (b) displays 24, (c) displays 17
 ```
-
-
-

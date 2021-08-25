@@ -24,7 +24,3 @@ The following Schemes do *not* allow definition by `eval`:
 * Supports `interaction-environment` but not single-argument `eval`, but definitions aren't visible in the interaction environment: Shoe
 
 * Does not support `eval` at all: Scheme 9, Schemik
-
-
-
-

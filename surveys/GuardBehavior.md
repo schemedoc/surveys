@@ -2,15 +2,15 @@ Helmut Eller asked what this example should return?
 
 ```Scheme
 (let ((events '()))
-   (guard (c 
+   (guard (c
            (#t #f))
      (guard (c
-             ((dynamic-wind 
+             ((dynamic-wind
                   (lambda () (set! events (cons 'c events)))
                   (lambda () #f)
                   (lambda () (set! events (cons 'd events))))
               #f))
-       (dynamic-wind 
+       (dynamic-wind
            (lambda () (set! events (cons 'a events)))
            (lambda () (raise 'error))
            (lambda () (set! events (cons 'b events))))))

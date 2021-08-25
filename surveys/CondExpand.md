@@ -51,5 +51,5 @@ Which implementations support the above?
 
 Signal an error:
 
-* foment 
+* foment
 * MIT
