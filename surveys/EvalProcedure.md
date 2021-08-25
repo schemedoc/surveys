@@ -7,5 +7,3 @@ Cyclone, Bigloo, STklos, MIT, Tinyscheme, Kawa, Guile, Gauche, Chibi, Scheme9, R
 
 Signal error:
 Chez, Chicken, Gambit, Loko.
-
-

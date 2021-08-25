@@ -13,4 +13,3 @@ Variable is bound to the empty list, which also serves as the "undefined result"
 Variable is bound to the empty list, which is *not* the "undefined result" value: VX.
 
 Variable is bound to a thunk which returns itself and does not appear to have any side effects: SXM.
-

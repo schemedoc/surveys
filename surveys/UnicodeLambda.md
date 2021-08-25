@@ -16,7 +16,7 @@ Of course, any Scheme supporting Unicode in identifiers and any form of symbol a
 |Loko	|NO	| |
 |Gambit	|NO	| |
 |Gauche | NO|uses caret (`^`)|
-|Guile	|YES| |	
+|Guile	|YES| |
 |Kawa	|NO	| |
 |Lips	|NO	| |
 |MIT	|NO	| |
@@ -24,4 +24,4 @@ Of course, any Scheme supporting Unicode in identifiers and any form of symbol a
 |Sagittarius|NO	| |
 |STklos	|YES|	| |
 |Tinyscheme	|NO	| |
-|Unsyntax	|NO	| | 
+|Unsyntax	|NO	| |

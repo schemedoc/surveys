@@ -20,7 +20,7 @@ Hard limit is 126937 arguments: MIT
 
 Hard limit is 8192 arguments: Gambit, Vicare
 
-Hard limit is 2048 arguments: Chicken 4 
+Hard limit is 2048 arguments: Chicken 4
 
 Hard limit is 2026 arguments: Foment
 

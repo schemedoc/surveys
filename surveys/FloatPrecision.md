@@ -31,5 +31,3 @@ Inputs are treated as as special lexical syntax, not as numbers: Llava
 *Output is truncated
 
 †Output is printed incorrectly
-
-

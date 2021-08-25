@@ -33,4 +33,3 @@ Loading: `load`
 Inexact rationals: `exp, log, sin, cos, tan, asin, acos, atan, sqrt`
 
 Complex numbers: `angle, imag-part, magnitude, make-polar, make-rectangular, real-part`
-

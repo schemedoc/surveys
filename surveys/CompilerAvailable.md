@@ -21,4 +21,3 @@ Tree-walking interpreters: Chicken, SISC, NexJ, KSi, SigScheme, TinyScheme, Mini
 20181023), S7, SIOD, BDC, Schemik, UMB, Llava, Sizzle(?), LMU(?), dfsch, Inlab
 
 Schemes for specialized CPUs are not listed here.  I have not tested most of these compilers.
-

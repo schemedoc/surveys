@@ -29,5 +29,3 @@ Does not have `eof-object?`: Owl Lisp
 Returns `#t`: Gambit, Chicken, Kawa, SISC, Chez
 
 Returns `#f`: Llava
-
-

@@ -22,7 +22,7 @@ Foment, Owl Lisp, Chibi, Sizzle[*]
 
 Supported as the only kind of macros: S7, RScheme, Rep, Elk, Dfsch
 
-Supported as the only kind of low-level macros: Scheme 9 
+Supported as the only kind of low-level macros: Scheme 9
 
 [*] S7 and Dfsch accept the `define`-style syntax `(define-macro (x y) y)` only.
 The Sizzle documentation claims to do the same, but it didn't work for me.
@@ -35,7 +35,6 @@ which define local macros.
 The following additional Schemes do not support `define-syntax` and are excluded below:
 SigScheme, S7, Rep, Elk, Sizzle, Dfsch.
 RScheme accepts only a non-standard form of `define-syntax` and is also excluded below.
-
 
 ### Syntax-rules
 
@@ -52,7 +51,7 @@ SXM, Sagittarius, Foment, Picrin, Owl Lisp, Chibi, Loko
 
 Not supported: (none)
 
-Supported as the only kind of hygienic macros: Bigloo 
+Supported as the only kind of hygienic macros: Bigloo
 
 ### Syntax-case
 
@@ -99,4 +98,3 @@ procedure call rather than a variable, such as `(set! (car x) y)`.
 The second version is equivalent to [SRFI 17](http://srfi.schemers.org/srfi-17/srfi-17.html)
 
 Supported by all implementations that support `syntax-case`, but no others.
-
