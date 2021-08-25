@@ -175,6 +175,7 @@ Not all these pages have information on all these Schemes.
 * [CwifClosePort](CwifClosePort/)
 * [EmbeddedCrLf](EmbeddedCrLf/)
 * [GetFromClosedStringPort](GetFromClosedStringPort/)
+* [JSONRepresentations](JSONRepresentations/)
 * [ReadLine](ReadLine/)
 * [Readtables](Readtables/)
 * [StringTitlecase](StringTitlecase/)
