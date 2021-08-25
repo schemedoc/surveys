@@ -1,3 +1,5 @@
+# Immediate strings coalesced
+
 ## Are immediate strings coalesced?
 
 Asked to evaluate `(let ((a "hello") (b "hello")) (eq? a b))`, Racket, Gauche, MIT, Gambit, Chicken, Bigloo, SISC, Chibi, Chez, STklos, Kawa, SCM, Ikarus/Vicare, Mosh, KSi, SigScheme, TinyScheme, Scheme 9, Dream, S7, BDC, XLisp, Rep, Schemik, Elk, UMB, Oaklisp, and Owl Lisp all return `#f`.

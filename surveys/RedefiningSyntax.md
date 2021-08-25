@@ -1,3 +1,5 @@
+# Redefining syntax
+
 ## Variable to syntax
 
 This example determines what the behavior of the usual implementations is when an identifier is defined as a variable and then redefined as syntax.  For example:

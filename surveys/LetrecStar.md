@@ -1,3 +1,5 @@
+# Letrec star
+
 This page reports the results of the expressions `(letrec ((x 0) (y x)) y)` and `(letrec* ((x 0) (y x)) y)`.  The former is not defined (in R6RS, it must return an error) and the latter should always return 0, provided `letrec*` is supported (it is required by R6RS and R7RS, but not by earlier reports).  It also looks at
 
 ```Scheme

@@ -1,3 +1,5 @@
+# Syntax definitions
+
 These tests show the type of syntax definitions the Schemes in the suite understand.
 The following Schemes do not support syntax extension of any (known) kind,
 and are excluded below:

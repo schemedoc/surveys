@@ -1,3 +1,5 @@
+# Empty symbol concatenated
+
 What does the reader do with `symbol-name||`?
 
 ```Scheme

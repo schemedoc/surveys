@@ -1,3 +1,5 @@
+# Embedded CR+LF
+
 I ran a set of existing implementations under Linux
 with input redirected to a file
 containing:

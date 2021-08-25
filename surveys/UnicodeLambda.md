@@ -1,3 +1,5 @@
+# Unicode lambda
+
 Which schemes support, by default, the unicode lambda character as an alternative to "`lambda`"?
 
 The following expression was evaluated on the REPL: `((λ () "ok"))`.

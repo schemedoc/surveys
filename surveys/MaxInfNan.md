@@ -1,3 +1,5 @@
+# Max Inf/NaN
+
 ## Max of +inf.0 and +nan.0
 
 R6RS requires that `(max +inf.0 x)` for any real x return `+inf.0`; it is silent about `(max x +inf.0)`, but I'd think that was entailed.  I tested `(max +inf.0 +nan.0)` against the test suite.

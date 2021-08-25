@@ -1,3 +1,5 @@
+# Redundant imports
+
 Importing two or more different libraries that export the same identifier with the same binding is okay in both R7RS and R6RS libraries and programs.  Importing the same identifier with different bindings is an error in R7RS and signals an error in R6RS systems, but should be permitted by an R7RS REPL (R7RS section 5.2).  This is tested by the following program:
 
 ```Scheme

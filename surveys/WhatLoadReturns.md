@@ -1,3 +1,5 @@
+# What load returns
+
 Asked to load a file containing the text `(values 1 2 3)`, Racket, Scheme48/scsh, Guile, RScheme return `1 2 3` (3 values).
 
 Chicken, Kawa, SISC, Chibi, Chez, Ikarus/Vicare, Larceny, Ypsilon, SigScheme, STklos return their standard

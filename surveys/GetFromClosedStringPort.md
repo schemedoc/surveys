@@ -1,3 +1,5 @@
+# Get from closed string port
+
 This test examines whether the SRFI 6 procedure `get-output-string` retrieves the value from a closed string output port.  The test code is:
 
 ```Scheme

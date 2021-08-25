@@ -1,3 +1,5 @@
+# Round Inf
+
 Results from `(round (* 1.0e300 1.0e300))` (to avoid problems with Schemes that don't understand the syntax `+inf.0`):
 
 Returns the argument:  Racket, Gauche, MIT, Chicken (with and without the numbers egg), Bigloo, Guile, Kawa, SISC, SCM, Chez, Vicare, Ypsilon, Mosh, IronScheme, NexJ, STklos, KSi, Shoe, BDC, Rep, Schemik, Elk, VX, Spark, Dfsch, Inlab, Sagittarius

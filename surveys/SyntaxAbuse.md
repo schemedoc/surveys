@@ -1,3 +1,5 @@
+# Syntax abuse
+
 How is `(eqv? do 1)` interpreted?
 
 Racket, MIT, Gambit, SISC, Chez, SCM, Ikarus, Larceny, Mosh, SigScheme, SXM,

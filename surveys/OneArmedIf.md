@@ -1,3 +1,5 @@
+# One-armed if
+
 The Scheme standards say that a one-armed `if` returns an unspecified value if the first argument is false.  The great majority of all Schemes tested have an "unspecified value" value, which is not the same (in the sense of `eq?`) to any other value, and is returned as the value of `(if #f #f)` and in similar circumstances.  The printing of this value is often suppressed by the REPL.  The following are exceptions:
 
 `(if #f #f)` => `#f`:  Bigloo, JScheme, Dream, Owl Lisp

@@ -1,3 +1,5 @@
+# Parameters and threads
+
 This page documents what happens to [SRFI 39](http://srfi.schemers.org/srfi-39/srfi-39.html)
 parameters that have been mutated from their original values (as opposed to bound by
 `parameterize`) when a new thread is spawned.  SRFI 39 documents three known behaviors:

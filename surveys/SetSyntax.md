@@ -1,3 +1,5 @@
+# Set syntax
+
 * define a macro `g`
 * define a local macro `f` that uses `g`
 * `set!` the identifier `g` to a procedure

@@ -1,3 +1,5 @@
+# Zero
+
 This page talks about how implementations handle various aspects of zero.  Thanks to Alexey Radul for the ideas here; the research is mine.
 
 ### Exact division by zero

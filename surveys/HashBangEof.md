@@ -1,3 +1,5 @@
+# Hash bang EOF
+
 I tested the REPLs of the usual Schemes to determine which ones terminated when they read `#!eof` from standard input.
 
 Terminated: Chicken, SISC, Detroit, Chez, Vicare, KSi

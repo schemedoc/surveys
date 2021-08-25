@@ -1,3 +1,5 @@
+# Case insensitivity
+
 ## Symbols
 
 Racket, Gauche, Gambit, Chicken, Bigloo, scsh, Guile, Kawa, Chibi, Chez, Vicare, Larceny, Ypsilon, Mosh, IronScheme, NexJ, KSi, SigScheme, Shoe, RScheme, S7, BDC, Rep, Schemik, Llava, Sizzle, Spark, Femtolisp, Dfsch, Owl Lisp, Sagittarius return `#f` to `(eq? 't 'T)`.

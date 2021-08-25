@@ -1,3 +1,5 @@
+# Keyword syntax
+
 Keywords are self-evaluating identifiers (except in Racket and Kawa, see below)
 that look like `:foo`, `foo:`, or `#:foo`, depending on the Scheme implementation:
 

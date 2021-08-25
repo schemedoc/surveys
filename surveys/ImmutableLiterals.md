@@ -1,3 +1,5 @@
+# Immutable literals
+
 Literal lists are mutable: MIT, Gambit, Chicken, Guile, IronScheme,
 Bigloo, Loko, Gauche, Chez, Mosh, Larceny, Vicare, Picrin, Schemik,
 TinyScheme

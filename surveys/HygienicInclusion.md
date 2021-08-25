@@ -1,3 +1,5 @@
+# Hygienic inclusion
+
 Are inclusions hygienic?
 
 Given the macro

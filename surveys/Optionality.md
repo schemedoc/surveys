@@ -1,3 +1,5 @@
+# Optionality
+
 This is an explanation of what's optional in IEEE and R5RS Scheme, grouped for ease of understanding.
 
 ### Not present in IEEE, required in R5RS

@@ -1,3 +1,5 @@
+# string->symbol conversion
+
 I tested how Schemes deal with `string->symbol` when the string contains characters that can only appear in an escaped symbol.  All Schemes in my test suite (except Rep, Schemik, and Oaklisp, which don't support `string->symbol`) return a symbol from `(string->symbol "foo)(bar")` rather than a syntax error.
 
 An interesting difference was the way in which the resulting symbol was printed by the REPL.

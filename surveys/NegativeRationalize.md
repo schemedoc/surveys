@@ -1,3 +1,5 @@
+# Negative rationalize
+
 The correct value of `(rationalize 20 1)` is 19, because 19/1 is the simplest rational that differs from 20 by an amount no more than 1.  But it is not clear what the value of `(rationalize 20 -1)` should be.  Is it also 19, or should an error be signaled?
 
 `(rationalize 20 1)` => 19 and `(rationalize 20 -1)` => 19:  Racket, MIT, Chicken with the numbers egg, Scheme48/scsh, Guile, Kawa, SISC, Chez, Vicare, Larceny, Ypsilon, Mosh, IronScheme, STklos, KSi, S7, Sagittarius, Foment, Chibi

@@ -1,3 +1,5 @@
+# Empty strings/vectors
+
 ## Comparing empty strings and vectors with eq?
 
 The vast majority of the Schemes in the test suite return `#f` to both `(eq? (vector) (vector))` and

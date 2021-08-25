@@ -1,3 +1,5 @@
+# Quote delimiter
+
 Survey of implementations to see which treat ' as a delimiter that terminates a symbol:
 
 I tested `(list 'a'b)` on the usual suite of Schemes.

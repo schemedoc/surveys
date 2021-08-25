@@ -1,3 +1,5 @@
+# Disjoint promises
+
 Testing the usual suite of Schemes to see whether promises returned by `delay` are disjoint from procedures.
 
 Disjoint: Racket, Gauche, MIT, Gambit, Chicken, Guile, Kawa, Chibi, SCM, STklos, SigScheme, TinyScheme, RScheme, Dream, BDC, XLisp, Elk, UMB, VX, SXM, Sizzle, Spark, Sagittarius (note that in TinyScheme and Dream promises can be invoked)

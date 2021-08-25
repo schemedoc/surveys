@@ -1,3 +1,5 @@
+# Redefining keywords
+
 What happens when a syntax keyword is redefined as a variable, with `(define (cond) 32) (cond)`?
 
 Returns 32:  Racket, Gauche, MIT, Guile, Kawa, SISC, SCM (with warning), Chez, Vicare, Larceny (with warning), Mosh, IronScheme, NexJ, JScheme, SigScheme, RScheme (with warning), BDC, Schemik, UMB, Elk, Llava, Sizzle, FemtoLisp, Dfsch, Inlab, Foment, Owl Lisp, Chibi, Sagittarius

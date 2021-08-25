@@ -1,3 +1,5 @@
+# Non-finite numbers
+
 ## Syntax
 
 Here's how various Schemes deal with syntax for non-finite inexact numbers.  "Standard syntax" means what R6RS prescribes: `+inf.0` for positive infinity, `-inf.0` for negative infinity, and both `+nan.0` and `-nan.0` for NaN.

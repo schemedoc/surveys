@@ -1,3 +1,5 @@
+# Float precision
+
 ## Multiple inexact-number precisions
 
 Scheme (before R7RS) and Common Lisp require that implementations understand short-float, single-float, double-float and long-float syntax.  These are written by replacing the `e` of exponential notation with an `s`, `f`, `d`, or `l` respectively.  However, there is no requirement that any of these be distinct, only that they be consistent: short-floats cannot have more precision than long-floats, for example.  Common Lisp requires that `e` notation be equivalent to `f` notation by default; Scheme has no such requirement.

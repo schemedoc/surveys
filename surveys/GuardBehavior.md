@@ -1,3 +1,5 @@
+# Guard behavior
+
 Helmut Eller asked what this example should return?
 
 ```Scheme
