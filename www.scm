@@ -117,17 +117,23 @@
                            (rel "noreferrer"))
                         "Page source (GitHub)")))))))))
 
+(define (list-surveys)
+  (define (filename->survey name)
+    (let ((ext ".md"))
+      (when (string-suffix? ext name)
+        (let ((stem (string-drop-right name (string-length ext))))
+          (and (not (string=? stem "index"))
+               stem)))))
+  (list-sort string<? (filter-map filename->survey (directory "surveys"))))
+
+(define (write-survey-pages)
+  (for-each write-survey-page (list-surveys)))
+
 (define (main)
   (create-directory "www")
   (write-simple-page "www/index.html" "surveys/index.md"
                      global-description)
-  (for-each (lambda (name)
-              (let ((ext ".md"))
-                (when (string-suffix? ext name)
-                  (let ((stem (string-drop-right name (string-length ext))))
-                    (unless (string=? stem "index")
-                      (write-survey-page stem))))))
-            (list-sort string<? (directory "surveys")))
+  (write-survey-pages)
   0)
 
 (main)
