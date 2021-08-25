@@ -104,7 +104,7 @@ Not all these pages have information on all these Schemes.
 * [EvalDefine](EvalDefine/)
 * [HygienicInclusion](HygienicInclusion/)
 * [LetrecStar](LetrecStar/)
-* [LiSPTopLevels](LiSPTopLevels/)
+* [LispTopLevels](LispTopLevels/)
 * [PetrofskyLet](PetrofskyLet/)
 * [RedefiningKeywords](RedefiningKeywords/)
 * [RedefiningSyntax](RedefiningSyntax/)
