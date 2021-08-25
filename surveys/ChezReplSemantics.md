@@ -1,4 +1,4 @@
-# REPL Semantics of Chez Scheme
+# Chez REPL semantics
 
 ## Introduction
 

@@ -1,4 +1,4 @@
-## The numeric tower
+# Numeric tower
 
 This is an analysis of the R5RS provision that the full numeric tower may be subsetted.  In this analysis, four boolean feature settings characterize different kinds of numeric towers: `exactness-preserving`, `ratios`, `inexact`, and `complex`.  These refer respectively to the closure of exact numbers under rational operations (except `/`), exact non-integer values, inexact rationals, and non-real numbers.
 

@@ -1,4 +1,4 @@
-# cond-expand support
+# cond-expand
 
 Supporting `cond-expand` from SRFI-0 and R7RS at the REPL?
 

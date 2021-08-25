@@ -1,4 +1,4 @@
-# Condition/Exception Taxonomies
+# Exception taxonomies
 
 This page lists the condition/exception system taxonomies for several
 Scheme implementations and SRFIs and for R6RS.

@@ -1,4 +1,4 @@
-## Empty definitions
+# Empty define
 
 I tested `(define x)` on the Scheme test suite.
 
