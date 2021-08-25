@@ -92,18 +92,30 @@
                      description
                      (colorize-sxml sxml))))
 
-(define (write-survey-page html-filename md-filename)
-  (let ((sxml (markdown-file->sxml md-filename)))
-    (write-html-file html-filename
-                     (let ((t (page-title-from-sxml sxml)))
-                       (if (not t)
-                           "Scheme Surveys"
-                           (string-append t " (Scheme Surveys)")))
-                     global-description
-                     (append (colorize-sxml sxml)
-                             `((hr)
-                               (p (a (@ (href "../"))
-                                     "Back to Scheme Surveys")))))))
+(define (survey-github-url stem)
+  (string-append "https://github.com/schemedoc/surveys/blob/master/surveys/"
+                 stem ".md"))
+
+(define (write-survey-page stem)
+  (let* ((md-filename (string-append "surveys/" stem ".md"))
+         (html-dir (string-append "www/" stem))
+         (html-filename (string-append html-dir "/index.html")))
+    (create-directory html-dir)
+    (let ((sxml (markdown-file->sxml md-filename)))
+      (write-html-file
+       html-filename
+       (let ((t (page-title-from-sxml sxml)))
+         (if t (string-append t " (Scheme Surveys)")
+             "Scheme Surveys"))
+       global-description
+       (append (colorize-sxml sxml)
+               `((hr)
+                 (p (a (@ (href "../"))
+                       "Back to Scheme Surveys"))
+                 (p (small
+                     (a (@ (href ,(survey-github-url stem))
+                           (rel "noreferrer"))
+                        "Page source (GitHub)")))))))))
 
 (define (main)
   (create-directory "www")
@@ -114,12 +126,7 @@
                 (when (string-suffix? ext name)
                   (let ((stem (string-drop-right name (string-length ext))))
                     (unless (string=? stem "index")
-                      (let* ((hdir (string-append "www/" stem))
-                             (html (string-append hdir "/index.html")))
-                        (create-directory hdir)
-                        (write-survey-page
-                         html
-                         (string-append "surveys/" name))))))))
+                      (write-survey-page stem))))))
             (list-sort string<? (directory "surveys")))
   0)
 
