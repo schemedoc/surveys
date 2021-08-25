@@ -140,6 +140,7 @@ Not all these pages have information on all these Schemes.
 * [ImmediateStringsCoalesced](ImmediateStringsCoalesced/)
 * [ImmutableLiterals](ImmutableLiterals/)
 * [ImmutableStrings](ImmutableStrings/)
+* [MakeListDefaultElement](MakeListDefaultElement/)
 * [NilIsFalse](NilIsFalse/)
 * [ReadMutable](ReadMutable/)
 * [VoidValue](VoidValue/)
