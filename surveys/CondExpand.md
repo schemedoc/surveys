@@ -1,6 +1,12 @@
 # cond-expand
 
-Supporting `cond-expand` from SRFI-0 and R7RS at the REPL?
+Is `(cond-expand ...)` supported at the REPL?
+
+`cond-expand` was originally defined in [SRFI
+0](https://srfi.schemers.org/srfi-0/srfi-0.html). It was included in
+R7RS with an additional `(library ...)` requirement type. Notably,
+`cond-expand` is absent from R6RS and all prior RnRS standards, though
+many implementations of those standards support it.
 
 Supported: Gauche, MIT, Chicken, Bigloo, Kawa, SISC, STklos, SigScheme, Scheme 9, RScheme, S7, SXM, Foment, Chibi, Sagittarius, Guile
 
