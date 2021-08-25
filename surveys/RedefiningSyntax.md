@@ -31,7 +31,7 @@ No support for `syntax-rules`: NexJ, JScheme, KSi, SigScheme, Shoe, TinyScheme, 
 
 Now we look at what happens when an identifier is defined as syntax and then changed to be a variable instead.  Here's an example:
 
-```
+```Scheme
 (define-syntax fard
   (syntax-rules ()
     ((fard a b) (- a b))))

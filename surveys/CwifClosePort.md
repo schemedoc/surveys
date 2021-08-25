@@ -1,6 +1,6 @@
 I created a file named "three" whose content was "3", and ran the following code in the test Schemes:
 
-```
+```Scheme
 (define port #f)
 (call-with-input-file "three"
   (lambda (p)

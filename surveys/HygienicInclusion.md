@@ -2,7 +2,7 @@ Are inclusions hygienic?
 
 Given the macro
 
-```
+```Scheme
 (define-syntax m
   (syntax-rules ()
     ((_) (lambda (a) (include "add.scm")))))

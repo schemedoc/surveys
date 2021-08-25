@@ -1,6 +1,6 @@
 This is an attempt to determine which Schemes treat literal strings as immutable, using the code
 
-```
+```Scheme
 (define y "abcde")
 (string-set! y 0 #\c)
 y

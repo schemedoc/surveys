@@ -44,7 +44,7 @@ The following implementations return `#f` for `(eqv +nan.0 +nan.0)`: Bigloo, Chi
 
 These are the R6RS examples involving `+inf.0` and `-inf.0` (already accounted for verbally in the "Implementation extensions" section of R7RS):
 
-```
+```Scheme
 (complex? +inf.0)    => #t     ; infinities are real but not rational
 (real? -inf.0)       => #t
 (rational? -inf.0)   => #f
@@ -113,7 +113,7 @@ These are the R6RS examples involving `+inf.0` and `-inf.0` (already accounted f
 
 These are the R6RS examples involving NaNs (already accounted for verbally in the "Implementation extensions" section of R7RS):
 
-```
+```Scheme
 (number? +nan.0)   => #t ; NaN is real but not rational
 (complex? +nan.0)  => #t
 (real? +nan.0)     => #t

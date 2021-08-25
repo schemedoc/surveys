@@ -29,7 +29,7 @@ fails to match, then a symbol can be used as a guard for each new
 requirement type, and it's possible to write future-proof things like
 this:
 
-```
+```Scheme
 (cond-expand
   ((and no-such-feature (no-such-test arg))
    'impossible)

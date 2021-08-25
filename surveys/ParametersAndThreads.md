@@ -30,7 +30,8 @@ MIT by default does not allow mutation, but has a separate type of settable para
 which do allow mutation.  The thread behavior of this type is unknown.
 
 Test code:
-```
+
+```Scheme
 (define p (make-parameter 5))
 (p 17)
 (define (thunk)

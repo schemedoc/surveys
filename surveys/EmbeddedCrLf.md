@@ -2,7 +2,7 @@ I ran a set of existing implementations under Linux
 with input redirected to a file
 containing:
 
-```
+```Scheme
 (write (string-length "abc
 def"))
 ```

@@ -76,7 +76,7 @@ Plain Chicken, Bigloo, Ikarus, NexJ, SigScheme, Shoe, TinyScheme, Dream, Scheme 
 
 I did a test of:
 
-```
+```Scheme
 (let* ((minf (* 1.0e200 -1.0e200))
        (mzero (/ 1.0 minf)))
   (list minf mzero (eqv? mzero 0.0)))
@@ -94,7 +94,7 @@ I wasn't able to generate `-0.0` on MIT, KSi, SigScheme, Scheme 9, Dream, Oaklis
 
 These are the R6RS examples involving -0.0 (already accounted for verbally in the "Implementation extensions" section of R7RS):
 
-```
+```Scheme
 (zero? -0.0)  => #t                ; -0.0 is a Scheme zero
 
 (+ 0.0 0.0)   => 0.0               ; Sum is -0.0 only if all arguments are -0.0

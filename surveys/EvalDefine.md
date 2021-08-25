@@ -1,6 +1,6 @@
 Passing a definition to `eval` may or may  not work according to R5RS.  Furthermore, in many Schemes, but not in R5RS, it's possible to call `eval` with just one argument, implying the interaction environment.  I tested the suite of Schemes to determine whether and how it's possible to add definitions to the interaction environment by evaluating the following four forms at the REPL:
 
-```
+```Scheme
 (eval '(define x 32) (interaction-environment))
 x
 (eval '(define y 55))

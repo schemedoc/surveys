@@ -10,7 +10,7 @@ Undeterminable order (no side effects): Owl Lisp
 
 The following C code was also tested:
 
-```
+```C
 # include <stdio.h>
 
 int yotz(int a, int b, int c) {

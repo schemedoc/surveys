@@ -1,6 +1,6 @@
 What does the reader do with `symbol-name||`?
 
-```
+```Scheme
 some-scheme> (define name "the value")
 some-scheme> name||
 ```

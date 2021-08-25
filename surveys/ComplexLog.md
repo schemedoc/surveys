@@ -2,7 +2,7 @@
 
 Guy Steele's three-part smoke test for Common Lisp involves evaluating `(atanh -2)`.  Traditionally, a Lisp passes if it returns a complex number; if it returns the *correct* complex number, so much the better.  The `atanh` function is not provided in R7RS-small, so I defined it as follows:
 
-```
+```Scheme
 (define (atanh x)
     (/ (- (log (+ 1 x))
           (log (- 1 x)))

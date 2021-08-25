@@ -1,6 +1,6 @@
 Helmut Eller asked what this example should return?
 
-```
+```Scheme
 (let ((events '()))
    (guard (c 
            (#t #f))

@@ -1,6 +1,6 @@
 I tried out
 
-```
+```Scheme
 (define-syntax foo
     (syntax-rules ()
       ((foo) (define x 32))))
