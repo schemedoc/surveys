@@ -43,5 +43,3 @@ For R6RS, change `define-library` to `library`, `(scheme base)` to `(rnrs base)`
 The R6RS effectively forbids REPLs.
 
 In some cases, indicated by "bug?", the observed behavior appears to indicate a bug that's unrelated to the issue tested here.
-
-See also the list of real and potential [conflicts between SRFIs](SrfiInteroperability).
