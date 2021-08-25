@@ -2,17 +2,17 @@
 
 This example determines what the behavior of the usual implementations is when an identifier is defined as a variable and then redefined as syntax.  For example:
 
-```
-        (define (noodle) (foodle))
-        (define (foodle) 23)
-        (noodle) => ??
-        
-        (define-syntax foodle (syntax-rules ()
-          ((foodle) 17)))
-        (noodle) => ??
-        
-        (define (noodle) (foodle))
-        (noodle) => ??
+```Scheme
+(define (noodle) (foodle))
+(define (foodle) 23)
+(noodle) => ??
+
+(define-syntax foodle (syntax-rules ()
+  ((foodle) 17)))
+(noodle) => ??
+
+(define (noodle) (foodle))
+(noodle) => ??
 ```
 
 Essentially all the implementations that support `syntax-rules` behave the same way on the first and third calls to `noodle`, returning 23 and 17 respectively.  The exception is Owl Lisp, which has a hyperstatic REPL that disallows all forward references.
