@@ -1,8 +1,3 @@
-```
-#!comment
-page in progress
-```
-
 All information taken from Christaian Quiennic's, __Lisp In Small Pieces__, 1994 edition.
 
 # Universal Global Environment
@@ -44,4 +39,3 @@ All information taken from Christaian Quiennic's, __Lisp In Small Pieces__, 1994
 |Modification|`(set! x ...)`, but `x` must exist|
 |Extension|`define`|
 |Definition|no|
-
