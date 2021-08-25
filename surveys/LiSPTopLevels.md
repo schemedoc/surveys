@@ -1,6 +1,8 @@
+# Lisp top levels
+
 All information taken from Christaian Quiennic's, __Lisp In Small Pieces__, 1994 edition.
 
-# Universal Global Environment
+## Universal Global Environment
 
 |What|How|
 |----|---|
@@ -10,7 +12,7 @@ All information taken from Christaian Quiennic's, __Lisp In Small Pieces__, 1994
 |Extension|no|
 |Definition|no, `define == set!`|
 
-# Frozen Global Environment
+## Frozen Global Environment
 
 |What|How|
 |----|---|
@@ -20,7 +22,7 @@ All information taken from Christaian Quiennic's, __Lisp In Small Pieces__, 1994
 |Extension|`define`} (only one time)|
 |Definition|no|
 
-# Automatically Extendable Global Environment
+## Automatically Extendable Global Environment
 
 |What|How|
 |----|---|
@@ -30,7 +32,7 @@ All information taken from Christaian Quiennic's, __Lisp In Small Pieces__, 1994
 |Extension|`(set! x ...)`|
 |Definition|no, `define == set!`|
 
-# Hyperstatic Global Environment
+## Hyperstatic Global Environment
 
 |What|How|
 |----|---|
