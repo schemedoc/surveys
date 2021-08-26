@@ -85,19 +85,15 @@
 (define (markdown-file->sxml md-filename)
   (pandoc-file->sxml 'gfm md-filename))
 
-(define (write-simple-page html-filename md-filename description)
-  (let ((sxml (markdown-file->sxml md-filename)))
-    (write-html-file html-filename
-                     (or (page-title-from-sxml sxml) "")
-                     description
-                     (colorize-sxml sxml))))
-
 (define (survey-github-url stem)
   (string-append "https://github.com/schemedoc/surveys/blob/master/surveys/"
                  stem ".md"))
 
+(define (survey-md-filename stem)
+  (string-append "surveys/" stem ".md"))
+
 (define (write-survey-page stem)
-  (let* ((md-filename (string-append "surveys/" stem ".md"))
+  (let* ((md-filename (survey-md-filename stem))
          (html-dir (string-append "www/" stem))
          (html-filename (string-append html-dir "/index.html")))
     (create-directory html-dir)
@@ -121,18 +117,39 @@
   (define (filename->survey name)
     (let ((ext ".md"))
       (when (string-suffix? ext name)
-        (let ((stem (string-drop-right name (string-length ext))))
-          (and (not (string=? stem "index"))
-               stem)))))
+        (string-drop-right name (string-length ext)))))
   (list-sort string<? (filter-map filename->survey (directory "surveys"))))
 
 (define (write-survey-pages)
   (for-each write-survey-page (list-surveys)))
 
+(define (write-index-page)
+  (let ((sxml (colorize-sxml (markdown-file->sxml "index.md"))))
+    (write-html-file
+     "www/index.html"
+     (page-title-from-sxml sxml)
+     global-description
+     (append
+      sxml
+      (let ((groups (with-input-from-file "www-index.scm" read)))
+        (map (lambda (group)
+               (let ((group-title (car group))
+                     (group-surveys (cdr group)))
+                 `(section
+                   (h2 ,group-title)
+                   (ul ,@(map (lambda (survey)
+                                (let ((href (string-append survey "/"))
+                                      (title (page-title-from-sxml
+                                              (markdown-file->sxml
+                                               (survey-md-filename survey)))))
+                                  `(li (a (@ (href ,href))
+                                          ,title))))
+                              group-surveys)))))
+             groups))))))
+
 (define (main)
   (create-directory "www")
-  (write-simple-page "www/index.html" "surveys/index.md"
-                     global-description)
+  (write-index-page)
   (write-survey-pages)
   0)
 
