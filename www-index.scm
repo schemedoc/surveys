@@ -2,6 +2,7 @@
   "comma-commands"
   "compiler-available"
   "five-to-six-to-seven"
+  "fluid-let"
   "implementation-support"
   "load-path"
   "macroexpand"
