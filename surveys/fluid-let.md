@@ -1,5 +1,7 @@
-`fluid-let` was proposed in SRFI-15 but withdrawn, so not every implementation advertises it, although many do support it.
+# Fluid let
 
+`fluid-let` was proposed in SRFI-15 but withdrawn, so not every
+implementation advertises it, although many do support it.
 
 | Scheme | `fluid-let` support |
 |---|---|
@@ -16,4 +18,3 @@
 |Sagittarius| no |
 |STklos | built-in |
 |Racket | no |
-
