@@ -89,11 +89,13 @@ Not all these pages have information on all these Schemes.
 * [CommaCommands](CommaCommands/)
 * [CompilerAvailable](CompilerAvailable/)
 * [FiveToSixToSeven](FiveToSixToSeven/)
+* [FluidLet](FluidLet/)
 * [ImplementationSupport](ImplementationSupport/)
 * [Optionality](Optionality/)
 * [SchemeOnWindows](SchemeOnWindows/)
 * [StandaloneExecutables](StandaloneExecutables/)
 * [SyntaxDefinitions](SyntaxDefinitions/)
+
 
 ## Bindings
 
