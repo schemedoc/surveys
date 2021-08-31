@@ -8,7 +8,8 @@
   "minischeme-history"
   "optionality"
   "scheme-on-windows"
-  "standalone-executables")
+  "standalone-executables"
+  "threads")
 
  ("Macros"
   "macroexpand"
