@@ -2,6 +2,7 @@
 
 |Library|JSON object|JSON array|JSON string|JSON true|JSON false|JSON null
 |-------|-----------|----------|-----------|---------|----------|---------
+|**SRFI 180**|alist|vector|string|`#t`|`#f`|`'null`
 |anb-json|(`'dict` . alist)|list|string or symbol|N/A|N/A|N/A
 |Chicken cjson|alist|vector|string|`#t`|`#f`|`'null`
 |Chicken json|avector or hashtable|list|string or symbol|`#t`|`#f`|void
