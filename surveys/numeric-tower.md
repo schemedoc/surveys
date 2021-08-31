@@ -24,6 +24,6 @@ NexJ's numeric tower is undocumented and behaves inconsistently in any case:  ap
 
 ## See also
 
-See also [ComplexRepresentations](../ComplexRepresentations/) for information on which Schemes support exact, inexact, and mixed-exactness complex numbers.
+See also: [Complex representations](../complex-representations/) for information on which Schemes support exact, inexact, and mixed-exactness complex numbers.
 
-See also [FloatPrecision](../FloatPrecision/) for information on the different precisions of inexact numbers that some Schemes support.
+See also: [Float precision](../float-precision/) for information on the different precisions of inexact numbers that some Schemes support.

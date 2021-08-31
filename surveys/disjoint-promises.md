@@ -12,4 +12,4 @@ Buggy implementation: Oaklisp
 
 Note:  In Owl Lisp, repeated forces re-evaluate the delayed expression, because Owl Lisp is immutable.
 
-See also [ForceNonPromise](../ForceNonPromise/).
+See also: [Force non-promise](../force-non-promise/).

@@ -48,4 +48,4 @@ All other systems lack support for either exact or inexact complex numbers or bo
 
 ## See also
 
-See also [NumericTower](../NumericTower/).
+See also: [Numeric tower](../numeric-tower/).
