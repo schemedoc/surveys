@@ -4,7 +4,7 @@
 
 Foment, Mosh, Vx-Scheme, Ypsilon
 
-## Which compile Scheme code into C++
+## Which can compile Scheme code into C++
 
 Chicken
 
