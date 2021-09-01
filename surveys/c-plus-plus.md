@@ -4,10 +4,10 @@
 
 Foment, Mosh, Vx-Scheme, Ypsilon
 
-## Supporting C++ types in the FFI
+## Which directly support C++ types in the FFI
 
 Chicken
 
-## Transpiling Scheme code into C++
+## Which compile Scheme code into C++
 
 Chicken
