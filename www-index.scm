@@ -1,4 +1,5 @@
 (("Features"
+  "c-plus-plus"
   "comma-commands"
   "compiler-available"
   "five-to-six-to-seven"
