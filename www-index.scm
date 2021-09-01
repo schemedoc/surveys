@@ -107,4 +107,8 @@
   "prefixed-string-to-number"
   "round-inf"
   "short-equality"
-  "zero"))
+  "zero")
+
+ ("Internals"
+  "garbage-collector"))
+
