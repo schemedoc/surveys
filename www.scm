@@ -2,12 +2,18 @@
         (srfi 1) (srfi 13) (srfi 132))
 
 (import (only (chicken file) create-directory directory)
-        (only (chicken process-context) change-directory)
-        (only (colorize)
-              coloring-type-exists? coloring-type-names html-colorize)
-        (only (html-parser) html->sxml)
-        (only (pandoc) pandoc-file->sxml)
-        (only (sxml-transforms) SXML->HTML))
+        (only (chicken process-context) change-directory))
+
+(import (only (colorize)
+              coloring-type-exists?
+              coloring-type-names
+              html-colorize)
+        (only (html-parser)
+              html->sxml)
+        (only (pandoc server)
+              pandoc-server-files->sxml)
+        (only (sxml-transforms)
+              SXML->HTML))
 
 (define global-description
   "Surveys of Scheme implementation features.")
@@ -82,9 +88,6 @@
            (apply string-append (cdr (car tags))))
           (else (rec (cdr tags))))))
 
-(define (markdown-file->sxml md-filename)
-  (pandoc-file->sxml 'gfm md-filename))
-
 (define (survey-github-url stem)
   (string-append "https://github.com/schemedoc/surveys/blob/master/surveys/"
                  stem ".md"))
@@ -92,26 +95,24 @@
 (define (survey-md-filename stem)
   (string-append "surveys/" stem ".md"))
 
-(define (write-survey-page stem)
-  (let* ((md-filename (survey-md-filename stem))
-         (html-dir (string-append "www/" stem))
+(define (write-survey-page-using-sxml stem sxml)
+  (let* ((html-dir (string-append "www/" stem))
          (html-filename (string-append html-dir "/index.html")))
     (create-directory html-dir)
-    (let ((sxml (markdown-file->sxml md-filename)))
-      (write-html-file
-       html-filename
-       (let ((t (page-title-from-sxml sxml)))
-         (if t (string-append t " (Scheme Surveys)")
-             "Scheme Surveys"))
-       global-description
-       (append (colorize-sxml sxml)
-               `((hr)
-                 (p (a (@ (href "../"))
-                       "Back to Scheme Surveys"))
-                 (p (small
-                     (a (@ (href ,(survey-github-url stem))
-                           (rel "noreferrer"))
-                        "Page source (GitHub)")))))))))
+    (write-html-file
+     html-filename
+     (let ((t-page (page-title-from-sxml sxml))
+           (t-site "Scheme Surveys"))
+       (if t-page (string-append t-page " (" t-site ")") t-site))
+     global-description
+     (append (colorize-sxml sxml)
+             `((hr)
+               (p (a (@ (href "../"))
+                     "Back to Scheme Surveys"))
+               (p (small
+                   (a (@ (href ,(survey-github-url stem))
+                         (rel "noreferrer"))
+                      "Page source (GitHub)"))))))))
 
 (define (list-surveys)
   (define (filename->survey name)
@@ -120,11 +121,13 @@
         (string-drop-right name (string-length ext)))))
   (list-sort string<? (filter-map filename->survey (directory "surveys"))))
 
-(define (write-survey-pages)
-  (for-each write-survey-page (list-surveys)))
-
-(define (write-index-page)
-  (let ((sxml (colorize-sxml (markdown-file->sxml "index.md"))))
+(define (write-index-page-using-sxml sxml surveys survey-sxmls)
+  (let ((sxml (colorize-sxml sxml))
+        (survey-titles (map (lambda (survey survey-sxml)
+                              (cons survey
+                                    (page-title-from-sxml survey-sxml)))
+                            surveys
+                            survey-sxmls)))
     (write-html-file
      "www/index.html"
      (page-title-from-sxml sxml)
@@ -139,18 +142,28 @@
                    (h2 ,group-title)
                    (ul ,@(map (lambda (survey)
                                 (let ((href (string-append survey "/"))
-                                      (title (page-title-from-sxml
-                                              (markdown-file->sxml
-                                               (survey-md-filename survey)))))
+                                      (title (cdr (assoc survey
+                                                         survey-titles))))
                                   `(li (a (@ (href ,href))
                                           ,title))))
                               group-surveys)))))
              groups))))))
 
+(define (convert-them-all md-filenames)
+  (pandoc-server-files->sxml 'gfm md-filenames))
+
+(define (write-all-pages)
+  (let* ((surveys (list-surveys))
+         (md-filenames (cons "index.md" (map survey-md-filename surveys)))
+         (sxmls (convert-them-all md-filenames)))
+    (write-index-page-using-sxml (car sxmls) surveys (cdr sxmls))
+    (for-each write-survey-page-using-sxml
+              surveys
+              (cdr sxmls))))
+
 (define (main)
   (create-directory "www")
-  (write-index-page)
-  (write-survey-pages)
+  (write-all-pages)
   0)
 
 (main)
