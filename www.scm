@@ -18,10 +18,7 @@
 (define global-description
   "Surveys of Scheme implementation features.")
 
-(define (disp . xs) (for-each display xs) (newline))
-
 (define (write-html-file html-filename title description body)
-  (disp "Writing " html-filename)
   (with-output-to-file html-filename
     (lambda ()
       (write-string "<!DOCTYPE html>")
@@ -95,6 +92,13 @@
 (define (survey-md-filename stem)
   (string-append "surveys/" stem ".md"))
 
+(define (list-surveys)
+  (define (filename->survey name)
+    (let ((ext ".md"))
+      (when (string-suffix? ext name)
+        (string-drop-right name (string-length ext)))))
+  (list-sort string<? (filter-map filename->survey (directory "surveys"))))
+
 (define (write-survey-page-using-sxml stem sxml)
   (let* ((html-dir (string-append "www/" stem))
          (html-filename (string-append html-dir "/index.html")))
@@ -113,13 +117,6 @@
                    (a (@ (href ,(survey-github-url stem))
                          (rel "noreferrer"))
                       "Page source (GitHub)"))))))))
-
-(define (list-surveys)
-  (define (filename->survey name)
-    (let ((ext ".md"))
-      (when (string-suffix? ext name)
-        (string-drop-right name (string-length ext)))))
-  (list-sort string<? (filter-map filename->survey (directory "surveys"))))
 
 (define (write-index-page-using-sxml sxml surveys survey-sxmls)
   (let ((sxml (colorize-sxml sxml))
@@ -149,17 +146,14 @@
                               group-surveys)))))
              groups))))))
 
-(define (convert-them-all md-filenames)
-  (pandoc-server-files->sxml 'gfm md-filenames))
-
 (define (write-all-pages)
   (let* ((surveys (list-surveys))
-         (md-filenames (cons "index.md" (map survey-md-filename surveys)))
-         (sxmls (convert-them-all md-filenames)))
-    (write-index-page-using-sxml (car sxmls) surveys (cdr sxmls))
-    (for-each write-survey-page-using-sxml
-              surveys
-              (cdr sxmls))))
+         (all-md-files (cons "index.md" (map survey-md-filename surveys)))
+         (all-sxmls (pandoc-server-files->sxml 'gfm all-md-files))
+         (index-sxml (car all-sxmls))
+         (survey-sxmls (cdr all-sxmls)))
+    (write-index-page-using-sxml index-sxml surveys survey-sxmls)
+    (for-each write-survey-page-using-sxml surveys survey-sxmls)))
 
 (define (main)
   (create-directory "www")
