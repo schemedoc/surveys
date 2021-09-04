@@ -4,14 +4,10 @@
 (import (only (chicken file) create-directory directory)
         (only (chicken process-context) change-directory))
 
-(import (only (colorize)
-              coloring-type-exists?
-              coloring-type-names
-              html-colorize)
-        (only (html-parser)
-              html->sxml)
-        (only (pandoc server)
-              pandoc-server-files->sxml)
+(import (only (pandoc tar)
+              pandoc-tar-files->sxml)
+        (only (colorize-sxml)
+              colorize-sxml)
         (only (sxml-transforms)
               SXML->HTML))
 
@@ -33,50 +29,6 @@
                (meta (@ (name "description")
                         (content ,description))))
               (body ,@body))))))
-
-(define (map-sxml-elems update tag elems)
-  (letrec ((convert-elem
-            (lambda (elem)
-              (if (and (pair? elem)
-                       (symbol? (car elem))
-                       (eq? tag (car elem)))
-                  (update elem)
-                  elem)))
-           (convert-elems
-            (lambda (elems)
-              (if (not (pair? elems)) elems
-                  (map convert-elem elems)))))
-    (convert-elems elems)))
-
-(define (dashes->spaces string)
-  (string-map (lambda (c) (if (char=? c #\-) #\space c)) string))
-
-(define (spaces->dashes string)
-  (string-map (lambda (c) (if (char=? c #\space) #\- c)) string))
-
-(define (coloring-type-string->symbol string)
-  (let ((string (dashes->spaces string)))
-    (let loop ((names (coloring-type-names)))
-      (and (not (null? names))
-           (if (string-ci= string (cdar names))
-               (caar names)
-               (loop (cdr names)))))))
-
-(define (colorize-sxml elems)
-  (map-sxml-elems
-   (lambda (elem)
-     (let* ((attrs (and (pair? (cadr elem))
-                        (eq? '@ (car (cadr elem)))
-                        (cdr (cadr elem))))
-            (syn-attr (assq 'data-syntax attrs))
-            (syn (and syn-attr (pair? (cdr syn-attr)) (cadr syn-attr)))
-            (synsym (and syn (coloring-type-string->symbol syn)))
-            (body (fold string-append "" ((if attrs cddr cdr) elem))))
-       `(pre (code (@ (class "colorize") ,@(or attrs '()))
-                   ,@(if (and syn (coloring-type-exists? synsym))
-                         (cdr (html->sxml (html-colorize synsym body)))
-                         (list body))))))
-   'pre elems))
 
 (define (page-title-from-sxml tags)
   (let rec ((tags tags))
@@ -149,7 +101,7 @@
 (define (write-all-pages)
   (let* ((surveys (list-surveys))
          (all-md-files (cons "index.md" (map survey-md-filename surveys)))
-         (all-sxmls (pandoc-server-files->sxml 'gfm all-md-files))
+         (all-sxmls (pandoc-tar-files->sxml 'gfm all-md-files))
          (index-sxml (car all-sxmls))
          (survey-sxmls (cdr all-sxmls)))
     (write-index-page-using-sxml index-sxml surveys survey-sxmls)
