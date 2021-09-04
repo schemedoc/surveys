@@ -95,8 +95,8 @@
 (define (list-surveys)
   (define (filename->survey name)
     (let ((ext ".md"))
-      (when (string-suffix? ext name)
-        (string-drop-right name (string-length ext)))))
+      (and (string-suffix? ext name)
+           (string-drop-right name (string-length ext)))))
   (list-sort string<? (filter-map filename->survey (directory "surveys"))))
 
 (define (write-survey-page-using-sxml stem sxml)
