@@ -73,7 +73,6 @@
   "quote-delimiter"
   "square-brackets"
   "string-symbol-conversion"
-  "unicode-lambda"
   "unsigned-imaginary"
   "upper-case-escape"
   "vertical-line-symbols")
@@ -90,6 +89,7 @@
   "read-line"
   "readtables"
   "string-titlecase"
+  "unicode-lambda"
   "unicode-support")
 
  ("Numbers"
