@@ -5,11 +5,14 @@
   "five-to-six-to-seven"
   "implementation-support"
   "load-path"
-  "macroexpand"
   "optionality"
   "scheme-on-windows"
-  "standalone-executables"
-  "syntax-definitions")
+  "standalone-executables")
+
+ ("Macros"
+  "macroexpand"
+  "syntax-definitions"
+  "implementation-of-hygienic-macros")
 
  ("Bindings"
   "chez-repl-semantics"
