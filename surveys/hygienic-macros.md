@@ -1,4 +1,4 @@
-# Implementation of hygienic macros
+# Hygienic macros
 
 How are hygienic macro systems implemented?
 

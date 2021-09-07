@@ -12,7 +12,7 @@
  ("Macros"
   "macroexpand"
   "syntax-definitions"
-  "implementation-of-hygienic-macros")
+  "hygienic-macros")
 
  ("Bindings"
   "chez-repl-semantics"
