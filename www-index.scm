@@ -5,6 +5,7 @@
   "five-to-six-to-seven"
   "implementation-support"
   "load-path"
+  "minischeme-history"
   "optionality"
   "scheme-on-windows"
   "standalone-executables")
