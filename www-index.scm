@@ -13,6 +13,7 @@
  ("Macros"
   "macroexpand"
   "syntax-definitions"
+  "syntax-definitions-to-infinity-and-beyond"
   "hygienic-macros")
 
  ("Bindings"
