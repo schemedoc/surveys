@@ -1,3 +1,5 @@
+# Syntax definitions - to infinity and beyond
+
 What is the outcome of
 
 ```
@@ -5,9 +7,6 @@ What is the outcome of
 
 (f)
 ```
-
-
-
 
 | sysyem   | outcome |
 |---|---|
