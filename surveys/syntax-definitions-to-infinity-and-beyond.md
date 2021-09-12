@@ -24,5 +24,6 @@ What is the outcome of
 | Racket      | enters infinite loop |
 | Sagittarius | enters infinite loop |
 | Scheme48    | GC reports insufficient memory |
+| Scheme9     | too many levels of macro expansion |
 | STklos      | enters infinite loop |
 | Unsyntax    | enters infinite loop |
