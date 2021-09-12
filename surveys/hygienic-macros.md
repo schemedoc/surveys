@@ -9,7 +9,7 @@ How are hygienic macro systems implemented?
 
 |system | syntax-rules | syntax-case | er | sc | how | where |
 |---|---|---|---|---|---|---|
-|Chibi	        |Y	|Y	|Y	|	| ER	                       | `lib/init7.scm` |
+|Chibi	        |Y	|Y	|Y	|	| ER over SC                       | `lib/init7.scm` |
 |Chicken        |Y	|N	|Y	|       | ER	                       | `synrules.scm expand.scm` |
 |Gauche	        |Y	|N !	|Y	|	| syntax-rules written in C    | `src/macro.c` |
 |Guile	        |Y	|Y	|N	|	| syntax-case                  | `module/ice-9/safe-r5rs.scm module/ice-9/psyntax.scm` |
