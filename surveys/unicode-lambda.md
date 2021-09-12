@@ -20,6 +20,7 @@ Of course, any Scheme supporting Unicode in identifiers and any form of symbol a
 |Kawa	|NO	| |
 |Lips	|NO	| |
 |MIT	|NO	| |
+|Peroxide |NO | |
 |Racket	|YES|	| |
 |Sagittarius|NO	| |
 |STklos	|YES|	| |
