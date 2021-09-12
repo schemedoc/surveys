@@ -21,6 +21,7 @@ What is the outcome of
 | LIPS        | stack overflow |
 | Loko        | enters infinite loop |
 | MIT         | enters infinite loop |
+| Peroxide    | Maximum macro expansion depth reached |
 | Racket      | enters infinite loop |
 | Sagittarius | enters infinite loop |
 | Scheme48    | GC reports insufficient memory |
