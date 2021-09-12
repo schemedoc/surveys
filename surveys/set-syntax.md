@@ -25,7 +25,7 @@ Will the system expand `f` using the macro `g`, the procedure
 * Kawa complains, saying identifiers bound to macros are immutable
 
 * These complain about the `set!` not being correct:
-  Chibi, Guile, Gambit, MIT, Loko, Chez, Sagittarius, Unsyntax
+  Chibi, Guile, Gambit, MIT, Peroxide, Loko, Chez, Sagittarius, Unsyntax
 
 * Bigloo acts as if we were trying to set! an undefined variable (which is also true!)
 
