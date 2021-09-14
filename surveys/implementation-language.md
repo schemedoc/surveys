@@ -17,6 +17,7 @@ In what language Schemes are implemented, and what architecture or bytecode do t
 | LIPS | Javascript | |
 | Loko | R6RS Scheme, assembler | |
 | MIT | C | |
+| Peroxide | Rust | |
 | Racket | | |
 | Sagittarius | C | |
 | STklos | C | portable bytecode, C code intepreting bytecode
