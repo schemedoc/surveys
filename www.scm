@@ -32,10 +32,12 @@
 
 (define (page-title-from-sxml tags)
   (let rec ((tags tags))
-    (cond ((not (pair? tags)) #f)
+    (cond ((not (pair? tags))
+           (error "Page has no title"))
           ((eqv? 'h1 (car (car tags)))
            (apply string-append (cdr (car tags))))
-          (else (rec (cdr tags))))))
+          (else
+           (rec (cdr tags))))))
 
 (define (survey-github-url stem)
   (string-append "https://github.com/schemedoc/surveys/blob/master/surveys/"
@@ -57,9 +59,7 @@
     (create-directory html-dir)
     (write-html-file
      html-filename
-     (let ((t-page (page-title-from-sxml sxml))
-           (t-site "Scheme Surveys"))
-       (if t-page (string-append t-page " (" t-site ")") t-site))
+     (string-append (page-title-from-sxml sxml) " (Scheme Surveys)")
      global-description
      (append (colorize-sxml sxml)
              `((hr)
