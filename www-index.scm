@@ -3,6 +3,7 @@
   "comma-commands"
   "compiler-available"
   "five-to-six-to-seven"
+  "implementation-language"
   "implementation-support"
   "load-path"
   "minischeme-history"
