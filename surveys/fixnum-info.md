@@ -26,7 +26,7 @@ In Kawa and IronScheme all exact integers are boxed, but a short range is preall
 These were computed using later versions of many of the above Schemes, so they are not necessarily directly comparable.
 However, fixnums tend to be a rather stable part of any Scheme implementation.
 
-}Bits|Schemes|
+|Bits|Schemes|
 |---|---|
 |62 bits|Racket†, Chicken†, Ypsilon†|
 |61 bits|Gauche†, Gambit†, Scheme48/scsh, Guile, Chibi†, SCM, STklos†, Sagittarius†|
