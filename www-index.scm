@@ -5,6 +5,7 @@
   "five-to-six-to-seven"
   "implementation-language"
   "implementation-support"
+  "jiffies-per-second"
   "load-path"
   "minischeme-history"
   "optionality"
