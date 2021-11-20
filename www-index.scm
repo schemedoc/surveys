@@ -2,6 +2,7 @@
   "c-plus-plus"
   "comma-commands"
   "compiler-available"
+  "disassemble"
   "five-to-six-to-seven"
   "implementation-language"
   "implementation-support"
