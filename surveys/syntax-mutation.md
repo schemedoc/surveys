@@ -44,6 +44,7 @@ to see the results nevertheless.
 |LIPS    | -2 |    |
 |Loko    | -2 |    |
 |MIT     | -2 | error (Variable reference to a syntactic keyword) |
+|Peroxide| -2 | |
 |Racket  | -2 |    |
 |Sagittarius | -2 | -2 |
 |Scheme48| -2 |    |
@@ -80,6 +81,7 @@ to see the results nevertheless.
 |LIPS   | -2 | n/a |
 |Loko   | invalid syntax | |
 |MIT    | Variable required | |
+|Peroxide| cannot set non-variable `f` | |
 |Racket | set!: cannot mutate syntax identifier | |
 |Sagittarius | syntax error | n/a |
 |Scheme48| -1 (after warning: invalid assignment) | |
