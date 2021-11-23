@@ -17,6 +17,7 @@
   "macroexpand"
   "syntax-definitions"
   "syntax-definitions-to-infinity-and-beyond"
+  "syntax-mutation"
   "hygienic-macros")
 
  ("Bindings"
