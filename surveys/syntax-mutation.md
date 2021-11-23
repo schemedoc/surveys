@@ -52,6 +52,13 @@ to see the results nevertheless.
 |scheme9 | -1 |    |
 |Unsyntax| -2 | duplicate definition of identifier |
 
+The same program was translated into Elisp, Common Lisp and Clojure:
+
+|system|result|
+|---|---|
+|elisp| -2 |
+|Clojure| -2 |
+|Common Lisp| -2 |
 
 ## 2. re-setting a macro to a value
 
@@ -88,5 +95,15 @@ to see the results nevertheless.
 |STklos | -1  (after error: variable 'f' unbound)        | error ('f' unbound) |
 |Scheme9   | -1          | n/a |
 |Unsyntax| -1 (after error: not a variable transformer '`f`') | |
+
+The same program was translated into Elisp, Common Lisp and Clojure:
+
+|system|result|
+|---|---|
+|elisp| -1 |
+|Clojure| -2 |
+|Common Lisp| -2 |
+
+(In Common Lisp, the function value of `f` was changed with `(setf (symbol-function 'f) (lambda () -2))`
 
 `n/a` = no compiler, or no difference between "compiled" and "running from the REPL".
