@@ -80,6 +80,7 @@
   "keyword-syntax"
   "one-plus-ex"
   "quote-delimiter"
+  "reader-vertical-bar-concatenated-with-number"
   "square-brackets"
   "string-symbol-conversion"
   "unsigned-imaginary"
