@@ -1,31 +1,32 @@
 # Reader: Vertical Bar Concatenated With Number
 
-What does the implementation understand when `|1|1` is given to its reader?
+What does the implementation understand when `|1|1` or `|a|b|c|` is given to
+its reader?
 
-|system      | result |
-|---|---|
-|Bigloo      | symbol `1` followed by number `1` |
-|Biwa        | symbol `|1|1` |
-|Chibi       | symbol `1` followed by number `1` |
-|Chicken     | symbol `11` |
-|Chez        | symbol `11` |
-|Cyclone     | symbol `1` followed by number `1` |
-|Gambit      | symbol `1` followed by number `1` |
-|Gauche      | symbol `1` followed by number `1` |
-|Guile       | symbol `|1|1` |
-|Kawa        | symbol `11`   |
-|LIPS        | reader gets confused |
-|Loko        | symbol `1` followed by number `1` |
-|MIT         | symbol `1` followed by number `1` |
-|Peroxide    | symbol `|1|1` |
-|Racket      | symbol `11` |
-|Sagittarius | symbol `1` followed by number `1` |
-|STklos      | symbol `11` |
-|Unsyntax    | symbol `1` followed by number `1` |
+|system      | `|1|1` | `|a|b|c|` |
+|---|---|---|
+|Bigloo      | symbol `1` followed by number `1` | three symbols, `a`, `b`, `c` |
+|Biwa        | symbol `|1|1` | symbol `|a|b|c|` |
+|Chibi       | symbol `1` followed by number `1` | symbol `a` and symbol `b|c|` |
+|Chicken     | symbol `11` | symbol `abc` |
+|Chez        | symbol `11` | symbol `abc` |
+|Cyclone     | symbol `1` followed by number `1` | symbol `a` and symbol `b|c|` |
+|Gambit      | symbol `1` followed by number `1` | three symbols, `a`, `b`, `c` |
+|Gauche      | symbol `1` followed by number `1` | three symbols, `a`, `b`, `c` |
+|Guile       | symbol `|1|1` | symbol `|a|b|c|`
+|Kawa        | symbol `11`   | symbol `abc` |
+|LIPS        | reader gets confused | symbol `a|b|c` |
+|Loko        | symbol `1` followed by number `1` | three symbols, `a`, `b`, `c` |
+|MIT         | symbol `1` followed by number `1` | symbol `a` and symbol `b|c|` |
+|Peroxide    | symbol `|1|1` | symbol `|a|b|c|` |
+|Racket      | symbol `11` | symbol `abc` |
+|Sagittarius | symbol `1` followed by number `1` | symbol `a` and symbol `b|c|` |
+|STklos      | symbol `11` | symbol `abc` |
+|Unsyntax    | symbol `1` followed by number `1` | symbol `a` and symbol `b|c|` |
 
 
-|system      | result |
-|---|---|
-|Clojure     | symbol `|1|1` |
-|Common Lisp | symbol `11` |
-|Emacs Lisp  | symbol `|1|1` |
+|system      | `|1|1` | `|a|b|c|` |
+|---|---|---|
+|Clojure     | symbol `|1|1` | symbol `|a|b|c|` |
+|Common Lisp | symbol `11`   | symbol `aBc`     |
+|Emacs Lisp  | symbol `|1|1` | symbol `|a|b|c|` |
