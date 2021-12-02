@@ -13,7 +13,7 @@ its reader?
 |Cyclone     | symbol `1` followed by number `1` | symbol `a` and symbol `b|c|` |
 |Gambit      | symbol `1` followed by number `1` | three symbols, `a`, `b`, `c` |
 |Gauche      | symbol `1` followed by number `1` | three symbols, `a`, `b`, `c` |
-|Guile       | symbol `|1|1` | symbol `|a|b|c|`
+|Guile       | symbol `|1|1` | symbol `|a|b|c|` |
 |Kawa        | symbol `11`   | symbol `abc` |
 |LIPS        | reader gets confused | symbol `a|b|c` |
 |Loko        | symbol `1` followed by number `1` | three symbols, `a`, `b`, `c` |
