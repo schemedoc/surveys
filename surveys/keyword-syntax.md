@@ -7,8 +7,10 @@ that look like `:foo`, `foo:`, or `#:foo`, depending on the Scheme implementatio
 
 *  Gambit (and DSSSL, SRFI 88) support `foo:`.
 
-*  Bigloo, STklos support both `foo:` and `:foo` and treats them as the same (in the sense of `eqv?`).
+*  Bigloo supports both `foo:` and `:foo` and treats them as the same (in the sense of `eqv?`).
 
+*  STklos supports `foo:`, `:foo`, `:foo:` and `#:foo` and treats them as the same (in the sense of `eq?`).
+ 
 *  S7 supports both `foo:` and `:foo` and treats them as distinct (in the sense of `eqv?`).
 
 *  Chicken always supports `#:foo` always and `foo:` by default, but can be
