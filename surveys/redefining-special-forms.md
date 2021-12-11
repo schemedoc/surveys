@@ -57,7 +57,7 @@ should complain about `x` not being bound.
 
 Biwa doesn't have `syntax-rules`, so `define-macro` was used.
 
-## Other Lisps
+## Other Lisps (redefining special form to value, not to another special form)
 
 Interestingly, only some Common Lisp implementations allow
 redefining the function value of the symbol `DEFUN`.
