@@ -16,6 +16,7 @@
  ("Macros"
   "macroexpand"
   "syntax-definitions"
+  "redefining-special-forms"
   "syntax-definitions-to-infinity-and-beyond"
   "syntax-mutation"
   "hygienic-macros")
