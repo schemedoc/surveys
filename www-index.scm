@@ -16,6 +16,7 @@
  ("Macros"
   "macroexpand"
   "syntax-definitions"
+  "self-referencial macro"
   "syntax-definitions-to-infinity-and-beyond"
   "syntax-mutation"
   "hygienic-macros")
