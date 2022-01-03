@@ -60,7 +60,7 @@ The test used here is `(define-syntax x (lambda (x) (syntax-case x () ((x y) (sy
 which is exactly equivalent to the `syntax-rules` macro used above.
 
 Supported: Chibi (incomplete), Gambit, Kawa, SISC, SXM, and all R6RS implementations:
-Racket, Guile, Chez, Vicare, Larceny (SRFI 172, buggy), Ypsilon, Mosh,
+Racket, Guile, Chez, Vicare, Larceny (SRFI 72, buggy), Ypsilon, Mosh,
 IronScheme, SXM, Sagittarius, Loko
 
 Not supported:  Gauche, MIT, Chicken, Bigloo, SCM, STklos, Scheme 9,
