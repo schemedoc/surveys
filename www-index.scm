@@ -50,6 +50,7 @@
   "one-armed-if"
   "parameters-and-threads"
   "petrofsky-catastrophe"
+  "recursive-values"
   "self-quoting-vectors"
   "what-load-returns")
 
