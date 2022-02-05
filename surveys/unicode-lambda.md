@@ -26,3 +26,4 @@ Of course, any Scheme supporting Unicode in identifiers and any form of symbol a
 |STklos	|YES|	| |
 |Tinyscheme	|NO	| |
 |Unsyntax	|NO	| |
+|Ypsilon  |NO | |
