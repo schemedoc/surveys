@@ -54,8 +54,10 @@ Which implementations support the above?
 * kawa               `expected`
 * stklos             `expected`
 * scheme 9           `expected`
+* Ypsilon with `-7`  `expected`
 
 Signal an error:
 
 * foment
 * MIT
+* Ypsilon with default behavior
