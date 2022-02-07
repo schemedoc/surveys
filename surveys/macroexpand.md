@@ -22,3 +22,4 @@ How can one expand a macro?
 | Scheme 9 | `macro-expand` | |
 | STklos   | `macro-expand` | |
 | Unsyntax | ? | |
+| Ypsilon  | `macro-expand` | |
