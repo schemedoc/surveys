@@ -4,7 +4,7 @@
 
 Scheme (before R7RS) and Common Lisp require that implementations understand short-float, single-float, double-float and long-float syntax.  These are written by replacing the `e` of exponential notation with an `s`, `f`, `d`, or `l` respectively.  However, there is no requirement that any of these be distinct, only that they be consistent: short-floats cannot have more precision than long-floats, for example.  Common Lisp requires that `e` notation be equivalent to `f` notation by default; Scheme has no such requirement.
 
-I asked the usual Schemes and some Common Lisps to evaluate `3.1415926535897932385s0`,  `3.1415926535897932385f0`, `3.1415926535897932385d0`, and `3.1415926535897932385l0`, where the numeric value is a 64-bit version of *π*.  Common Lisps were asked about precision directly using the standard `float-bits` procedure.  For Scheme, I inferred how many bits of precision were provided by the answers.  Here are the results (note that IEEE doubles are 53-bit precision and IEEE singles are 24-bit precision):
+I asked the usual Schemes and some Common Lisps to evaluate `3.1415926535897932385s0`,  `3.1415926535897932385f0`, `3.1415926535897932385d0`, and `3.1415926535897932385l0`, where the numeric value is a 64-bit version of *π*.  Common Lisps were asked about precision directly using the standard `float-bits` procedure.  For Scheme, I inferred how many bits of precision were provided by the answers.  Here are the results:
 
 All four numbers are the same and have 53-bit precision (IEEE double):  Racket CS. Gauche, Gambit, Chicken, Guile*, Kawa, SISC, Chibi, SCM, Chez, Vicare, Larceny, Ypsilon, Mosh, IronScheme, STklos, KSI, S7, UMB, VX, SXM, Spark, Dfsch, Inlab, Sagittarius
 
