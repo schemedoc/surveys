@@ -6,13 +6,13 @@ Scheme (before R7RS) and Common Lisp require that implementations understand sho
 
 I asked the usual Schemes and some Common Lisps to evaluate `3.1415926535897932385s0`,  `3.1415926535897932385f0`, `3.1415926535897932385d0`, and `3.1415926535897932385l0`, where the numeric value is a 64-bit version of *π*.  Common Lisps were asked about precision directly using the standard `float-bits` procedure.  For Scheme, I inferred how many bits of precision were provided by the answers.  Here are the results (note that IEEE doubles are 53-bit precision and IEEE singles are 24-bit precision):
 
-All four numbers are the same and have 53-bit precision:  Gauche, Gambit, Chicken (with or without the numbers egg)*, Guile*, Kawa, SISC, Chibi, SCM, Chez, Vicare, Larceny, Ypsilon, Mosh, IronScheme, STklos*, KSI†, S7†, UMB, VX*, SXM*, Spark, Dfsch†, Inlab*, Sagittarius
+All four numbers are the same and have 53-bit precision (IEEE double):  Racket CS. Gauche, Gambit, Chicken, Guile*, Kawa, SISC, Chibi, SCM, Chez, Vicare, Larceny, Ypsilon, Mosh, IronScheme, STklos, KSI, S7, UMB, VX, SXM, Spark, Dfsch, Inlab, Sagittarius
 
 All four numbers are the same and have 18-digit precision (between 59 and 60 bits): Scheme 9
 
 All four numbers are the same and have 20-bit precision: Shoe
 
-The first two numbers have 24-bit precision, the last two have 53-bit precision (IEEE double):  Racket, NexJ, Armed Bear CL, Allegro CL, Clozure CL, CMU CL, Embeddable CL, GNU CL, Steel Bank CL, Scieneer CL
+The first two numbers have 24-bit precision, the last two have 53-bit precision:  Racket BC, NexJ, Armed Bear CL, Allegro CL, Clozure CL, CMU CL, Embeddable CL, GNU CL, Steel Bank CL, Scieneer CL
 
 The numbers have 19-bit, 24-bit, 53-bit, and 53-bit precision respectively: LispWorks
 
@@ -26,8 +26,3 @@ Report syntax errors or treat input as identifiers:  Bigloo, Scheme48/scsh, Tiny
 
 Inputs are treated as as special lexical syntax, not as numbers: Llava
 
-## Footnotes
-
-*Output is truncated
-
-†Output is printed incorrectly
