@@ -22,5 +22,6 @@ How are hygienic macro systems implemented?
 |Sagittarius	|Y	|Y	|Y	|       | syntax-case; ER separate     | `boot/lib/macro.scm` |
 |STklos         |Y      |N      |N      |N      | define-macro (no lexical scope) | `lib/mbe.stk` |
 |Unsyntax	|Y	|Y	|	|       | syntax-case                  | `src/unsyntax/expander/syntax-case.scm src/unsyntax/syntax.scm` |
+|Ypsilon        |Y      |Y      |N      |N      | syntax-rules in Scheme; portable syntax-case  | `heap/boot/macro/expand.scm`, `stdlib/core/syntax-case.scm` |
 
 `!` = at least seems to be planned

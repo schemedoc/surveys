@@ -42,6 +42,39 @@ The following implementations return `#t` for `(eqv +nan.0 +nan.0)`: Chez, Gambi
 
 The following implementations return `#f` for `(eqv +nan.0 +nan.0)`: Bigloo, Chibi, Chicken, Gauche, MIT Scheme, Scheme48.
 
+### Different NaNs: Is (/ 0.0 0.0) the same as +nan.0?
+
+I ran the following code:
+
+```scheme
+(list (equal? +nan.0 (/ 0.0 0.0)) (eqv? +nan.0 (/ 0.0 0.0)) (= +nan.0 (/ 0.0 0.0)) (eq? +nan.0 (/ 0.0 0.0)) )
+```
+
+And got this:
+
+| Scheme      | Result          |
+|-------------|-----------------|
+| Bigloo      | `(#f #f #f #f)` |
+| Biwa        | `(#t #f #f #f)` |
+| Chibi       | `(#f #f #f #f)` |
+| Chicken     | `(#f #f #f #f)` |
+| Cyclone     | `(#f #f #f #f)` |
+| Foment      | error (division by zero) |
+| Gambit      | `(#f #f #f #f)` |
+| Gauche      | `(#f #f #f #f)` |
+| Guile       | `(#t #t #f #t)` |
+| Kawa        | `(#t #t #f #f)` |
+| LIPS        | `(#t #t #f #f)` |
+| Loko        | `(#f #f #f #f)` |
+| MIT         | `(#f #f #f #f)` |
+| Racket      | `(#t #t #f #f)` |
+| Sagittarius | `(#t #t #f #t)` |
+| STklos      | `(#t #t #t #f)` |
+| Unsyntax    | `(#f #f #f #f)` |
+| Ypsilon     | `(#t #t #f #t)` |
+
+Emacs Lisp returns `(nil nil nil)` (without the `eqv` part, which elisp does not have)
+
 ## Infinity examples
 
 These are the R6RS examples involving `+inf.0` and `-inf.0` (already accounted for verbally in the "Implementation extensions" section of R7RS):

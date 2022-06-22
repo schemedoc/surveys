@@ -51,6 +51,7 @@ to see the results nevertheless.
 |STklos  | -1 | -1 |
 |scheme9 | -1 |    |
 |Unsyntax| -2 | duplicate definition of identifier |
+|Ypsilon | -2 |    |
 
 The same program was translated into Elisp, Common Lisp and Clojure:
 
@@ -95,6 +96,7 @@ The same program was translated into Elisp, Common Lisp and Clojure:
 |STklos | -1  (after error: variable 'f' unbound)        | error ('f' unbound) |
 |Scheme9   | -1          | n/a |
 |Unsyntax| -1 (after error: not a variable transformer '`f`') | |
+|Ypsilon | error in set!: misplaced syntactic keyword as variable | |
 
 The same program was translated into Elisp, Common Lisp and Clojure:
 

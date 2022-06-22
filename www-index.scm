@@ -17,6 +17,7 @@
   "macroexpand"
   "syntax-definitions"
   "self-referencial macro"
+  "redefining-special-forms"
   "syntax-definitions-to-infinity-and-beyond"
   "syntax-mutation"
   "hygienic-macros")
@@ -51,6 +52,7 @@
   "one-armed-if"
   "parameters-and-threads"
   "petrofsky-catastrophe"
+  "recursive-values"
   "self-quoting-vectors"
   "what-load-returns")
 

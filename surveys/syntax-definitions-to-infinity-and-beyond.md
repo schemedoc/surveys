@@ -28,3 +28,4 @@ What is the outcome of
 | Scheme9     | too many levels of macro expansion |
 | STklos      | enters infinite loop |
 | Unsyntax    | enters infinite loop |
+| Ypsilon     | enters infinite loop |

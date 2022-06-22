@@ -59,8 +59,9 @@ Supported as the only kind of hygienic macros: Bigloo
 The test used here is `(define-syntax x (lambda (x) (syntax-case x () ((x y) (syntax y)))))`,
 which is exactly equivalent to the `syntax-rules` macro used above.
 
-Supported: Racket, Gambit, Guile, Kawa, SISC, Chez, Vicare, Larceny, Ypsilon, Mosh,
-IronScheme, SXM, Sagittarius, Chibi, Loko
+Supported: Chibi (incomplete), Gambit, Kawa, SISC, SXM, and all R6RS implementations:
+Racket, Guile, Chez, Vicare, Larceny (SRFI 72, buggy), Ypsilon, Mosh,
+IronScheme, SXM, Sagittarius, Loko
 
 Not supported:  Gauche, MIT, Chicken, Bigloo, SCM, STklos, Scheme 9,
 Foment, Picrin, Owl Lisp

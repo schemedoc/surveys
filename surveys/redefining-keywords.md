@@ -6,6 +6,6 @@ Returns 32:  Racket, Gauche, MIT, Guile, Kawa, SISC, SCM (with warning), Chez, V
 
 "Attempt to redefine macro" error at define time:  Gambit, SXM
 
-"Attempt to redefine immutable identifier" error at define time: Scheme48/scsh, Ypsilon, KSi
+"Attempt to redefine immutable identifier" error at define time: Scheme48/scsh, Ypsilon, KSi 
 
 Macro continues to shadow procedure:  Chicken, Bigloo, STklos, Shoe, TinyScheme, Scheme 9, S7, XLisp, Rep, Picrin
