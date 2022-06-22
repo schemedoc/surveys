@@ -16,6 +16,7 @@
  ("Macros"
   "macroexpand"
   "syntax-definitions"
+  "self-referencial macro"
   "redefining-special-forms"
   "syntax-definitions-to-infinity-and-beyond"
   "syntax-mutation"
