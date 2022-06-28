@@ -1,6 +1,6 @@
 # Upper-case escape
 
-How is the string "abc\Ndef", with an uppercase escape sequence, processed?
+How is the string "abc\\Ndef", with an uppercase escape sequence, processed?
 
 Lexical syntax error:  Racket, Gambit, Chicken, Scheme48/scsh, Guile, Vicare, Ypsilon, Mosh, IronScheme, NexJ, KSi, SigScheme, Scheme 9, S7, SXM, Spark, Inlab, Owl Lisp, Sagittarius
 
