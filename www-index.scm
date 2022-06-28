@@ -10,6 +10,7 @@
   "load-path"
   "minischeme-history"
   "optionality"
+  "scheme-number-implementations"
   "scheme-on-windows"
   "standalone-executables")
 
