@@ -91,8 +91,10 @@
                    (h2 ,group-title)
                    (ul ,@(map (lambda (survey)
                                 (let ((href (string-append survey "/"))
-                                      (title (cdr (assoc survey
-                                                         survey-titles))))
+                                      (title (cdr (or (assoc survey
+                                                             survey-titles)
+                                                      (error "No title for"
+                                                             survey)))))
                                   `(li (a (@ (href ,href))
                                           ,title))))
                               group-surveys)))))
