@@ -113,6 +113,7 @@
   "exact-sqrt"
   "fixnum-info"
   "float-precision"
+  "log-requires-floating-point"
   "max-inf-nan"
   "negative-rationalize"
   "negative-sqrt"
