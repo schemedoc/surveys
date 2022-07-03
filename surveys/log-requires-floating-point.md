@@ -37,6 +37,10 @@ in current days 64-bit doubles.
 |Tinyscheme  | +inf.0 |
 |Unsyntax    | +inf.0 |
 |Ypsilon     | 5710.411030625233
+|            |          |
+|Common Lisp | 5710.411 |
+|Emacs Lisp  | 1.0e+INF |
 
-* Biwa and Tinyscheme already compute `x` as the inexact infinity `+inf.0`
 
+* Biwa and Tinyscheme already compute `x` as the inexact infinity `+inf.0`.
+* The Common Lisp standard requires that the implementations compute this answer correctly.
