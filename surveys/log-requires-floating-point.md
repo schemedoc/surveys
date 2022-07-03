@@ -50,3 +50,17 @@ in current days 64-bit doubles.
 
 
 * Biwa and Tinyscheme already compute `x` as the inexact infinity `+inf.0`.
+
+
+Another experiment:
+
+```
+(log 1/6319748715279270675921934218987893281199411530039296)
+```
+Should return -119.27551918982401. (This was posted to the ECL mailing list on 2022-Jul-03 -- ECL does not compute the value, and complains about the user requesting log of zero).
+
+* Cyclone needs the number to be given as explicit division (doesn't support rationals), and returns `-inf.0`
+* Loko returns `-inf.0`
+* Tinyscheme needs the number to be given as explicit division (doesn't support rationals), and returns `-43.66827238`
+
+All others return the correct result; Bigloo and Scheme9 need the rational to be described as division, not as rational type.
