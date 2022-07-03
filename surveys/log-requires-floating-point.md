@@ -31,6 +31,7 @@ in current days 64-bit doubles.
 |LIPS        | +inf.0 |
 |Loko        | +inf.0 |
 |MIT         | +inf.0 |
+|Racket      | 5710.411030625233 |
 |Sagittarius | 5710.411030625233 |
 |Scheme 9    | 5710.41103062521399 |
 |STklos      | +inf.0 |
