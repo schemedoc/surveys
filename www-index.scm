@@ -94,7 +94,7 @@
  ("Pairs and lists"
   "improper-lists"
   "property-lists"
-  "circular-sublists")
+  "circular-lists")
 
  ("I/O and character encoding"
   "cwif-close-port"
