@@ -7,23 +7,23 @@ code.
 |---|---|---|---|
 | Bigloo   | `time`       | procedure |
 | Biwa     | n/a | | |
-| Chibi    | `time`  | syntax | needed: `(import (chibi time))` |
+| Chibi    | `time`  | syntax | `(import (chibi time))` |
 | Chicken  | `time`  | syntax | time and memory |
 | Chez     | `time`  | syntax | time and memory |
 | Cyclone  | n/a | | |
 | Gambit   | `time`  | syntax | time and memory |
-| Gauche   | `time`  | syntax | only times, no memory|
+| Gauche   | `time`  | syntax | only times |
 | Guile    | ? | | |
 | Kawa     | ? | | |
 | LIPS     | n/a | | |
 | Loko     | `time` | syntax | time and memory |
-| MIT      | `with-timings` | procedure | time only (*) |
+| MIT      | `with-timings` | procedure | time only (\*) |
 | Racket   | `time` | syntax | time and memory |
 | Sagittarius | `time` | syntax | `(import (time)` - only times |
 | Scheme 9 | n/a | | |
-| STklos   | `time` | syntax | only times, no memory|
+| STklos   | `time` | syntax | only times |
 | Unsyntax | n/a | | |
-| Ypsilon  | `time` | syntax | (import (ypsilon time))|
+| Ypsilon  | `time` | syntax | `(import (ypsilon time))` |
 
 
 (*) An example from the MIT Scheme Reference Manual:
