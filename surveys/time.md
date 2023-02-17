@@ -40,7 +40,7 @@ code.
 ```
 
 | System | Method | Procedure or Syntax |
-|---|---|
+|---|---|---|
 | elisp | n/a |  |
 | Common Lisp | `time` | syntax |
 | Clojure | `time` | syntax |
