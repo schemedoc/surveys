@@ -26,9 +26,9 @@ Does not support `letrec`: Shoe
 
 ## letrec*
 
-Returns 0: Chicken, Bigloo, Scheme48/scsh, Guile, Chez, Larceny, Ypsilon, Mosh, IronScheme, NexJ, KSi, Scheme 9, S7, Foment, Chibi, Sagittarius
+Returns 0: Chicken, Bigloo, Scheme48/scsh, Guile, Chez, Larceny, Ypsilon, Mosh, IronScheme, NexJ, KSi, Scheme 9, S7, Foment, Chibi, Sagittarius, STklos
 
-Does not support `letrec*`: Racket, Gauche, MIT, Gambit, Kawa, SISC, SCM, JScheme, STklos, SigScheme, Shoe, TinyScheme, RScheme, BDC, XLisp, Rep, Schemik, Elk, Llava, SXM, Sizzle, FemtoLisp, Dfsch, Inlab, Owl Lisp
+Does not support `letrec*`: Racket, Gauche, MIT, Gambit, Kawa, SISC, SCM, JScheme, SigScheme, Shoe, TinyScheme, RScheme, BDC, XLisp, Rep, Schemik, Elk, Llava, SXM, Sizzle, FemtoLisp, Dfsch, Inlab, Owl Lisp
 
 ## internal definition
 
