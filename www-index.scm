@@ -12,7 +12,8 @@
   "optionality"
   "scheme-number-implementations"
   "scheme-on-windows"
-  "standalone-executables")
+  "standalone-executables"
+  "time")
 
  ("Macros"
   "macroexpand"
