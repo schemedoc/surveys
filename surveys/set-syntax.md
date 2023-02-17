@@ -20,7 +20,7 @@ Will the system expand `f` using the macro `g`, the procedure
 ```
 
 * These allow the redefinition, returning -3:
-  Chicken, Gauche, Cyclone
+  Chicken, Gauche, Cyclone, STklos *after* version 1.70
 
 * Kawa complains, saying identifiers bound to macros are immutable
 
@@ -29,6 +29,6 @@ Will the system expand `f` using the macro `g`, the procedure
 
 * Bigloo acts as if we were trying to set! an undefined variable (which is also true!)
 
-* STklos' behavior is different - it complains about not being able to match a clause
+* STklos' behavior (up to version 1.70) is different - it complains about not being able to match a clause
 when expanding the macro (g was registered as a macro, and we set it to a procedure
 that does not do clause matching).
