@@ -48,7 +48,8 @@ to see the results nevertheless.
 |Racket  | -2 |    |
 |Sagittarius | -2 | -2 |
 |Scheme48| -2 |    |
-|STklos  | -1 | -1 |
+|STklos  (up to 1.70) | -1 | -1 |
+|STklos  (post v1.70)| -2 | -1 |
 |scheme9 | -1 |    |
 |Unsyntax| -2 | duplicate definition of identifier |
 |Ypsilon | -2 |    |
@@ -93,7 +94,8 @@ The same program was translated into Elisp, Common Lisp and Clojure:
 |Racket | set!: cannot mutate syntax identifier | |
 |Sagittarius | syntax error | n/a |
 |Scheme48| -1 (after warning: invalid assignment) | |
-|STklos | -1  (after error: variable 'f' unbound)        | error ('f' unbound) |
+|STklos 1.70| -1  (after error: variable 'f' unbound)        | error ('f' unbound) |
+|Stklos post-1.70| -2 | -1 |
 |Scheme9   | -1          | n/a |
 |Unsyntax| -1 (after error: not a variable transformer '`f`') | |
 |Ypsilon | error in set!: misplaced syntactic keyword as variable | |
