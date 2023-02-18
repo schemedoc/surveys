@@ -33,6 +33,7 @@ Also included is the result for `(atanh 1)`.
 These functions are part of the Common Lisp standard, but not all implementations work the same, as can be seen below. Clojure was also added to the list, being the only othe rpopular Lisp that implements these (Emacs Lisp doesn't).
 
 | System  | (atanh 1)                          |
+|---|---|
 | ABCL    | `#.SINGLE-FLOAT-POSITIVE-INFINITY` |
 | CCL     | division by zero                   |
 | Clisp   | division by zero                   |
