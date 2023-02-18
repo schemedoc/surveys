@@ -116,6 +116,7 @@
   "fixnum-info"
   "float-precision"
   "log-requires-floating-point"
+  "hyperbolic-trigonometric.md"
   "max-inf-nan"
   "negative-rationalize"
   "negative-sqrt"
