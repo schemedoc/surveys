@@ -11,7 +11,7 @@ Also included is the result for `(atanh 1)`.
 | Biwa        | n       |           |
 | Chez        | y       | error     |
 | Chibi       | n       |           |
-| Chicken     |         |           |
+| Chicken     | lib     | +inf.0    |
 | Cyclone     | n       |           |
 | Gambit      | y       | error     |
 | Gauche      | y       | +inf.0    |
