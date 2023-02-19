@@ -61,4 +61,4 @@ stklos> (disassemble d)
 004:
 ```
 
-The STklos bytecode is documented in the file [`vm.md`](https://github.com/egallesio/STklos/blob/master/vm.md) in their sources.
+The STklos bytecode is documented in the file [`vm.md`](https://github.com/egallesio/STklos/blob/master/doc/vm/vm.adoc) in their sources.
