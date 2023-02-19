@@ -27,7 +27,7 @@ Also included is the result for `(atanh 1)`.
 | Unsyntax    | n       |           |
 | Ypsilon     | n       |           |
 
-These functions are part of the Common Lisp standard, but not all implementations work the same, as can be seen below. Clojure was also added to the list, being the only othe rpopular Lisp that implements these (Emacs Lisp doesn't).
+These functions are part of the Common Lisp standard, but not all implementations work the same, as can be seen below. Clojure was also added to the list, being the only other popular Lisp that implements these functions (Emacs Lisp doesn't).
 
 | System  | (atanh 1)                          |
 |---|---|
