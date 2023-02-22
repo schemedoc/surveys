@@ -8,7 +8,6 @@
   "implementation-support"
   "jiffies-per-second"
   "load-path"
-  "minischeme-history"
   "optionality"
   "profiling"
   "scheme-number-implementations"
