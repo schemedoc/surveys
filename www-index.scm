@@ -10,10 +10,10 @@
   "load-path"
   "minischeme-history"
   "optionality"
+  "profiling"
   "scheme-number-implementations"
   "scheme-on-windows"
-  "standalone-executables"
-  "time")
+  "standalone-executables")
 
  ("Macros"
   "macroexpand"
