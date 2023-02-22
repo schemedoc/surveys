@@ -1,4 +1,4 @@
-# Scheme-number implementations
+# Scheme{number} implementations
 
 There are several Scheme implementations whose name is Scheme{number}
 or S{number}. This page aims to disambiguate them.
@@ -13,16 +13,18 @@ by David Rush.
 [s7](https://ccrma.stanford.edu/software/s7/) is an interpreter for
 music applications by Bill Schottstaedt.
 
-s7 is named after the Sunbeam motorcycle. It is not spelled S7, and
-does not stand for Scheme 7.
+s7 is named after the [Sunbeam
+motorcycle](https://en.wikipedia.org/wiki/Sunbeam_S7_and_S8). It does
+not stand for Scheme 7.
 
-# Scheme 9 from Empty Space
+# Scheme 9
 
 [Scheme 9 from Empty Space](https://www.t3x.org/s9fes/) (aka Scheme 9,
-s9, s9fes) is an interpreter by Nils M Holm.
+scheme9, s9, s9fes) is an interpreter by Nils M Holm.
 
-Scheme 9 was probably named after the operating system _Plan 9 from
-Bell Labs_.
+The name of Scheme 9 was probably inspired by the operating system
+_Plan 9 from Bell Labs_, which in turn was named after the low-budget
+movie _Plan 9 from Outer Space_. A scheme is a plan.
 
 # Scheme 48
 
