@@ -6,7 +6,7 @@ This page reports the results of the expressions `(letrec ((x 0) (y x)) y)` and 
 (let ((z 0))
   (define x 0)
   (define y x)
-y)
+  y)
 ```
 
 which in R5RS and earlier is defined to be the same as the `letrec` version, and in R6RS and R7RS is defined to be the same as the `letrec*` version.
