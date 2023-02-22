@@ -1,4 +1,6 @@
-# Convenience `time` macro
+# Profiling
+
+## Simple timing
 
 Most Lisps have a `time` macro that measures the execution time of
 code.
@@ -39,9 +41,10 @@ code.
              (newline)))
 ```
 
+Other Lisps:
+
 | System | Method | Procedure or Syntax |
 |---|---|---|
 | elisp | n/a |  |
 | Common Lisp | `time` | syntax |
 | Clojure | `time` | syntax |
-
