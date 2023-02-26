@@ -23,7 +23,7 @@ Also included is the result for `(atanh 1)`.
 | Racket      | y       | +inf.0    |
 | Sagittarius | n       |           |
 | SCM         | y       | +inf.0    |
-| STklos      | n       |           |
+| STklos      | y       | error     |
 | Unsyntax    | n       |           |
 | Ypsilon     | n       |           |
 
