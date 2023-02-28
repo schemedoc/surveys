@@ -59,13 +59,13 @@
 
  ("Identity and mutability"
   "char-eq"
+  "default-values"
   "disjoint-promises"
   "empty-strings-vectors"
   "exception-taxonomies"
   "immediate-strings-coalesced"
   "immutable-literals"
   "immutable-strings"
-  "make-list-default-element"
   "nil-is-false"
   "read-mutable"
   "void-value")
