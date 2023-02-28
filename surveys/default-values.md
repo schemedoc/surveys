@@ -30,7 +30,7 @@ according to the standards).
 | Racket      |                | `#\nul`   | `0`              |                                 |
 | Sagittarius |                | `#\space` | `#<unspecified>` | `0`                             |
 | Scheme48    |                | `#\?`     | `#{Unspecific}`  |                                 |
-| SCM         |                | `random!` | `#<unspecified>` |                                 |
+| SCM         |                | random!   | `#<unspecified>` |                                 |
 | STklos      | `#void`        | `0`       | `#void`          | `0`                             |
 | TinyScheme  |                | `#\space` | `'()`            |                                 |
 | Unsyntax    | `#<undef>`     | `#\space` | `#<undef>`       | `0`                             |
