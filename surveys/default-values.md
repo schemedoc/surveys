@@ -12,27 +12,26 @@ What is the result of the following expressions?
 Surprisingly, some of the values are random (which is perfectly fine
 according to the standards).
 
-| System      | list         | string  | vector         | bytevector                      |
-|-------------|--------------|---------|----------------|---------------------------------|
-| Bigloo      | #unspecified | #\space | #unspecified   |                                 |
-| Biwa        |              | #\space | (unspecified)  |                                 |
-| Chez        | #<void>      | #\nul   | 0              | random, but most often zero (?) |
-| Chibi       | #<undef>     | #\space | #<undef>       | 0                               |
-| Cyclone     | #f           | #\space | #f             | random!                         |
-| Gambit      | 0            | #\null  | 0              | 0                               |
-| Gauche      | #f           | #\space | #<undef>       |                                 |
-| Chicken     |              | #\space | #<unspecified> |                                 |
-| Guile       | '()          | #\nul   | #<unspecified> |                                 |
-| Kawa        | #!null       | #\space | #!null         | 0                               |
-| LIPS        | #<undefined> | #\space | #<undefined>   | 0                               |
-| Loko        |              | #\nul   | 0              | 0                               |
-| MIT         | #!default    | #\null  | #f             | 0                               |
-| Racket      |              | #\nul   | 0              |                                 |
-| Sagittarius |              | #\space | #<unspecified> | 0                               |
-| Scheme48    |              | #\?     | #{Unspecific}  |                                 |
-| SCM         |              | random! | #<unspecified> |                                 |
-| STklos      | #void        | 0       | #void          | 0                               |
-| TinyScheme  |              | #\space | '()            |                                 |
-| Unsyntax    | #<undef>     | #\space | #<undef>       | 0                               |
-| Ypsilon     | #f           | #\space | #<unspecified> | 0                               |
-
+| System      | list           | string    | vector           | bytevector                      |
+|-------------|----------------|-----------|------------------|---------------------------------|
+| Bigloo      | `#unspecified` | `#\space` | `#unspecified`   |                                 |
+| Biwa        |                | `#\space` | `(unspecified)`  |                                 |
+| Chez        | `#<void>`      | `#\nul`   | `0`              | random, but most often zero (?) |
+| Chibi       | `#<undef>`     | `#\space` | `#<undef>`       | `0`                             |
+| Cyclone     | `#f`           | `#\space` | `#f`             | random!                         |
+| Gambit      | `0`            | `#\null`  | `0`              | `0`                             |
+| Gauche      | `#f`           | `#\space` | `#<undef>`       |                                 |
+| Chicken     |                | `#\space` | `#<unspecified>` |                                 |
+| Guile       | `'()`          | `#\nul`   | `#<unspecified>` |                                 |
+| Kawa        | `#!null`       | `#\space` | `#!null`         | `0`                             |
+| LIPS        | `#<undefined>` | `#\space` | `#<undefined>`   | `0`                             |
+| Loko        |                | `#\nul`   | `0`              | `0`                             |
+| MIT         | `#!default`    | `#\null`  | `#f`             | `0`                             |
+| Racket      |                | `#\nul`   | `0`              |                                 |
+| Sagittarius |                | `#\space` | `#<unspecified>` | `0`                             |
+| Scheme48    |                | `#\?`     | `#{Unspecific}`  |                                 |
+| SCM         |                | `random!` | `#<unspecified>` |                                 |
+| STklos      | `#void`        | `0`       | `#void`          | `0`                             |
+| TinyScheme  |                | `#\space` | `'()`            |                                 |
+| Unsyntax    | `#<undef>`     | `#\space` | `#<undef>`       | `0`                             |
+| Ypsilon     | `#f`           | `#\space` | `#<unspecified>` | `0`                             |
