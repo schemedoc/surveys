@@ -122,6 +122,7 @@
   "non-finite-numbers"
   "numeric-tower"
   "prefixed-string-to-number"
+  "random-numbers"
   "round-inf"
   "short-equality"
   "zero"))
