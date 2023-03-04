@@ -192,3 +192,23 @@ MIT (even when ignoring floating point traps), Scheme48/scsh, STklos, UMB raise 
 Mosh returns its implementation-specific "undefined" value.
 
 Plain Chicken, Bigloo, Ikarus, NexJ, SigScheme, Shoe, TinyScheme, Scheme 9, Dream, RScheme, BDC, XLisp, Rep, Schemik, Elk, VX, Oaklisp, Femtolisp, Inlab, Owl Lisp do not support non-real numbers.
+
+## Zero times infinity
+
+Inspired by the discussion on a Guile but report:
+
+https://debbugs.gnu.org/cgi/bugreport.cgi?bug=16365
+
+
+What is the result of
+```
+(* 0 +inf.0)
+```
+
+Bigloo, Biwa, Chicken, Gauche, Guile, Kawa, LIPS, Sagittarius, Scheme48 return `+nan.0`.
+
+Cyclone, Loko, MIT, STklos return `-nan.0`.
+
+Chez, Chibi, Gambit, Unsyntax, Ypsilon return `0`.
+
+
