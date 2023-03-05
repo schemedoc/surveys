@@ -15,7 +15,7 @@ code.
 | Cyclone  | n/a | | |
 | Gambit   | `time`  | syntax | time and memory |
 | Gauche   | `time`  | syntax | only times |
-| Guile    | ? | | |
+| Guile    | `time` | REPL command, `,time exp` | time and momory |
 | Kawa     | ? | | |
 | LIPS     | n/a | | |
 | Loko     | `time` | syntax | time and memory |
