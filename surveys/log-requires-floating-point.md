@@ -43,7 +43,7 @@ Another interesting test is this -- what if we have a bignum that *does* fit a d
 |Scheme 9    | 5710.411030625213  | 138.629436111989054|
 |STklos      | +inf.0             | +inf.0             |
 |Tinyscheme  | +inf.0             | 138.6294361        |
-|Unsyntax    | +inf.0             | error: non procedure application: (#<undef>) |
+|Unsyntax    | +inf.0             | 138.6294361        |
 |Ypsilon     | 5710.411030625233  | 138.62943611198907 |
 |            |          |           |
 | ABCL       | error    | 138.62944 |
