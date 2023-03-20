@@ -1,6 +1,6 @@
-# Log requires floating point?
+# Log and sqrt require floating point?
 
-Does `log` need to be computed using floating-point representation?
+Does `log` or `sqrt` need to be computed using floating-point representation?
 This excludes the larger part of bignums.
 
 This is a test:
@@ -22,42 +22,47 @@ Another interesting test is this -- what if we have a bignum that *does* fit a d
 (log x)
 ```
 
-|System      | (log (expt 2 200)) | (log (expt 2 200)) |
-|------------|--------------------|---|
-|Bigloo      | -inf.0             | -inf.0             |
-|Biwa        | +inf.0             | 138.62943611198907 |
-|Chez        | 5710.411030625233  | 138.62943611198907 |
-|Chibi       | +inf.0             | 138.62943611198907 |
-|Chicken     | +inf.0             | 138.62943611198907 |
-|Cyclone     | +inf.0             | 138.62943611198907 |
-|Foment      | +inf.0             | 138.62943611198907 |
-|Gambit      | 5710.411030625233  | 138.62943611198907 |
-|Gauche      | 5710.411030625233  | 138.62943611198907 |
-|Guile       | 5710.411030625233  | 138.62943611198907 |
-|Kawa        | +inf.0             | 138.62943611198907 |
-|LIPS        | +inf.0             | 138.62943611198907 |
-|Loko        | +inf.0             | +inf.0             |
-|MIT         | +inf.0             | 138.62943611198907 |
-|Racket      | 5710.411030625233  | 138.62943611198907 |
-|Sagittarius | 5710.411030625233  | 138.62943611198907 |
-|Scheme 9    | 5710.411030625213  | 138.629436111989054|
-|STklos      | +inf.0             | +inf.0             |
-|Tinyscheme  | +inf.0             | 138.6294361        |
-|Unsyntax    | +inf.0             | 138.6294361        |
-|Ypsilon     | 5710.411030625233  | 138.62943611198907 |
-|            |          |           |
-| ABCL       | error    | 138.62944 |
-| CCL        | 5710.411 | 138.62943 |
-| Clisp      | 5710.411 | 138.62943 |
-| CMUCL      | 5710.411 | 138.62943 |
-| ECL        | 5710.411 | 138.62943 |
-| SBCL       | 5710.411 | 138.62943 |
-|            |          |
-|Emacs Lisp  | 1.0e+INF | 138.62943611198907 |
+A third test:
+```scheme
+(define S (+ (expt 2 2030) 111111111111111111111111117))
+(sqrt S)
+```
 
+|System      | (log (expt 2 200)) | (log (expt 2 200)) | (sqrt S) |
+|------------|--------------------|---|---|
+|Bigloo      | -inf.0             | -inf.0             | 10540925533894.598 |
+|Biwa        | +inf.0             | 138.62943611198907 | +inf.0 |
+|Chez        | 5710.411030625233  | 138.62943611198907 | 3.511119404027961e305 |
+|Chibi       | +inf.0             | 138.62943611198907 | 3.511119404027961e+305 |
+|Chicken     | +inf.0             | 138.62943611198907 | +inf.0 |
+|Cyclone     | +inf.0             | 138.62943611198907 | +inf.0 |
+|Foment      | +inf.0             | 138.62943611198907 | error |
+|Gambit      | 5710.411030625233  | 138.62943611198907 | 3.511119404027961e305 |
+|Gauche      | 5710.411030625233  | 138.62943611198907 | +inf.0 |
+|Guile       | 5710.411030625233  | 138.62943611198907 | 3.511119404027961e305 |
+|Kawa        | +inf.0             | 138.62943611198907 | +inf.0 |
+|LIPS        | +inf.0             | 138.62943611198907 | +inf.0 |
+|Loko        | +inf.0             | +inf.0             | +inf.0 |
+|MIT         | +inf.0             | 138.62943611198907 | error |
+|Racket      | 5710.411030625233  | 138.62943611198907 | 3.511119404027961e+305
+|Sagittarius | 5710.411030625233  | 138.62943611198907 | +inf.0 |
+|Scheme 9    | 5710.411030625213  | 138.629436111989054| 3.51111940402796075e+305 |
+|STklos      | +inf.0             | +inf.0             | +inf.0 |
+|Tinyscheme  | +inf.0             | 138.6294361        | +inf.0 |
+|Unsyntax    | +inf.0             | 138.6294361        | 3.511119404027961e+305 |
+|Ypsilon     | 5710.411030625233  | 138.62943611198907 | +inf.0 |
+|            |          |           |
+| ABCL       | error    | 138.62944 | error (argument too large to fit single float) |
+| CCL        | 5710.411 | 138.62943 | overflow |
+| Clisp      | 5710.411 | 138.62943 | overflow |
+| CMUCL      | 5710.411 | 138.62943 | overflow |
+| ECL        | 5710.411 | 138.62943 | overflow |
+| SBCL       | 5710.411 | 138.62943 | overflow |
+|            |          |
+|Emacs Lisp  | 1.0e+INF | 138.62943611198907 | 1.0e+INF |
 
 * Biwa and Tinyscheme already compute `x` as the inexact infinity `+inf.0`.
-
+* Bigloo computes `(expt 2 2030)` as zero
 
 Another experiment:
 
