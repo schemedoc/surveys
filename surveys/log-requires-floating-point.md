@@ -57,6 +57,7 @@ A third test:
 | Clisp      | 5710.411 | 138.62943 | overflow |
 | CMUCL      | 5710.411 | 138.62943 | overflow |
 | ECL        | 5710.411 | 138.62943 | overflow |
+| GCL        | error    | 138.62943611198907 | error |
 | SBCL       | 5710.411 | 138.62943 | overflow |
 |            |          |
 |Emacs Lisp  | 1.0e+INF | 138.62943611198907 | 1.0e+INF |
