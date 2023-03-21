@@ -49,3 +49,14 @@ links to the head).
 All Common Lisp implementations will loop *while setting* the `cdddr` of the list. However, all of them get back to the REPL after a `^C` -- except ABCL, which exits the program.
 
 Emacs Lisp quite properly informs that the "list contains a loop".
+
+The equivalent code used for Common Lisp and Emacs Lisp is below.
+
+```lisp
+(setq a (list 10 20 30))
+(setf (cdddr a) (cdr a))
+
+(listp a)
+(length a)
+(mapcar #'- a)
+```
