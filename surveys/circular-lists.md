@@ -35,3 +35,17 @@ links to the head).
 | STklos   | loop  | loop |
 | Unsyntax | error | loop |
 | Ypsilon  | error | error |
+| | | |
+| ABCL  | ...  | ... | 
+| Clisp | loop | loop |
+| CMUCL | loop | loop |
+| CCL   | error | loop |
+| ECL   | loop | loop |
+| GCL   | loop | loop |
+| SBCL  | loop | loop |
+| | | |
+| elisp | error | error |
+
+All Common Lisp implementations will loop *while setting* the `cdddr` of the list. However, all of them get back to the REPL after a `^C` -- except ABCL, which exits the program.
+
+Emacs Lisp quite properly informs that the "list contains a loop".
