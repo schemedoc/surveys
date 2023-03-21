@@ -14,3 +14,13 @@ MIT, Gambit, XLisp, Sagittarius return various objects (1 value).
 SCM doesn't like multiple values at the top level.
 
 Mosh, IronScheme, KSI, TinyScheme, Scheme 9, Elk, UMB, VX, Oaklisp, Owl Lisp either don't support values or don't support load.
+
+
+Common Lisp, for comparison:
+
+* ***Return the path in a path object***: ECL, Clisp
+* ***Return the path as a string***: CCL
+* ***Return `T`***: ABCL, CMUCL, GCL, SBCL
+
+Emacs Lisp returns `t`.
+
