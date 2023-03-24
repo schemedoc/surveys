@@ -29,3 +29,13 @@ Hard limit is 998 arguments: RScheme
 Cannot run test: UMB, Owl Lisp
 
 [*]: If STklos is started with `-s 10000000` then it will support the initial test with one million arguments.
+
+Common Lisp implementations:
+
+* ABCL: no limit?
+* CCL 65535
+* Clisp 4095
+* CMUCL: no limit?
+* ECL 65536
+* GCL 64
+* SBCL: no limit?
