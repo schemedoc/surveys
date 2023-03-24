@@ -32,6 +32,13 @@ Cannot run test: UMB, Owl Lisp
 
 Common Lisp implementations:
 
+```lisp
+(progn (setq args (make-list K :initial-element 1)) T)
+(apply #'+ args)
+
+```
+The maximum `K` for which the above works is:
+
 * ABCL: no limit?
 * CCL 65535
 * Clisp 4095
