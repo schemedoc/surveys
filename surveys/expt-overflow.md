@@ -1,4 +1,4 @@
-# Overflow in `expt`
+# Overflow in expt
 
 What is the result of `(expt 2 2305843009213693951)`?
 The exponent is too large for the number to be computed, so the system may
