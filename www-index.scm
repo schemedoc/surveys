@@ -112,6 +112,7 @@
   "complex-representations"
   "exact-expt"
   "exact-sqrt"
+  "expt-overflow"
   "fixnum-info"
   "float-precision"
   "log-requires-floating-point"
