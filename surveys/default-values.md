@@ -35,3 +35,11 @@ according to the standards).
 | TinyScheme  |                | `#\space` | `'()`            |                                 |
 | Unsyntax    | `#<undef>`     | `#\space` | `#<undef>`       | `0`                             |
 | Ypsilon     | `#f`           | `#\space` | `#<unspecified>` | `0`                             |
+|             |                |           |                  |                                 |
+| ABCL        | `NIL`          | `#\Null`  | `NIL`            |                                 |
+| CCL         | `NIL`          | `#\Null`  | `0`              |                                 |
+| Clisp       | `NIL`          | `#\Null`  | `NIL`            |                                 |
+| CMUCL       | `NIL`          | `#\Null`  | `0`              |                                 |
+| ECL         | `NIL`          | `#\space` | `NIL`            |                                 |
+| GCL         | `NIL`          | `#\space` | `NIL`            |                                 |
+| SBCL        | `NIL`          | `#\Null`  | `0`              |                                 |
