@@ -21,7 +21,7 @@ code.
 | Loko     | `time` | syntax | time and memory |
 | MIT      | `with-timings` | procedure | time only (\*) |
 | Racket   | `time` | syntax | time and memory |
-| Sagittarius | `time` | syntax | `(import (time)` - only times |
+| Sagittarius | `time` | syntax | `(import (time))` - only times |
 | Scheme 9 | n/a | | |
 | STklos   | `time` | syntax | only times |
 | Unsyntax | n/a | | |
