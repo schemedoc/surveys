@@ -15,6 +15,7 @@
   "standalone-executables")
 
  ("Macros"
+  "improper-syntax-rules-patterns"
   "macroexpand"
   "syntax-definitions"
   "self-referential-macro"
