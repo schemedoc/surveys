@@ -46,6 +46,46 @@ Gambit, MIT, Chibi, and STklos return 0 in both cases.
 
 All other systems lack support for either exact or inexact complex numbers or both.
 
+## Inexact imaginary zero
+
+If the imaginary part of a number is an inexact zero, is it still
+complex, or is it real?
+
+The following expressions were evaluated in different systems:
+
+```
+1+0.0i
+(= 1+0.0i 1)
+(real? 1+0.0i)
+(exact? 1+0.0i)
+```
+
+Interestingly, the output is quite diverse. Some implementations will
+coerce the whole number into inexact; others will disregard the inexact
+0.0 and treat it as a real; others will even keep it complex, but will
+answer true when it is compared to exact `1`.
+
+
+| System      | `1+0.0i` | (= 1+0.0i 1) | (real? 1+0.0i) | (exact? 1+0.0i) |
+|-------------|----------|--------------|----------------|-----------------|
+| Chez        | 1.0+0.0i | #t           | #f             | #f              |
+| Chibi       | 1+0.0i   | #t           | #f             | #f              |
+| Chicken     | 1.0      | #t           | #t             | #f              |
+| Cyclone     | 1.0+0.0i | #f           | #t             | #f              |
+| Foment      | 1.0+0.0i | #t           | #f             | #f              |
+| Gabmit      | 1+0.0i   | #t           | #f             | #f              |
+| Gauche      | 1.0      | #t           | #t             | #f              |
+| Kawa        | 1        | #t           | #f             | #f              |
+| Lips        | 1+0.0i   | #t           | #f             | #f              |
+| Loko        | 1.0+0.0i | #f           | #f             | #f              |
+| MIT         | 1+0.0i   | #t           | #t             | #f              |
+| Racket      | 1.0+0.0i | #t           | #f             | #f              |
+| Sagittarius | 1.0+0.0i | #t           | #f             | #f              |
+| Stklos      | 1        | #t           | #t             | #t              |
+| Unsyntax    | 1+0.0i   | #t           | #f             | #f              |
+| Ypsilon     | 1.0+0.0i | #t           | #f             | #f              |
+
+
 ## See also
 
 See also: [Numeric tower](../numeric-tower/).
