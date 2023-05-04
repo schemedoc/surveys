@@ -59,6 +59,7 @@
   "what-load-returns")
 
  ("Identity and mutability"
+  "boolean-equal"
   "char-eq"
   "default-values"
   "disjoint-promises"
