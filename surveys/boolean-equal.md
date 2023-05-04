@@ -17,7 +17,7 @@ And *even if we adopt interpretation \#1*, R7RS doesn't require the
 system to signal an error, so answering `#t` or `#f` is actually
 legal.
 
-Besides that, althought not mentioned in the errata, the text for
+Besides that, although not mentioned in the errata, the text for
 `boolean=?` is
 > `(boolean=? boolean1 boolean2 boolean3 . . . )`
 > Returns `#t` if all the arguments are `#t` or all are `#f`.
@@ -54,5 +54,5 @@ R6RS -- it was done for all that had the procedure `boolean=?`.
 | Ypsilon     | error              | error            | error         |
 
 
-* Bigloo, Guile, Scheme9, Tinyscheme do not seem to have `boolean=?`
+* Bigloo, Guile, Scheme9, TinyScheme do not seem to have `boolean=?`
   bound, so were not included in the comparison.
