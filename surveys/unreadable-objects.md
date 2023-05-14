@@ -1,5 +1,8 @@
 # Unreadable objects
 
+This is a survey of the lexical syntax that the `write` procedure uses
+to write unreadable objects.
+
 | Implementation | Syntax   | Skippable |
 |----------------|----------|-----------|
 | Chez Scheme    | `#<...>` | no        |
@@ -14,6 +17,10 @@
 | Sagittarius    | `#<...>` | no        |
 | STklos         | `#[...]` | YES?      |
 | (Common Lisp)  | `#<...>` | no        |
+
+**Skippable** means that the written stand-in object can be parsed as
+an S-expression (using the syntax of that implementation) and
+therefore skipped to find more S-expressions in the same stream.
 
 ## Conflicts
 
@@ -40,3 +47,6 @@ ambiguity for valid code. The ambiguity does make it harder to deal
 with invalid input where an unreadable object may be silently
 misinterpreted as some type of readable object or rejected with a
 confusing error message.
+
+STklos has a similar syntax `#<<end` but since it does not use
+`#<...>` for unreadable data there is no ambiguity.
