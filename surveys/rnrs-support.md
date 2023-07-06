@@ -23,5 +23,5 @@ Scheme systems grouped by the Scheme standards they support:
 | Unsyntax    |      |      |      | x    |
 | Ypsilon     |      |      | x    | x    |
 
-- Chicken: R7RS conformance is achieved via [r7rs egg](https://wiki.call-cc.org/eggref/5/r7rs)
+- Chicken: R7RS support is achieved via [r7rs egg](https://wiki.call-cc.org/eggref/5/r7rs)
 - Racket: R7RS support is achieved via [community-provided #lang](https://github.com/lexi-lambda/racket-r7rs/)
