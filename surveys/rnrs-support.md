@@ -17,16 +17,16 @@ Scheme systems grouped by the Scheme standards they support:
 | Gerbil      |      | x    |      | x    |
 | Gauche      |      | x    |      | x    |
 | Guile       |      |      | x    | x    |
-| Iron Scheme |      |      | x    |      |
+| IronScheme  |      |      | x    |      |
 | Kawa        |      | x    | x    | x    |
 | Lips        |      | x    |      | x    |
 | Loko        |      |      | x    | x    |
 | MIT         | x    |      |      | x    |
 | Racket      |      | x    | x    | x*   |
-| S7          |      | x    |      | x    |
-| S9fes       | x    |      |      |      |
+| s7          |      | x    |      | x    |
+| S9fES       | x    |      |      |      |
 | Sagittarius |      |      | x    | x    |
-| Stklos      |      | x    |      | x    |
+| STklos      |      | x    |      | x    |
 | Unsyntax    |      |      |      | x    |
 | Ypsilon     |      |      | x    | x    |
 
