@@ -10,6 +10,7 @@
   "load-path"
   "optionality"
   "profiling"
+  "rnrs-support"
   "scheme-number-implementations"
   "scheme-on-windows"
   "standalone-executables")
