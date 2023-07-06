@@ -11,7 +11,7 @@ Scheme systems grouped by the Scheme standards they support:
 | Cyclone     |      |      |      | x    |
 | Foment      |      |      |      | x    |
 | Gambit      |      | x    |      | x    |
-| Gauche      |      | x    | x    | x    |
+| Gauche      |      | x    |      | x    |
 | Guile       |      |      | x    | x    |
 | Kawa        |      | x    | x    | x    |
 | Lips        |      | x    |      | x    |
