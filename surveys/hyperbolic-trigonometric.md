@@ -3,7 +3,9 @@
 This is a list of systems and their support for the hyperbolic trigonometric
 functions.
 
-Also included is the result for `(atanh 1)`.
+Also included is the result for `(atanh 1)`, with an exact `1`. For
+every implementation that supports hyperbolic trigonometric functions,
+the value of `(atanh 1.0)`, with inexact `1.0` is `+inf.0`.
 
 | System      | support | (atanh 1) |
 |-------------|---------|-----------|
@@ -27,7 +29,7 @@ Also included is the result for `(atanh 1)`.
 | Unsyntax    | n       |           |
 | Ypsilon     | n       |           |
 
-These functions are part of the Common Lisp standard, but not all implementations work the same, as can be seen below. Clojure was also added to the list, being the only other popular Lisp that implements these functions (Emacs Lisp doesn't).
+These functions are part of the Common Lisp standard, but not all implementations work the same, as can be seen below. For Common Lisp, the result is always the same for integer `1` and float `1.0`.
 
 | System  | (atanh 1)                          |
 |---|---|
@@ -37,5 +39,3 @@ These functions are part of the Common Lisp standard, but not all implementation
 | ECL     | division by zero                   |
 | GCL     | division by zero                   |
 | SBCL    | division by zero                   |
-|         |                                    |
-| Clojure | illegal argument                   |
