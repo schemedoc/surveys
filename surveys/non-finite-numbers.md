@@ -182,3 +182,26 @@ These are the R6RS examples involving NaNs (already accounted for verbally in th
 
 (rationalize +inf.0 +inf.0) => +nan.0 ; Rationalizing infinity to nearest infinity is NaN
 ```
+
+## `expt` and infinities
+
+| System      | `(expt +inf.0 -inf.0)`         | `(expt -inf.0 +inf.0)` |
+|-------------|--------------------------------|------------------------|
+| Bigloo      | 0.0                            | +inf.0                 |
+| Biwa        | 0                       exact! | +inf.0                 |
+| Chez        | 0.0                            | +inf.0                 |
+| Chibi       | 0.0                            | +inf.0                 |
+| Chicken     | 0.0                            | +nan.0+nan.0i          |
+| Cyclone     | +inf.0                         | +inf.0                 |
+| Gambit      | 0.0                            | +nan.0+nan.0i          |
+| Gauche      | 0.0                            | +nan.0+nan.0i          |
+| Guile       | 0.0                            | +nan.0+nan.0i          |
+| Kawa        | 0.0                            | +inf.0                 |
+| LIPS        | 0                       exact! | +inf.0                 |
+| MIT         | 0.0                            | -nan.0-nan.0i          |
+| Sagittarius | +nan.0+nan.0i                  | +inf.0                 |
+| STklos      | 0.0                            | -nan.0-nan.0i          |
+|-------------|--------------------------------|------------------------|
+| C           | 0                              | inf                    |
+| Emacs Lisp  | 0.0                            | 1.0e+INF               |
+
