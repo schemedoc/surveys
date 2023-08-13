@@ -111,6 +111,7 @@
   "unicode-support")
 
  ("Numbers"
+  "complex-conjugate"
   "complex-logarithm"
   "complex-representations"
   "exact-expt"
