@@ -182,3 +182,41 @@ These are the R6RS examples involving NaNs (already accounted for verbally in th
 
 (rationalize +inf.0 +inf.0) => +nan.0 ; Rationalizing infinity to nearest infinity is NaN
 ```
+
+## `expt` and infinities
+
+The following table shows how Scheme implementations deal with
+exponentiation of infinities.
+
+| System      | `(expt +inf.0 -inf.0)`         | `(expt -inf.0 +inf.0)` |
+|-------------|--------------------------------|------------------------|
+| Bigloo      | 0.0                            | +inf.0                 |
+| Biwa        | 0                       exact! | +inf.0                 |
+| Chez        | 0.0                            | +inf.0                 |
+| Chibi       | 0.0                            | +inf.0                 |
+| Chicken     | 0.0                            | +nan.0+nan.0i          |
+| Cyclone     | +inf.0                         | +inf.0                 |
+| Gambit      | 0.0                            | +nan.0+nan.0i          |
+| Gauche      | 0.0                            | +nan.0+nan.0i          |
+| Guile       | 0.0                            | +nan.0+nan.0i          |
+| Kawa        | 0.0                            | +inf.0                 |
+| LIPS        | 0                       exact! | +inf.0                 |
+| MIT         | 0.0                            | -nan.0-nan.0i          |
+| Sagittarius | +nan.0+nan.0i                  | +inf.0                 |
+| STklos      | 0.0                            | -nan.0-nan.0i          |
+|-------------|--------------------------------|------------------------|
+| C (pow)     | 0                              | inf                    |
+| Emacs Lisp  | 0.0                            | 1.0e+INF               |
+| Javascript  | 0                              | Infinity               |
+
+* The exactness of Biwa's and LIPS' answer is likely due to Javascript, where
+  `(+Infinity)**(-Infinity)` returns exact zero. The `+inf.0` in the other case
+  is also consistent with the Javescript result.
+* The First case (`inf^(-inf)`) is zero for most implementations probably because
+  it is what the C `pow` function returns.
+* Similarly, its likely that the (`-inf^inf`) case is most usually `+inf.0`
+  for the same reason
+* The `nan` cases in (`-inf^inf`) could happen when computing `x^y` as
+  `exp(y*log(x))`, since `( +inf * log(-inf) )` = `( +inf * (+inf + PI*i) )`,
+  which becomes NaN. (Using `exp(y*log(x))` instead of `pow` makes sense because
+  it works for complexes.)
