@@ -1,4 +1,4 @@
-# Is `abs` the same as complex norm?
+# Is abs the same as complex norm?
 
 What is the result of `(abs -3-4i)`?
 
