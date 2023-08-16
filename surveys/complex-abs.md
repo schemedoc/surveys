@@ -14,7 +14,7 @@ real part only.
 | Chez        | error        |                  |
 | Chibi       | -3-4i        | leaves unchanged |
 | Chicken     | error        |                  |
-| Cyclone     | 3.0          | abs of real part |
+| Cyclone     | error        |                  |
 | Gambit      | error        |                  |
 | Gauche      | 5.0          |                  |
 | Guile       | error        |                  |
