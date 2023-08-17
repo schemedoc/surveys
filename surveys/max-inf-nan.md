@@ -14,7 +14,7 @@ Note that the six R6RS implementations are split 3-3 (or 4-3 if Guile, which doe
 
 ## Max of +nan.0 and 0
 
-IEEE says that `(max +nan.0 0.0) should return 0.0, and R7RS says `(max +nan.0 0)` has to return an inexact number, but is silent about which number.  The latter is tested here.
+IEEE says that `(max +nan.0 0.0)` should return `0.0`, and R7RS says `(max +nan.0 0)` has to return an inexact number, but is silent about which number.  The latter is tested here.
 
 Racket, Gauche, Gambit, Chicken with the numbers egg, Scheme48, Guile, Chez, Vicare, Ypsilon, Mosh, IronScheme, NexJ, STklos, RScheme, BDC, Elk, Sagittarius return `+nan.0`.
 
