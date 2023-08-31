@@ -8,6 +8,7 @@
   "implementation-support"
   "jiffies-per-second"
   "load-path"
+  "online-help"
   "optionality"
   "profiling"
   "rnrs-support"
