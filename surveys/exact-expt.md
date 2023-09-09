@@ -58,6 +58,7 @@ Some Common Lisp systems were also checked, for comparison.
 | Racket      | 3.0                |
 | Sagittarius | 3.0                |
 | Scheme48    | 3.0000000000000004 |
+| SCM         | 3.0                |
 | STklos      | 3.0000000000000004 |
 |-------------|--------------------|
 | ABCL        | 3.0                |
