@@ -55,7 +55,7 @@ Some Common Lisp systems were also checked, for comparison.
 | LIPS        | error              |
 | Loko        | 3.000000238418579  |
 | MIT         | 3.0                |
-| Racket      | 2.0                |
+| Racket      | 3.0                |
 | Sagittarius | 3.0                |
 | Scheme48    | 3.0000000000000004 |
 | STklos      | 3.0000000000000004 |
