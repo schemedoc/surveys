@@ -132,4 +132,8 @@
   "random-numbers"
   "round-inf"
   "short-equality"
-  "zero"))
+  "zero")
+
+ ("Internals"
+  "garbage-collector"))
+
