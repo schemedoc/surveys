@@ -91,6 +91,7 @@
   "reader-vertical-bar-concatenated-with-number"
   "square-brackets"
   "string-symbol-conversion"
+  "unreadable-objects"
   "unsigned-imaginary"
   "upper-case-escape"
   "vertical-line-symbols")
