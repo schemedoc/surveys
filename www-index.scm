@@ -14,7 +14,8 @@
   "rnrs-support"
   "scheme-number-implementations"
   "scheme-on-windows"
-  "standalone-executables")
+  "standalone-executables"
+  "threads")
 
  ("Macros"
   "improper-syntax-rules-patterns"
