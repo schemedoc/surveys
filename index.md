@@ -2,7 +2,7 @@
 
 This is an index to pages that describe various detailed differences between Scheme implementations.
 
-As of 2016-08-05, the list of Scheme implementations tested is:
+List of Scheme implementations tested (the list may differer depends on the survey).
 
 [Racket](http://racket-lang.org/),
 [Gauche](http://practical-scheme.net/gauche/),
@@ -14,6 +14,7 @@ Chicken v4, [Chicken v5](http://wiki.call-cc.org/eggref/4/numbers),
 [Scheme48](http://s48.org/) and [scsh](http://www.scsh.net/),
 [Guile](http://www.gnu.org/software/guile/),
 [Kawa](http://www.gnu.org/software/kawa/),
+[LIPS](https://lips.js.org/),
 [Sagittarius](https://code.google.com/p/sagittarius-scheme),
 [SISC](http://sisc-scheme.org/),
 [Chibi](https://code.google.com/p/chibi-scheme/),
@@ -52,6 +53,7 @@ Chicken v4, [Chicken v5](http://wiki.call-cc.org/eggref/4/numbers),
 [Dfsch](http://hakl.net/software/dfsch.en.html),
 [Inlab](http://www.inlab.de/scheme/),
 [Oaklisp](http://www.bcl.hamilton.ie/~barak/oaklisp),
+[unsyntax](https://www.unsyntax.org/),
 [Owl Lisp](https://code.google.com/p/owl-lisp/).
 
 My test system now runs 64-bit Linux,
