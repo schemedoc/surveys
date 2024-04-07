@@ -3,7 +3,7 @@
 ## Exact rational base
 
 This tests whether exponentiation of exact numbers produces an exact result.
-The test expression was `(expt 1/3 3)`, except on systems without inexact rationals, where `(expt 3 3)` was substituted.
+The test expression was `(expt 1/3 3)`, except on systems without exact rationals, where `(expt 3 3)` was substituted.
 
 
 | System      | `(expt 1/3 3)`        | `(expt 3 3)` |
