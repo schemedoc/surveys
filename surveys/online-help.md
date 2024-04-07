@@ -13,7 +13,7 @@ How does one get help from the REPL?
 | Gauche      | Y                        | with library along with symbol | Y ("`info`") pager   |
 | Guile       | Y                        | categorized by library         | Y                    |
 | Kawa        |                          |                                |                      |
-| LIPS        | Y                        | Y                              |                      |
+| LIPS        | Y                        |                                | Y                    |
 | Loko        | Y (in `(loko apropos)`)  | categorized by library         |                      |
 | MIT         | Y                        |                                | `,help`              |
 | Racket      |                          |                                | `help`, `,help`      |
