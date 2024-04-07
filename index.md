@@ -1,8 +1,8 @@
 # Scheme Surveys
 
-This is an index to pages that describe various detailed differences between Scheme implementations.
+These pages detail various differences between Scheme implementations.
 
-List of Scheme implementations tested (the list may differer depends on the survey).
+List of implementations tested:
 
 [BDC](http://carlstrom.com/bdc-scheme/),
 [Bigloo](http://www-sop.inria.fr/members/Manuel.Serrano/bigloo/),
@@ -31,7 +31,7 @@ Chicken v4, [Chicken v5](http://wiki.call-cc.org/eggref/4/numbers),
 [Mosh](https://code.google.com/p/mosh-scheme/),
 [NexJ](http://nexj-scheme.org/),
 [Oaklisp](http://www.bcl.hamilton.ie/~barak/oaklisp),
-[Owl Lisp](https://code.google.com/p/owl-lisp/).
+[Owl Lisp](https://code.google.com/p/owl-lisp/),
 [Picrin](https://github.com/picrin-scheme/picrin),
 [Racket](http://racket-lang.org/),
 [Rep](http://librep.sourceforge.net/),
@@ -56,35 +56,14 @@ Chicken v4, [Chicken v5](http://wiki.call-cc.org/eggref/4/numbers),
 [XLisp](http://www.xlisp.org/),
 [Ypsilon](https://code.google.com/p/ypsilon/).
 
-My test system now runs 64-bit Linux,
-but most of the pages below report the results from using 32-bit Linux.
-Most of my Schemes (except Racket and JVM-based and CLR-based ones)
-are built from source, usually the latest release but in some cases
-the head of source control.
-However, not all versions are up to date,
-and the versions tested have changed over the past few years,
-so some of the claims in the pages below are surely obsolete.
-Implementers and users are urged to [notify me](mailto:cowan@ccil.org)
-when they see something incorrect.
+Not all of these surveys have information on all these Schemes.
 
-As of 2016-04-01, Oaklisp is not building on my 64-bit Linux system again.
-
-As of 2014-11-29, I successfully built 32-bit Oaklisp on 64-bit Linux,
-and restored it to the list above.
-
-As of 2013-07-29, I could not build Oaklisp (it doesn't seem to like 64-bit systems)
-or Dream (link dead), so they were excluded from the suite from then on.
-
-As of 2013-01-31, I could not build [VX](https://code.google.com/p/vx-scheme/)
-or [Spark](https://github.com/vijaymathew/spark-scheme),
-so they were excluded from the suite from then on.
-
-KSM, Luna, MScheme, QScheme, Rhizome/pi, and VSCM
-either will not build on my system or will not run.
-For these and many other Schemes see the
-[fairly complete list of Scheme implementations](http://community.schemewiki.org/?scheme-faq-standards).
-
-Not all these pages have information on all these Schemes.
+We have not managed to build and run
+[VX](https://code.google.com/p/vx-scheme/),
+[Spark](https://github.com/vijaymathew/spark-scheme), KSM, Luna,
+MScheme, QScheme, Rhizome/pi, and VSCM. For these and many other
+Schemes see the [fairly complete list of Scheme
+implementations](http://community.schemewiki.org/?scheme-faq-standards).
 
 ## More surveys
 
