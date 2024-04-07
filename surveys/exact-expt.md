@@ -52,7 +52,7 @@ Some Common Lisp systems were also checked, for comparison.
 | Gauche      | 3                  |
 | Guile       | 3.0                |
 | Kawa        | 3.0                |
-| LIPS        | error              |
+| LIPS        | 3                  |
 | Loko        | 3.000000238418579  |
 | MIT         | 3.0                |
 | Racket      | 3.0                |
