@@ -2,7 +2,7 @@
 
 This is an index to pages that describe various detailed differences between Scheme implementations.
 
-As of 2016-08-05, the list of Scheme implementations tested is:
+List of Scheme implementations tested (the list may differer depends on the survey).
 
 [Racket](http://racket-lang.org/),
 [Gauche](http://practical-scheme.net/gauche/),
