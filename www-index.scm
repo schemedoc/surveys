@@ -29,6 +29,7 @@
  ("Bindings"
   "chez-repl-semantics"
   "define-syntax-defines"
+  "definitions-in-cond-clauses"
   "empty-define"
   "eval-define"
   "fluid-let"
