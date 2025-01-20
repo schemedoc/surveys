@@ -8,7 +8,7 @@ R7RS with an additional `(library ...)` requirement type. Notably,
 `cond-expand` is absent from R6RS and all prior RnRS standards, though
 many implementations of those standards support it.
 
-Supported: Gauche, MIT, Chicken, Bigloo, Kawa, SISC, STklos, SigScheme, Scheme 9, RScheme, S7, SXM, Foment, Chibi, Sagittarius, Guile
+Supported: Gauche, MIT, Chicken, Bigloo, Kawa, SISC, STklos, SigScheme, Scheme 9, RScheme, S7, SXM, Foment, Chibi, Sagittarius, Guile, LIPS
 
 Not supported: Racket* , Scheme48/scsh, SCM, Chez, Vicare*, Larceny*, Ypsilon*, Mosh, IronScheme, NexJ, JScheme, KSi, Shoe, TinyScheme, BDC, XLisp, Rep, Schemik, Elk, Llava, Sizzle, FemtoLisp, Dfsch, Inlab, Owl Lisp
 
@@ -52,6 +52,7 @@ Which implementations support the above?
 * gauche             `expected`
 * guile              `expected`
 * kawa               `expected`
+* LIPS               `expected`
 * stklos             `expected`
 * scheme 9           `expected`
 * Ypsilon with `-7`  `expected`

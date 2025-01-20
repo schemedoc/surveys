@@ -6,7 +6,7 @@ I also checked that `(integer->char 65)` was the same as `#\A`; it was in all Sc
 
 ## Characters
 
-Full support:  Racket, Gauche, Gambit, MIT, Chicken, Scheme48/scsh, Guile, Kawa, Chez, Vicare, Larceny, Ypsilon, Mosh, STklos, KSi, SigScheme, XLisp, BDC, Foment, Owl Lisp, Chibi, Sagittarius
+Full support:  Racket, Gauche, Gambit, MIT, Chicken, Scheme48/scsh, Guile, Kawa, Chez, Vicare, Larceny, Ypsilon, Mosh, STklos, KSi, SigScheme, XLisp, BDC, Foment, Owl Lisp, Chibi, Sagittarius, LIPS
 
 Characters 0-65535 only:  RScheme, SISC, IronScheme, NexJ, JScheme
 
@@ -16,7 +16,7 @@ No `integer->char` procedure: Rep, Schemik, Llava, FemtoLisp, Dfsch
 
 ## Strings
 
-Full support:  Racket, Gauche, Gambit, Chicken, Scheme48/scsh, Guile, Kawa, Chez, Vicare, Larceny, Ypsilon, Mosh, STklos, KSi, SigScheme, XLisp, BDC, Foment, Owl Lisp, Chibi, Sagittarius
+Full support:  Racket, Gauche, Gambit, Chicken, Scheme48/scsh, Guile, Kawa, Chez, Vicare, Larceny, Ypsilon, Mosh, STklos, KSi, SigScheme, XLisp, BDC, Foment, Owl Lisp, Chibi, Sagittarius, LIPS
 
 Characters 0-65535 only: SISC, IronScheme, NexJ, JScheme
 
@@ -28,7 +28,7 @@ No `integer->char` procedure: Rep, Schemik, Llava, FemtoLisp, Dfsch
 
 I tried to define the identifier π with the value 3.141592653 and then evaluate it.
 
-Successful:  Racket, Gauche, Gambit, Chicken, Bigloo, Scheme48/scsh, Guile, Kawa, SISC, SCM, Chez, Vicare, Larceny, Ypsilon, Mosh, IronScheme, NexJ, JScheme, STklos, KSi, SigScheme, Shoe, TinyScheme, RScheme, S7, BDC, UMB, Elk, Llava, Sizzle, FemtoLisp, Dfsch, Inlab, Foment, Owl Lisp, Chibi, Sagittarius
+Successful:  Racket, Gauche, Gambit, Chicken, Bigloo, Scheme48/scsh, Guile, Kawa, SISC, SCM, Chez, Vicare, Larceny, Ypsilon, Mosh, IronScheme, NexJ, JScheme, STklos, KSi, SigScheme, Shoe, TinyScheme, RScheme, S7, BDC, UMB, Elk, Llava, Sizzle, FemtoLisp, Dfsch, Inlab, Foment, Owl Lisp, Chibi, Sagittarius, LIPS
 
 Unsuccessful: MIT, Chez (can't enter π at the REPL), Scheme 9, XLisp, Rep, Schemik, SXM
 

@@ -2,7 +2,7 @@
 
 ## Exact, inexact, and mixed complex numbers
 
-Exact, inexact, and mixed complex number representations, where inexact and mixed numbers that are `=` are nevertheless distinct in the sense of `eqv?`: Gambit, Kawa, Chibi.  (Also CLISP, Pure.)
+Exact, inexact, and mixed complex number representations, where inexact and mixed numbers that are `=` are nevertheless distinct in the sense of `eqv?`: Gambit, Kawa, Chibi, LIPS.  (Also CLISP, Pure.)
 
 Exact, inexact, and mixed complex number representations, where inexact and mixed numbers that are `=` are the same in the sense of `eqv?`: MIT, STklos.
 
@@ -18,7 +18,7 @@ Mosh has a bug whereby numbers that are `=` are always `eqv?` even if they diffe
 
 ## The imaginary part of an inexact real number
 
-The value of `(imag-part 2.0)` is exact 0:  Racket, MIT, Gambit, plain Chicken, Guile, Kawa, Chez, Vicare, Larceny, Ypsilon, Mosh, IronScheme, STklos, RScheme (but see below), Sizzle, Spark, Chibi.
+The value of `(imag-part 2.0)` is exact 0:  Racket, MIT, Gambit, plain Chicken, Guile, Kawa, Chez, Vicare, Larceny, Ypsilon, Mosh, IronScheme, STklos, RScheme (but see below), Sizzle, Spark, Chibi, LIPS.
 
 The value of `(imag-part 2.0)` is inexact 0.0:  Gauche, Chicken with the numbers egg, Scheme48/scsh, SISC, SCM, KSi, S7, UMB, SXM.
 
@@ -76,7 +76,7 @@ answer true when it is compared to exact `1`.
 | Gabmit      | 1+0.0i   | #t           | #f             | #f              |
 | Gauche      | 1.0      | #t           | #t             | #f              |
 | Kawa        | 1        | #t           | #f             | #f              |
-| Lips        | 1+0.0i   | #t           | #f             | #f              |
+| LIPS        | 1+0.0i   | #t           | #f             | #f              |
 | Loko        | 1.0+0.0i | #f           | #f             | #f              |
 | MIT         | 1+0.0i   | #t           | #t             | #f              |
 | Racket      | 1.0+0.0i | #t           | #f             | #f              |

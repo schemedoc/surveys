@@ -2,7 +2,7 @@
 
 ## Symbols
 
-Racket, Gauche, Gambit, Chicken, Bigloo, scsh, Guile, Kawa, Chibi, Chez, Vicare, Larceny, Ypsilon, Mosh, IronScheme, NexJ, KSi, SigScheme, Shoe, RScheme, S7, BDC, Rep, Schemik, Llava, Sizzle, Spark, Femtolisp, Dfsch, Owl Lisp, Sagittarius return `#f` to `(eq? 't 'T)`.
+Racket, Gauche, Gambit, Chicken, Bigloo, scsh, Guile, Kawa, Chibi, Chez, Vicare, Larceny, Ypsilon, Mosh, IronScheme, NexJ, KSi, SigScheme, Shoe, RScheme, S7, BDC, Rep, Schemik, Llava, Sizzle, Spark, Femtolisp, Dfsch, Owl Lisp, Sagittarius, LIPS return `#f` to `(eq? 't 'T)`.
 
 MIT, Scheme48, SISC, SCM, STklos, TinyScheme, Scheme 9, Dream, XLisp, Elk, UMB, VX, Oaklisp, SXM, Inlab return `#t`.
 
@@ -14,13 +14,13 @@ I also decided to check the case-insensitive implementations using `(string=? (s
 
 Is `#\Space` a valid constant?
 
-Racket, Gauche, MIT, Bigloo, Scheme48, Guile, Kawa, Chibi, Chez, NexJ, STklos, KSi, SigScheme, TinyScheme, Scheme 9, Dream, RScheme, Rep, Elk, Oaklisp, Llava, SXM, Spark, Dfsch, Inlab accept `#\Space`.
+Racket, Gauche, MIT, Bigloo, Scheme48, Guile, Kawa, Chibi, Chez, NexJ, STklos, KSi, SigScheme, TinyScheme, Scheme 9, Dream, RScheme, Rep, Elk, Oaklisp, Llava, SXM, Spark, Dfsch, Inlab, LIPS accept `#\Space`.
 
 Gambit, Chicken, scsh, Vicare, Ypsilon, Mosh, IronScheme, Shoe, S7, Schemik, UMB, Sizzle, FemtoLisp, Owl Lisp, Sagittarius reject `#\Space`.
 
 ## Boolean constants
 
-Gambit, TinyScheme, S7, VX, Sizzle, Owl Lisp do not accept `#T` as equivalent to `#t`.
+Gambit, TinyScheme, S7, VX, Sizzle, Owl Lisp, LIPS do not accept `#T` as equivalent to `#t`.
 
 The other Schemes in the test suite do.
 
@@ -62,6 +62,7 @@ Here's a list of implementations and their default case sensitivity ('S' for sen
 | Stalin         | I       | no |
 | STklos         | S       | yes (command line and directive #!no-fold-case) |
 | TinyScheme     | I       | no |
+| LIPS           | S       | yes (directive #!fold-case)
 
 (* Pocket Scheme: only folds case between U+0000 - U+00FF)
 

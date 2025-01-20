@@ -13,6 +13,7 @@ implementation advertises it, although many do support it.
 |Gauche| built-in |
 |Guile| no |
 |Kawa| built-in |
+|LIPS| no |
 |Loko| through Akku |
 |MIT| built-in |
 |Sagittarius| no |

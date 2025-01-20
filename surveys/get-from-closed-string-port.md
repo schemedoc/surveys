@@ -3,13 +3,13 @@
 This test examines whether the SRFI 6 procedure `get-output-string` retrieves the value from a closed string output port.  The test code is:
 
 ```Scheme
-(define p (output-string-port))
+(define p (open-output-string))
 (write 32 p)
 (close-output-port p)
 (get-output-string p)
 ```
 
-Returns 32:  Racket, Gauche, MIT, Gambit, Chicken, Kawa, Chez, IronScheme, STklos, Sizzle, Foment
+Returns 32:  Racket, Gauche, MIT, Gambit, Chicken, Kawa, Chez, IronScheme, STklos, Sizzle, Foment, LIPS
 
 Throws an exception saying the port is closed:  Bigloo, Guile, SCM, SigScheme, TinyScheme, RScheme, S7, Elk, SXM, Sagittarius, Picrin
 

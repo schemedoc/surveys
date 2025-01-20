@@ -2,7 +2,7 @@
 
 What happens when a syntax keyword is redefined as a variable, with `(define (cond) 32) (cond)`?
 
-Returns 32:  Racket, Gauche, MIT, Guile, Kawa, SISC, SCM (with warning), Chez, Vicare, Larceny (with warning), Mosh, IronScheme, NexJ, JScheme, SigScheme, RScheme (with warning), BDC, Schemik, UMB, Elk, Llava, Peroxide, Sizzle, FemtoLisp, Dfsch, Inlab, Foment, Owl Lisp, Chibi, Sagittarius
+Returns 32:  Racket, Gauche, MIT, Guile, Kawa, SISC, SCM (with warning), Chez, Vicare, Larceny (with warning), Mosh, IronScheme, NexJ, JScheme, SigScheme, RScheme (with warning), BDC, Schemik, UMB, Elk, Llava, Peroxide, Sizzle, FemtoLisp, Dfsch, Inlab, Foment, Owl Lisp, Chibi, Sagittarius, LIPS
 
 "Attempt to redefine macro" error at define time:  Gambit, SXM
 

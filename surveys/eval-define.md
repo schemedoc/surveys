@@ -11,9 +11,9 @@ y
 
 The following Schemes allow definition by `eval`:
 
-* Supports both `interaction-environment` and single-argument `eval`: Gambit, Chicken, Bigloo, Kawa, SISC, SCM, Chez, Larceny, NexJ, STklos, TinyScheme, Sizzle, Spark
+* Supports both `interaction-environment` and single-argument `eval`: Gambit, Chicken, Bigloo, Kawa, SISC, SCM, Chez, Larceny, NexJ, STklos, TinyScheme, Sizzle, Spark, LIPS
 
-* Supports single-argument `eval` but not `interaction-environment`: Racket, RScheme, Scheme 9, S7, XLisp, Rep, Elk, UMB, VX, Llava, SXM, FemtoLisp, Inlab (SXM provides `interaction-environment` but calling it signals an error)
+* Supports single-argument `eval` but not `interaction-environment`: Racket, RScheme, Scheme 9, S7, XLisp, Rep, Elk, UMB, VX, Llava, SXM, FemtoLisp, Inlab, Biwa (SXM provides `interaction-environment` but calling it signals an error)
 
 * Supports `interaction-environment` but not single-argument `eval`: Gauche, Scheme48/scsh, Guile, Vicare, Ypsilon, IronScheme, SigScheme, Dream, BDC, Sagittarius
 

@@ -14,7 +14,7 @@ where `add.scm` contains `(+ a 1)`, is the `a` that is bound inside the macro th
 
 Evaluates to 33: Racket, Gambit, Guile, Kawa, SISC, Chez, Mosh, IronScheme, SXM
 
-`a` is undefined: Gauche, Chicken, Chibi, STklos, S7, Foment, Owl Lisp
+`a` is undefined: Gauche, Chicken, Chibi, STklos, S7, Foment, Owl Lisp, LIPS
 
 `include` is undefined or broken: MIT, Bigloo, Scheme48/scsh, SCM, Vicare, Larceny, Ypsilon, Scheme 9, Sagittarius
 

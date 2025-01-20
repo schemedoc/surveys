@@ -44,7 +44,7 @@ R6RS -- it was done for all that had the procedure `boolean=?`.
 | Gabmit      | error              | #t               | #t            |
 | Gauche      | error              | error            | error         |
 | Kawa        | #t                 | error            | error         |
-| Lips        | #f                 | error            | error         |
+| LIPS        | #f                 | error            | error         |
 | Loko        | error              | error            | error         |
 | MIT         | #t                 | error            | error         |
 | Racket      | error              | error            | error         |

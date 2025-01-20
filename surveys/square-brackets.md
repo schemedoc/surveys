@@ -9,7 +9,7 @@ Vicare, Larceny, Ypsilon, Mosh, IronScheme, Sagittarius
 
 Non-R6RS but evaluates to `(a b c)`: Gauche, Gambit, Chicken, Bigloo, SISC,
 Scheme 9, STklos, KSi, Schemik, Elk, Oaklisp,
-SXM, Sizzle, Spark
+SXM, Sizzle, Spark, LIPS, Biwa
 
 Evaluates to the symbol `[a`, followed by undefined-variable error on `b`:
 Chibi, SCM, Shoe, TinyScheme, Dream, S7, BDC, XLisp, UMB, VX, Llava, Dfsch, Inlab

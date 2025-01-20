@@ -21,7 +21,7 @@ Then we evaluated `x` and `y`.
 | Gauche      | 7     | 7     | 7         | 7         |
 | Guile       | 7     | error | 7         | error     |
 | Kawa        | 7     | error | 7         | 7         |
-| LIPS        | 7     | error | error (*) | error (*) |
+| LIPS        | 7     | 7     | 7         | 7         |
 | Loko        | error | error | error     | error     |
 | MIT         | error | error | error     | error     |
 | Racket      | 7     | error | 7         | error     |
@@ -31,7 +31,3 @@ Then we evaluated `x` and `y`.
 | SCM         | 7     | 7     | 7         | 7         |
 | STklos      | 7     | 7     | 7         | 7         |
 | Tinyscheme  | 7     | 7     | 7         | 7         |
-
-
-    
-* LIPS does not recognise the 'else' clause when it's the only expression in `cond`.

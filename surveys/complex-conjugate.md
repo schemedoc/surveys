@@ -6,7 +6,7 @@ complex conjugate of a number?
 | System      | procedure   | obs          |
 |-------------|-------------|--------------|
 | Bigloo      |             |              |
-| Biwa        |             | No complexes |
+| Biwa        |             |              |
 | Chibi       |             |              |
 | Chicken     |             |              |
 | Chez        | `conjugate` |              |

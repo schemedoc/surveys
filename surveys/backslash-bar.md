@@ -2,7 +2,7 @@
 
 Testing for the acceptance of `\|' in string literals:
 
-Accepted as equivalent to `|`:  Gauche, MIT, Gambit, Chicken, Bigloo, Kawa, Chibi, SCM, Larceny, STklos, Shoe, Dream, BDC, Rep, UMB, VX, Oaklisp, Llava, Sizzle, FemtoLisp, Dfsch, Sagittarius
+Accepted as equivalent to `|`:  Gauche, MIT, Gambit, Chicken, Bigloo, Kawa, Chibi, SCM, Larceny, STklos, Shoe, Dream, BDC, Rep, UMB, VX, Oaklisp, Llava, Sizzle, FemtoLisp, Dfsch, Sagittarius, LIPS
 
 Not equivalent: Schemik
 

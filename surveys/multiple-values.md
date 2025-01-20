@@ -6,7 +6,7 @@ I asked my usual suite of Schemes to evaluate `(+ 1 (values 2 3))`.
 
 Racket, MIT,
 Gambit, Scheme48/scsh, Kawa, SISC, Chibi, SCM, Chez, Ikarus/Vicare, Ypsilon,
-IronScheme, KSi, SigScheme, Shoe, SXM, Sizzle, Spark, Femtolisp, Owl Lisp
+IronScheme, KSi, SigScheme, Shoe, SXM, Sizzle, Spark, Femtolisp, Owl Lisp, LIPS
 all report errors, either of the form "Single
 value expected, multiple values received", or else a low-level error
 reflecting how multiple values are represented.

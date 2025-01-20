@@ -19,7 +19,7 @@ Scheme systems grouped by the Scheme standards they support:
 | Guile       |      |      | x    | x    |
 | IronScheme  |      |      | x    |      |
 | Kawa        |      | x    | x    | x    |
-| Lips        |      | x    |      | x    |
+| LIPS        |      | x    |      | x    |
 | Loko        |      |      | x    | x    |
 | MIT         | x    |      |      | x    |
 | Racket      |      | x    | x    | x*   |
