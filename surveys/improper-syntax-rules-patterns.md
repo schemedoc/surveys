@@ -35,7 +35,7 @@ a b ()
 | Gauche      | accepts                         |
 | Guile       | error while *expanding*         |
 | Kawa        | accepts                         |
-| LIPS        | expands to (quote (begin))      |
+| LIPS        | accepts                         |
 | Loko        | error while *expanding*         |
 | MIT         | accepts                         |
 | Racket      | error while *expanding*         |
@@ -44,4 +44,3 @@ a b ()
 | STklos      | error while *expanding*         |
 | Unsyntax    | error while *expanding*         |
 | Ypsilon     | error while *expanding*         |
-    

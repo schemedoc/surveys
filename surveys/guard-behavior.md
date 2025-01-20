@@ -35,6 +35,6 @@ We do indeed get `(a b c d a b)` from Chez, Ikarus, Vicare, Larceny, Ypsilon, Mo
 
 However, IronScheme, Racket (in #lang r6rs mode), STklos all return `(a b c d)`.  In the case of IronScheme at least, that is because it supports escape continuations only, and so the outer continuation in `guard` cannot re-enter the dynamic extent of the body.
 
-SigScheme returns `(a c d b)`, apparently evaluating the test of the cond-clause in the dynamic environment of `raise` and unwinding the stack only when the test returns true.  That's arguably "better" that `(a b c d)` as this will call other handlers in the correct environment if the test returns `#f`.
+SigScheme, LIPS returns `(a c d b)`, apparently evaluating the test of the cond-clause in the dynamic environment of `raise` and unwinding the stack only when the test returns true.  That's arguably "better" that `(a b c d)` as this will call other handlers in the correct environment if the test returns `#f`.
 
 The other Schemes all report errors, typically about `guard` or `raise` being undefined, or that `(#t #f)` is not a valid procedure call.

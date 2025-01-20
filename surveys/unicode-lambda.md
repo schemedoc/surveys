@@ -18,7 +18,7 @@ Of course, any Scheme supporting Unicode in identifiers and any form of symbol a
 |Gauche | NO|uses caret (`^`)|
 |Guile	|YES| |
 |Kawa	|NO	| |
-|Lips	|NO	| |
+|LIPS	|NO	| |
 |MIT	|NO	| |
 |Peroxide |NO | |
 |Racket	|YES|	| |

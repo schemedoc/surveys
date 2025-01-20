@@ -24,7 +24,7 @@ according to the standards).
 | Chicken     |                | `#\space` | `#<unspecified>` |                                 |
 | Guile       | `'()`          | `#\nul`   | `#<unspecified>` |                                 |
 | Kawa        | `#!null`       | `#\space` | `#!null`         | `0`                             |
-| LIPS        | `#<undefined>` | `#\space` | `#<undefined>`   | `0`                             |
+| LIPS        | `#void`        | `#\space` | `#void`          | `0`                             |
 | Loko        |                | `#\nul`   | `0`              | `0`                             |
 | MIT         | `#!default`    | `#\null`  | `#f`             | `0`                             |
 | Racket      |                | `#\nul`   | `0`              |                                 |

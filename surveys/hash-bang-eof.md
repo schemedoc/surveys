@@ -12,7 +12,7 @@ Special object: Llava, Owl Lisp
 
 Unknown identifier: SigScheme, Shoe, BDC, XLisp, Schemik, UMB, Inlab
 
-Attempts to evaluate an eof-object: Mosh
+Attempts to evaluate an eof-object: Mosh, LIPS
 
 Apparently ignores it:  Bigloo, SCM, Ypsilon, IronScheme, JScheme, STklos, TinyScheme, Scheme 9, RScheme, Elk, FemtoLisp, Dfsch, Sagittarius, Picrin
 

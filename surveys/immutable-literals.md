@@ -2,7 +2,7 @@
 
 Literal lists are mutable: MIT, Gambit, Chicken, Guile, IronScheme,
 Bigloo, Loko, Chez, Mosh, Larceny, Vicare, Picrin, Schemik,
-TinyScheme
+TinyScheme, LIPS
 
 Literal lists are immutable: Cyclone, Chibi, Gauche, Sagittarius, Kawa,
 STklos, Scheme48

@@ -7,4 +7,4 @@ VSCM, Chibi report bad syntax.
 
 Chicken, Bigloo, Scheme48/scsh, STklos report an undefined variable.
 
-Gauche, Guile, Kawa, Scheme 9, S7, Sagittarius report `#f`.
+Gauche, Guile, Kawa, Scheme 9, S7, Sagittarius, LIPS report `#f`.

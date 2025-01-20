@@ -6,6 +6,6 @@ Undefined variable:  Racket, Gauche, MIT, Chicken (with or without the numbers e
 
 Unsupported lexical syntax: Scheme48/scsh, Larceny, Ypsilon, IronScheme, NexJ, KSI, SigScheme, SXM, Dfsch, Owl Lisp
 
-Equivalent to `+35i`: Kawa, Vicare, Chibi, RScheme (does not support complex numbers), UMB
+Equivalent to `+35i`: Kawa, Vicare, Chibi, RScheme (does not support complex numbers), UMB, LIPS
 
 Returns a so-called generic object: Llava

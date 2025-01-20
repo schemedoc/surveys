@@ -17,7 +17,7 @@ is given to its reader?
 |Gauche      | symbol `1` followed by number `1` | three symbols, `a`, `b`, `c` |
 |Guile       | symbol `\|1\|1` | symbol `\|a\|b\|c\|` |
 |Kawa        | symbol `11`   | symbol `abc` |
-|LIPS        | reader gets confused | symbol `a\|b\|c` |
+|LIPS        | symbol `11`   | symbol `abc` |
 |Loko        | symbol `1` followed by number `1` | three symbols, `a`, `b`, `c` |
 |MIT         | symbol `1` followed by number `1` | symbol `a` and symbol `b\|c\|` |
 |Peroxide    | symbol `\|\|1\|1` | symbol `\|a\|b\|c\|` |

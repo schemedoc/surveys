@@ -6,7 +6,8 @@ And what method is used for generating them?
 What is the result of
 
 ```
-(import (srfi 27))(random-real)
+(import (srfi 27))
+(random-real)
 ```
 
 or equivalent?
@@ -33,6 +34,7 @@ uses a custom Mersenne Twister generator.
 | Gauche      | fixed            | 0.8147236863931789  |                   | Mersenne Twister                                                               |
 | Guile       | fixed            | 0.8187953998906781  |                   | Multiply With Carry (`libguile/random.c`); also external?  (`lib/getrandom.c`) |
 | MIT         | fixed            | 0.9123799209965706  |                   | ChaCha20 (`src/runtime/random.scm`)                                            |
+| LIPS        | fixed            | 0.6589080521371216  | `(random)`        | Linear Congruential (`lib/R5RS.scm`)                                           |
 | Sagittarius | fixed            | 0.7868209548678019  | = STklos          | Mersenne Twister (`sitelib/srfi/%3a27/random-bits.scm`)                        |
 | Scheme48    | fixed            | 0.8574025375628211  | = gambit, chicken |                                                                                |
 | STklos      | fixed            | 0.7868209548678019  | = sagittarius     | Mersenne Twister (`lib/srfi/27.{stk,c}`)                                       |

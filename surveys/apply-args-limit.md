@@ -18,6 +18,8 @@ These tests were done on a 64-bit Linux system.
 
 Hard limit is 126937 arguments: MIT
 
+Hard limit of 9445 (depends on Node.js stack size): LIPS
+
 Hard limit is 8192 arguments: Gambit, Vicare
 
 Hard limit is 2048 arguments: Chicken 4

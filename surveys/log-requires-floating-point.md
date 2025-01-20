@@ -45,7 +45,7 @@ A third test:
 (sqrt S)
 ```
 
-|System      | (log (expt 10 2480)) | |(log (expt 2 200)) | (sqrt S) |
+|System      | (log (expt 10 2480)) | (log n) |(log (expt 2 200)) | (sqrt S) |
 |------------|--------------------|---|---|---|
 |Bigloo      | -inf.0             | -inf.0 |-inf.0             | 10540925533894.598 |
 |Biwa        | +inf.0             | +nan.0 |138.62943611198907 | +inf.0 |
