@@ -23,6 +23,6 @@ How are hygienic macro systems implemented?
 |STklos         |Y      |N      |N      |N      | define-macro (no lexical scope) | `lib/mbe.stk` |
 |tr7            |Y      |N      |N      |N      | syntax-rules written in C | `tr7.c` | 
 |Unsyntax	|Y	|Y	|	|       | syntax-case                  | `src/unsyntax/expander/syntax-case.scm src/unsyntax/syntax.scm` |
-|Ypsilon        |Y      |Y      |N      |N      | syntax-rules in Scheme; portable syntax-case  | `heap/boot/macro/expand.scm`, `stdlib/core/syntax-case.scm` |
+|Ypsilon        |Y      |Y      |N      |N      | syntax-rules in Scheme; portable syntax-case  | `heap/boot/macro/`, `stdlib/core/syntax-case.scm` |
 
 `!` = at least seems to be planned
