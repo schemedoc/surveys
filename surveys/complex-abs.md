@@ -23,7 +23,7 @@ real part only.
 | MIT         | error        |                  |
 | Racket      | error        |                  |
 | Sagittarius | 5            | keeps exactness  |
-| STklos      | error        |                  |
+| STklos      | 5            | keeps exactness  |
 | Unsyntax    | -3-4i        | leaves unchanged |
 |             |              |                  |
 | ABCL        | 5.0          |                  |
