@@ -41,7 +41,7 @@ is likely to be (3).
 |Sagittarius| 3 ("syntax error") |
 |Scheme 48  | 1 ("f unbound")    |
 |Scheme 9   | see below |
-|STklos     | 1 ("f unbound")    |
+|STklos     | 3 ("syntax error") |
 |Unsyntax   | 3 ("syntax error") |
 
 For Scheme 9 From Empty Space, we get:
