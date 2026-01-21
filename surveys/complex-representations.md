@@ -81,7 +81,7 @@ answer true when it is compared to exact `1`.
 | MIT         | 1+0.0i   | #t           | #t             | #f              |
 | Racket      | 1.0+0.0i | #t           | #f             | #f              |
 | Sagittarius | 1.0+0.0i | #t           | #f             | #f              |
-| Stklos      | 1        | #t           | #t             | #t              |
+| Stklos      | 1+0.0i   | #t           | #f             | #f              |
 | Unsyntax    | 1+0.0i   | #t           | #f             | #f              |
 | Ypsilon     | 1.0+0.0i | #t           | #f             | #f              |
 
