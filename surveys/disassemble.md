@@ -4,9 +4,10 @@ How can one disassemble an expression?
 
 | Implementation | method | for what objects? | how is the code returned? |
 | -------------- | ------ | ----------------- | ------------------------- |
-| Guile  | `arch-disassemble` | ? | ? |
-| Kawa   | `(disassemble proc)` | for procedures | returns string |
-| STklos | `(disassemble proc)` | for procedures | prints the bytecode |
+| Gauche | `(disasm proc)`           | for procedures  | prints the bytecode |
+| Guile  | `arch-disassemble`        | ?               | ?                   |
+| Kawa   | `(disassemble proc)`      | for procedures  | returns string      |
+| STklos | `(disassemble proc)`      | for procedures  | prints the bytecode |
 | STklos | `(disassemble-expr proc)` | for expressions | prints the bytecode |
 
 ## Example: Kawa
@@ -62,3 +63,16 @@ stklos> (disassemble d)
 ```
 
 The STklos bytecode is documented in the file [`vm.md`](https://github.com/egallesio/STklos/blob/master/doc/vm/vm.adoc) in their sources.
+
+## Example: Gauche
+
+```
+gosh$ (disasm (lambda (x) (* 2 x)))
+CLOSURE #<closure (#f x)>
+=== main_code (name=#f, cc=0x7f90254208a0, codevec=0x7f90243b1980, size=4, const=0 stack=1):
+signatureInfo: ((#f x))
+     0 CONSTI-PUSH(2) 
+     1 LREF0                    ; x
+     2 NUMMUL2                  ; (* 2 x)
+     3 RET 
+```
