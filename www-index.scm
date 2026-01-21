@@ -68,6 +68,7 @@
   "disjoint-promises"
   "empty-strings-vectors"
   "exception-taxonomies"
+  "modifying-features"
   "immediate-strings-coalesced"
   "immutable-literals"
   "immutable-strings"
