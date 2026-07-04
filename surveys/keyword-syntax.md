@@ -29,7 +29,7 @@ that look like `:foo`, `foo:`, or `#:foo`, depending on the Scheme implementatio
 Note: Chez and CL use `#:` not for keywords but for uninterned symbols.
 
 If we adopt the `:foo` style, Gauche, Bigloo, S7, STklos will work out of the box,
-and Chicken will support it with an option.
+and Chicken, Gambit will support it with an option.
 
 If we adopt the `foo:` style, Gambit, Chicken, STklos, Bigloo, S7 will work out of the box,
 and Guile, Kawa will support it with an option.
